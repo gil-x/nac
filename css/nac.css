@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500,600|Julius+Sans+One&display=swap");
 * {
   margin: 0;
@@ -69,4 +70,52 @@ footer {
   font-size: 1.5em;
   font-style: italic;
   margin: 0.5em 0 2em; }
+
+#burger, #close {
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 23px;
+  cursor: pointer; }
+
+#burger {
+  position: fixed;
+  z-index: 10;
+  background: url("../img/burger.svg"); }
+
+#close {
+  position: absolute;
+  z-index: 30;
+  background: url("../img/close.svg"); }
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  width: 25%;
+  height: 100%;
+  padding: 1em;
+  background: #000;
+  transition: transform 0.5s;
+  text-align: left; }
+  #menu ul li {
+    margin: 1.5em;
+    color: #FFF;
+    list-style-type: square;
+    text-transform: uppercase; }
+    #menu ul li ul li {
+      margin: 1em 2em;
+      list-style-type: '↪ '; }
+  #menu a {
+    color: #FFF;
+    text-decoration: none; }
+  #menu a:hover {
+    text-decoration: underline; }
+
+#menu.menu-off {
+  transform: translateX(100%); }
+
+#menu.menu-on {
+  transform: translateX(0); }
 

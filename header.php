@@ -40,8 +40,11 @@ else {
 // }
 // echo '<span>' . $site_title . '</span>';
 // echo '<span>' . $site_description . '</span>';
-
-// wp_nav_menu(array('theme_location'=>'primary'));
+echo '<a href="#" id="burger" class="menu-open"></a>';
+echo '<nav id="menu" class="menu-off">';
+echo '<a href="#" id="close" class="menu-close off">';
+wp_nav_menu(array('theme_location'=>'primary'));
+echo '</nav>';
 
 ?>
 
