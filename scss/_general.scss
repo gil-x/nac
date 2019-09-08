@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500,600|Julius+Sans+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: $nac-font-1;
+    font-family: 'Montserrat', 'Sans-Serif';
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Julius Sans One', 'sans-serif';
+}
+
+p {
+    color: $nac-font-2;
+}
