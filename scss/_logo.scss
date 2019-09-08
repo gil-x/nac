@@ -1,0 +1,21 @@
+.logo {
+    margin: 0;
+    font-size: 4.8em;
+    font-weight: 200;
+    font-family: 'Montserrat', monospace, sans-serif;
+
+    sup, span {
+        font-weight: 500;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.slogan {
+    color: $nac-font-3;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0.5em 0 2em;
+}
