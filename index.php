@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 
+
 <?php
+
+echo '<main class="page">';
+
 if( have_posts() ):
 
 	echo '<h1>' . get_the_title() . '</h1>';
@@ -18,6 +22,7 @@ if( have_posts() ):
 endif;
 
 get_sidebar();
+echo '</main>';
 
 get_footer();
 

@@ -14,9 +14,9 @@ $args = array(
 
 $query = new WP_Query($args);
 
-echo '<h1>' . get_the_title() . '</h1>';
+echo '<h1 class="blog-title">' . get_the_title() . '</h1>';
 
-echo '<main class="blog">';
+echo '<main class="page blog">';
 
 echo '<div class="post-container">';
 if ( $query->have_posts() ) {

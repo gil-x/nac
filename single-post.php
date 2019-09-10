@@ -1,7 +1,7 @@
 <?php get_header();
 // echo '<main class="single-post-container">';
 // echo '<div class="single-post">';
-echo '<main class="blog">';
+echo '<main class="page">';
 
 ?>
 

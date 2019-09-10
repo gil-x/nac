@@ -1,17 +1,21 @@
-h1 {
+.blog-title {
     margin: 1em 0;
     padding: 0 20%;
     font-size: 3em;
     // flex-basis: 100%;
 }
 
-.blog {
+.page {
     padding: 0 20%;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
 
-    .post-container {
-        flex-basis: 75%;
+    .content, .post-container {
+        flex-basis: 70%;
+    }
+
+    h1 {
+        flex-basis: 100%;
     }
 
     .post {
@@ -68,10 +72,10 @@ h1 {
     @include debug(#DDD);
 
     flex-basis: 24%;
-    padding: 0 3em;
+    padding: 0 2%;
     border-left: 1px solid $black;
     border-right: 1px solid $black;
-    margin-left: 1%;
+    margin-left: 2%;
 
     h2 {
         margin: 1em 0 1.5em;

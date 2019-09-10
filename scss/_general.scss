@@ -21,19 +21,20 @@ p {
     text-align: justify;
 }
 
-// .page {
-//     text-align: center;
-// }
-
 footer {
     padding: 2em 0 0.25em;
     width: 100%;
-    color: $nac-font-2;
+    color: $nac-font-3;
     text-align: center;
-    font-size: 1.1em;
-    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    line-height: 1.35em;
 
     a {
+        color: $nac-font-2;
+    }
+
+    a:hover {
         color: $nac-font-1;
     }
 }
@@ -78,3 +79,35 @@ footer {
     }
 }
 
+.contact {
+    // display: flex;
+    // flex-wrap: wrap;
+    text-align: center;
+    padding: 0 20%;
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        flex-basis: 100%;
+    }
+
+    p {
+        flex-basis: 100%;
+    }
+
+    form {
+        // margin: 2em 0;
+        flex-basis: 50%;
+        padding: 0 2em;
+        // border: 1px dashed gray;
+    }
+
+    iframe {
+        // margin: 1em;
+        flex-basis: 50%;
+        // padding: 3em;
+    }
+}
