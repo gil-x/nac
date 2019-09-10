@@ -16,8 +16,9 @@ h1, h2, h3 {
 }
 
 p {
-    color: $nac-font-2;
     margin: 1em 0;
+    color: $nac-font-2;
+    text-align: justify;
 }
 
 // .page {

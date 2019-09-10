@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php get_header();
+// echo '<main class="single-post-container">';
+// echo '<div class="single-post">';
+echo '<main class="blog">';
+
+?>
 
 	<?php
 	if( have_posts() ):
@@ -10,5 +15,9 @@
     endif;
     ?>
 
-<?php get_footer(); ?>
+<?php 
+
+echo '</main>';
+
+get_footer(); ?>
     

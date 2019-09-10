@@ -13,8 +13,9 @@ h1, h2, h3 {
   font-family: 'Julius Sans One', 'sans-serif'; }
 
 p {
+  margin: 1em 0;
   color: #333;
-  margin: 1em 0; }
+  text-align: justify; }
 
 footer {
   padding: 2em 0 0.25em;
@@ -67,10 +68,11 @@ header {
     header .logo a {
       text-decoration: none; }
   header .slogan {
+    margin: 0.5em 0 2em;
     color: #888;
     font-size: 1.5em;
     font-style: italic;
-    margin: 0.5em 0 2em; }
+    text-align: center; }
 
 #burger, #close {
   top: 20px;
@@ -177,4 +179,14 @@ h1 {
       margin: 1em 0; }
     #sidebar ul li:hover {
       text-decoration: underline; }
+
+.single.post h1 {
+  padding: 0; }
+
+.single.post .excerpt {
+  margin: 1em 0;
+  font-size: 1.5em; }
+
+.single.post p {
+  margin: 1em 0; }
 
