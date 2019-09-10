@@ -1,0 +1,93 @@
+h1 {
+    margin: 1em 0;
+    padding: 0 20%;
+    font-size: 3em;
+    // flex-basis: 100%;
+}
+
+.blog {
+    padding: 0 20%;
+    display: flex;
+    // flex-wrap: wrap;
+
+    .post-container {
+        flex-basis: 75%;
+    }
+
+    .post {
+        margin-bottom: 3em;
+        cursor: pointer;
+
+        h2 {
+            padding: 1em 0 0.5em;
+            margin-bottom: 0.5em;
+            color: $black;
+            border-bottom: 7px solid $black;
+        }
+
+        p {
+            margin: 1em;
+        }
+
+        img {
+            width: 100%;
+            opacity: 0.75;
+            transition: filter 3s, opacity 1s;
+            filter: grayscale(100%);
+        }
+
+        .read-more {
+            text-align: center;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                padding: 0.25em 0.5em;
+                background: $black;
+                transition: all 0.25s;
+                border-radius: 1px;
+                display: inline-block;
+            }
+
+            a:hover {
+                background: rgba(0,0,0,0.85);
+                filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.45));
+            }
+        }
+
+    }
+
+    .post:hover > img {
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+   
+}
+
+#sidebar {
+    @include debug(#DDD);
+
+    flex-basis: 24%;
+    padding: 0 3em;
+    border-left: 1px solid $black;
+    border-right: 1px solid $black;
+    margin-left: 1%;
+
+    h2 {
+        margin: 1em 0 1.5em;
+    }
+
+    ul {
+
+        list-style-type: square;
+
+        li {
+            cursor: pointer;
+            margin: 1em 0;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+    }
+}

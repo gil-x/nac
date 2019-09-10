@@ -17,7 +17,7 @@ p {
   margin: 1em 0; }
 
 footer {
-  padding: 0.25em;
+  padding: 2em 0 0.25em;
   width: 100%;
   color: #333;
   text-align: center;
@@ -55,21 +55,22 @@ footer {
     position: fixed;
     bottom: 0; }
 
-.logo {
-  margin: 0;
-  font-size: 4.8em;
-  font-weight: 200;
-  font-family: 'Montserrat', monospace, sans-serif; }
-  .logo sup, .logo span {
-    font-weight: 500; }
-  .logo a {
-    text-decoration: none; }
-
-.slogan {
-  color: #888;
-  font-size: 1.5em;
-  font-style: italic;
-  margin: 0.5em 0 2em; }
+header {
+  text-align: center; }
+  header .logo {
+    margin: 0;
+    font-size: 4.8em;
+    font-weight: 200;
+    font-family: 'Montserrat', monospace, sans-serif; }
+    header .logo sup, header .logo span {
+      font-weight: 500; }
+    header .logo a {
+      text-decoration: none; }
+  header .slogan {
+    color: #888;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0.5em 0 2em; }
 
 #burger, #close {
   top: 20px;
@@ -118,4 +119,62 @@ footer {
 
 #menu.menu-on {
   transform: translateX(0); }
+
+h1 {
+  margin: 1em 0;
+  padding: 0 20%;
+  font-size: 3em; }
+
+.blog {
+  padding: 0 20%;
+  display: flex; }
+  .blog .post-container {
+    flex-basis: 75%; }
+  .blog .post {
+    margin-bottom: 3em;
+    cursor: pointer; }
+    .blog .post h2 {
+      padding: 1em 0 0.5em;
+      margin-bottom: 0.5em;
+      color: #000;
+      border-bottom: 7px solid #000; }
+    .blog .post p {
+      margin: 1em; }
+    .blog .post img {
+      width: 100%;
+      opacity: 0.75;
+      transition: filter 3s, opacity 1s;
+      filter: grayscale(100%); }
+    .blog .post .read-more {
+      text-align: center; }
+      .blog .post .read-more a {
+        color: #FFF;
+        text-decoration: none;
+        padding: 0.25em 0.5em;
+        background: #000;
+        transition: all 0.25s;
+        border-radius: 1px;
+        display: inline-block; }
+      .blog .post .read-more a:hover {
+        background: rgba(0, 0, 0, 0.85);
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.45)); }
+  .blog .post:hover > img {
+    opacity: 1;
+    filter: grayscale(0%); }
+
+#sidebar {
+  flex-basis: 24%;
+  padding: 0 3em;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  margin-left: 1%; }
+  #sidebar h2 {
+    margin: 1em 0 1.5em; }
+  #sidebar ul {
+    list-style-type: square; }
+    #sidebar ul li {
+      cursor: pointer;
+      margin: 1em 0; }
+    #sidebar ul li:hover {
+      text-decoration: underline; }
 
