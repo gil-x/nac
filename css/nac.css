@@ -11,6 +11,8 @@
 
 h1, h2, h3 {
   font-family: 'Julius Sans One', 'sans-serif'; }
+  h1 a, h2 a, h3 a {
+    text-decoration: none; }
 
 p {
   margin: 1em 0;
@@ -170,7 +172,6 @@ header {
   transform: translateX(0); }
 
 .blog-title {
-  margin: 1em 0;
   padding: 0 20%;
   font-size: 3em; }
   @media screen and (max-width: 600px) {
@@ -184,7 +185,13 @@ header {
   display: flex;
   flex-wrap: wrap; }
   .page .content, .page .post-container {
-    flex-basis: 70%; }
+    flex-basis: 70%;
+    display: flex;
+    flex-wrap: wrap; }
+    .page .content .post, .page .post-container .post {
+      flex-basis: 50%;
+      margin-bottom: 1em;
+      padding: 1em; }
   .page h1 {
     flex-basis: 100%; }
   .page .post {
@@ -195,8 +202,6 @@ header {
       margin-bottom: 0.5em;
       color: #000;
       border-bottom: 7px solid #000; }
-    .page .post p {
-      margin: 1em; }
     .page .post img {
       width: 100%;
       opacity: 0.75;
@@ -215,7 +220,7 @@ header {
       .page .post .read-more a:hover {
         background: rgba(0, 0, 0, 0.85);
         filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.45)); }
-  .page .post:hover > img {
+  .page .post:hover a > img {
     opacity: 1;
     filter: grayscale(0%); }
   @media screen and (max-width: 600px) {
