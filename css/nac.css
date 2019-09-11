@@ -196,6 +196,7 @@ header {
     flex-basis: 100%; }
   .page .post {
     margin-bottom: 3em;
+    flex-basis: 70%;
     cursor: pointer; }
     .page .post h2 {
       padding: 1em 0 0.5em;
@@ -204,9 +205,7 @@ header {
       border-bottom: 7px solid #000; }
     .page .post img {
       width: 100%;
-      opacity: 0.75;
-      transition: filter 3s, opacity 1s;
-      filter: grayscale(100%); }
+      transition: filter 3s, opacity 1s; }
     .page .post .read-more {
       text-align: center; }
       .page .post .read-more a {
@@ -220,7 +219,10 @@ header {
       .page .post .read-more a:hover {
         background: rgba(0, 0, 0, 0.85);
         filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.45)); }
-  .page .post:hover a > img {
+  .page .post-container .post a img {
+    opacity: 0.75;
+    filter: grayscale(100%); }
+  .page .post-container .post:hover a > img {
     opacity: 1;
     filter: grayscale(0%); }
   @media screen and (max-width: 600px) {

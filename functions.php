@@ -44,7 +44,7 @@ function nac_widget_setup() {
 			'name'			=> 'sidebar',
 			'id'			=> 'sidebar-0',
 			'class'			=> 'cls-sidebar-0',
-			'description'	=> 'Test de sidebar',
+			'description'	=> 'Sidebar',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
 			'before_title'  => '<h2 class="widgettitle">',
@@ -60,32 +60,32 @@ add_action('widgets_init', 'nac_widget_setup');
 	   WIDGETS functions
 	=======================
 */
-// class DomiciliationWidget extends WP_Widget {
-// 	// Constructor
-// 	public function __construct() {
-// 		$args = array(
-// 			'classname'		=> 'widget-domiciliation',
-// 			'description'	=> 'essai de widget',
-// 		);
-// 		parent::__construct('domiciliation_widget', 'Domiciliation', $args);
-// 	}
-// 	// Back-end display
-// 	public function form($instance) {
-// 		echo 'suce mon noeud';
-// 	}
+class DomiciliationWidget extends WP_Widget {
+	// Constructor
+	public function __construct() {
+		$args = array(
+			'classname'		=> 'widget-domiciliation',
+			'description'	=> 'essai de widget',
+		);
+		parent::__construct('domiciliation_widget', 'Domiciliation', $args);
+	}
+	// Back-end display
+	public function form($instance) {
+		echo 'suce mon noeud';
+	}
 
-// 	// Front-end Display
-// 	public function widget($args, $instance) {
-// 		echo $args['before_title'];
-// 		echo 'Demande de domiciliation';
-// 		echo $args['after_title'];
-// 		echo $args['before_widget'];
-// 		echo $args['after_widget'];
-// 	}
-// }
-// add_action('widgets_init', function(){
-// 	register_widget('DomiciliationWidget');
-// });
+	// Front-end Display
+	public function widget($args, $instance) {
+		echo $args['before_title'];
+		echo 'Demande de domiciliation';
+		echo $args['after_title'];
+		echo $args['before_widget'];
+		echo $args['after_widget'];
+	}
+}
+add_action('widgets_init', function(){
+	register_widget('DomiciliationWidget');
+});
 
 /*
 	=======================
@@ -194,42 +194,42 @@ add_action('widgets_init', 'nac_widget_setup');
 	================
 */
 
-// function pressPagination($pages = '', $range = 2)
-// {
-//     global $paged;
-//     $showitems= ($range * 2)+1;
+function pressPagination($pages = '', $range = 2)
+{
+    global $paged;
+    $showitems= ($range * 2)+1;
  
-//     if(empty($paged)) $paged = 1;
-//     if($pages == '')
-//     {
-//         global $wp_query;
-//         $pages = $wp_query->max_num_pages;
-//         if(!$pages)
-//         {
-//                    $pages = 1;
-//         }
-//     }
+    if(empty($paged)) $paged = 1;
+    if($pages == '')
+    {
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
+        if(!$pages)
+        {
+                   $pages = 1;
+        }
+    }
  
-//     if(1 != $pages)
-//     {
-//         echo "<div class='pagination'>";
-//         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
-//         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+    if(1 != $pages)
+    {
+        echo "<div class='pagination'>";
+        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
+        if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
          
-//         for ($i=1; $i <= $pages; $i++)
-//         {
-//             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-//             {
-//                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
-//             }
-//         }
+        for ($i=1; $i <= $pages; $i++)
+        {
+            if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+            {
+                echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
+            }
+        }
  
-//         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
-//            if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
-//            echo "</div>n";
-//        }
+        if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
+           if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
+           echo "</div>n";
+       }
  
-// }
+}
 
 
 
