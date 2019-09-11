@@ -14,7 +14,7 @@ $args = array(
 
 $query = new WP_Query($args);
 
-echo '<h1 class="blog-title">' . get_the_title() . '</h1>';
+echo '<h1 class="blog-title">(' . get_the_title() . ')</h1>';
 
 echo '<main class="page blog">';
 
