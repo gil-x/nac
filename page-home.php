@@ -26,9 +26,10 @@ endif;
 
 <div class="social">
     <?php
-    echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/facebook.svg" alt="facebook" title="facebook">';
-    echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/linkedin.svg" alt="linkedin" title="linkedin">';
-    echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/instagram.svg" alt="instagram" title="instagram">';
+    echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/facebook.svg" alt="Facebook" title="Facebook">';
+	echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/linkedin.svg" alt="Linkedin" title="Linkedin">';
+	echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/twitter.svg" alt="Twitter" title="Twitter">';
+    echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/instagram.svg" alt="Instagram" title="Instagram">';
     ?>
 </div>
 
