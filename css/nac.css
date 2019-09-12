@@ -186,6 +186,14 @@ header {
       padding: 0 5%;
       font-size: 2em; } }
 
+.blog-title::before {
+  content: "(";
+  color: #FF8C00; }
+
+.blog-title::after {
+  content: ")";
+  color: #FF8C00; }
+
 .page {
   padding: 0 20%;
   display: flex;
@@ -266,4 +274,17 @@ header {
 
 .single.post p {
   margin: 1em 0; }
+
+.contact p input[type="submit"] {
+  color: #FFF;
+  border: none;
+  background: #000;
+  padding: 0.25em 0.5em;
+  border-radius: 1px;
+  transition: all 0.25s;
+  cursor: pointer; }
+
+.contact p input[type="submit"]:hover {
+  background: rgba(0, 0, 0, 0.85);
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.45)); }
 

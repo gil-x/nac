@@ -10,6 +10,16 @@
     }
 }
 
+.blog-title::before {
+    content: "(";
+    color: $nac-color;
+}
+
+.blog-title::after {
+    content: ")";
+    color: $nac-color;
+}
+
 .page {
     padding: 0 20%;
     display: flex;
