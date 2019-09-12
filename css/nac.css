@@ -96,16 +96,19 @@ footer {
 header {
   text-align: center; }
   header .logo {
-    margin: 0.5em 0;
-    font-size: 4.8em;
+    margin: 0;
+    font-size: 3.8em;
     font-weight: 200;
-    font-family: 'Montserrat', monospace, sans-serif; }
+    font-family: 'Montserrat', monospace, sans-serif;
+    transform: translateX(-0.35em); }
     @media screen and (max-width: 600px) {
       header .logo {
         font-size: 1.8em;
         margin: 1.5em 0 0.5em; } }
-    header .logo sup, header .logo span {
+    header .logo span {
       font-weight: 500; }
+    header .logo sup {
+      font-size: 2em; }
     header .logo a {
       text-decoration: none; }
   header .slogan {
@@ -118,6 +121,9 @@ header {
     @media screen and (max-width: 600px) {
       header .slogan {
         font-size: 0.95em; } }
+
+.home .logo {
+  font-size: 4.8em; }
 
 #burger, #close {
   top: 20px;

@@ -2,18 +2,23 @@ header {
     text-align: center;
     
     .logo {
-        margin: 0.5em 0;
-        font-size: 4.8em;
+        margin: 0;
+        font-size: 3.8em;
         font-weight: 200;
         font-family: 'Montserrat', monospace, sans-serif;
+        transform: translateX(-0.35em);
 
         @media screen and (max-width: 600px) {
             font-size: 1.8em;
             margin: 1.5em 0 0.5em;
         }
     
-        sup, span {
+        span {
             font-weight: 500;
+        }
+
+        sup {
+            font-size: 2em;
         }
     
         a {
@@ -33,5 +38,9 @@ header {
             font-size: 0.95em;
         }
     }
+}
+
+.home .logo {
+    font-size: 4.8em;
 }
 
