@@ -40,7 +40,25 @@ header {
     }
 }
 
-.home .logo {
-    font-size: 4.8em;
+.home {
+
+    @media screen and (max-width: 1024px) {
+        display: block;
+        padding-top: 3em;
+    }
+
+    .logo {
+        font-size: 4.8em;
+    
+        @media screen and (max-width: 1024px) {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 1.8em;
+            margin: 0;
+        }
+    }
 }
 
