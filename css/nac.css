@@ -20,7 +20,7 @@ p {
   text-align: justify; }
 
 footer {
-  padding: 2em 0 0.25em;
+  padding: 5em 0 0.25em;
   width: 100%;
   color: #888;
   text-align: center;
@@ -29,8 +29,8 @@ footer {
   line-height: 1.35em; }
   footer a {
     color: #333; }
-  footer a:hover {
-    color: #000; }
+    footer a:hover {
+      color: #000; }
 
 .home {
   height: 100vh;
@@ -92,6 +92,22 @@ footer {
         width: 100%; }
         .contact form *, .contact iframe * {
           width: 100%; } }
+
+.content img {
+  width: 100%; }
+
+.a2a_svg svg {
+  background: #000; }
+  .a2a_svg svg:hover {
+    background: rgba(0, 0, 0, 0.85); }
+
+.addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
+  display: none; }
+  @media screen and (max-width: 600px) {
+    .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
+      display: block;
+      flex-basis: 100%;
+      text-align: center; } }
 
 header {
   text-align: center; }
