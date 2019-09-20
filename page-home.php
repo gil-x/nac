@@ -26,10 +26,10 @@ endif;
 
 <div class="social">
     <?php
-    echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/facebook.svg" alt="Facebook" title="Facebook">';
-	echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/linkedin.svg" alt="Linkedin" title="Linkedin">';
-	echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/twitter.svg" alt="Twitter" title="Twitter">';
-    echo '<img class="social-icon" src="' . get_template_directory_uri() . '/img/instagram.svg" alt="Instagram" title="Instagram">';
+    echo '<a href="https://www.facebook.com/newaccesscompta" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/facebook.svg" alt="Facebook" title="Facebook"></a>';
+	echo '<a href="" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/linkedin.svg" alt="Linkedin" title="Linkedin"></a>';
+	echo '<a href="https://twitter.com/newaccesscompta" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/twitter.svg" alt="Twitter" title="Twitter"></a>';
+    echo '<a href="https://www.instagram.com/newaccesscompta/" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/instagram.svg" alt="Instagram" title="Instagram"></a>';
     ?>
 </div>
 
@@ -37,3 +37,8 @@ endif;
 <?php
 get_footer();
 ?>
+
+
+
+
+

@@ -113,3 +113,9 @@ footer {
         text-align: center;
     }
 }
+
+.simple.page {
+    @include noshare;
+
+    display: block;
+}

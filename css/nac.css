@@ -87,6 +87,13 @@ footer {
       flex-basis: 100%;
       text-align: center; } }
 
+.simple.page {
+  display: block; }
+  .simple.page .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
+    display: none; }
+  .simple.page .a2a_kit.a2a_kit_size_32.a2a_floating_style.a2a_vertical_style {
+    display: none; }
+
 header {
   text-align: center; }
   header .logo {
@@ -161,12 +168,12 @@ header {
   transition: transform 0.5s;
   text-align: left; }
   #menu ul li {
-    margin: 1.5em;
+    margin: 1.2em;
     color: #FFF;
     list-style-type: square;
     text-transform: uppercase; }
     #menu ul li ul li {
-      margin: 1em 2em;
+      margin: 0.75em 2em;
       list-style-type: '↪ '; }
   #menu a {
     color: #FFF;
