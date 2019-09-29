@@ -122,6 +122,19 @@ footer {
         text-align: center;
     }
 }
+.a2a_kit > * {
+    transition: transform 0.25s, filter 0.25s;
+    // background: orange;
+}
+.a2a_kit > *:hover {
+    transform: scale(1.35) rotateZ(360deg);
+    filter: drop-shadow(0 0 2px #000) invert(80%) ;
+    // background: white;
+}
+.a2a_floating_style a:hover .a2a_svg {
+    opacity: 1 !important;
+    z-index: 1000;
+}
 
 .simple.page {
     @include noshare;
