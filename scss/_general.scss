@@ -25,8 +25,12 @@ p {
     text-align: justify;
 
     a {
-        color: $nac-color;
+        
         font-weight: 600;
+
+        &:hover {
+            color: $nac-color;
+        }
     }
 }
 

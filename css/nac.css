@@ -19,8 +19,9 @@ p {
   color: #333;
   text-align: justify; }
   p a {
-    color: #23c0ad;
     font-weight: 600; }
+    p a:hover {
+      color: #05b6bc; }
 
 footer {
   padding: 5em 0 0.25em;
@@ -186,9 +187,19 @@ header {
     color: #FFF;
     list-style-type: square;
     text-transform: uppercase; }
-    #menu ul li ul li {
-      margin: 0.75em 2em;
-      list-style-type: '↪ '; }
+    #menu ul li ul {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.25s; }
+      #menu ul li ul li {
+        margin: 0.75em 2em;
+        list-style-type: '↪ '; }
+    #menu ul li .submenu-on {
+      max-height: 50vh; }
+  #menu ul .menu-item-has-children > a {
+    cursor: pointer; }
+    #menu ul .menu-item-has-children > a::after {
+      content: " +"; }
   #menu a {
     color: #FFF;
     text-decoration: none; }
@@ -219,11 +230,11 @@ header {
 
 .blog-title::before {
   content: "(";
-  color: #23c0ad; }
+  color: #05b6bc; }
 
 .blog-title::after {
   content: ")";
-  color: #23c0ad; }
+  color: #05b6bc; }
 
 .page {
   padding: 0 20%;
