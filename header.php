@@ -17,7 +17,7 @@ else {
 
 <header>
 	<div class="logo">
-		<?php echo '<a href="' . get_home_url() . '"><sup>+</sup>new<span>access</span>compta</a>'; ?>
+		<?php echo '<a href="' . get_home_url() . '"><sup id="plus">+</sup><span id="new">new</span><span id="access">access</span><span id="compta">compta</span></a>'; ?>
 	</div>
 	<p class="slogan">Donec consectetur a purus at venenatis</p>
 </header>

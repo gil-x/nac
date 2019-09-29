@@ -1,3 +1,31 @@
+@keyframes show {
+    0% {transform: rotateY(0)}
+    100% {transform: rotateY(360deg)}
+}
+
+@keyframes sliderot {
+    0% { transform: translateX(-100vw) rotateZ(-720deg); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(0) rotateZ(0deg); }
+}
+@keyframes slidefromleft {
+    0% { transform: translateX(-50vw); }
+    100% { transform: translateX(0); }
+}
+@keyframes slidefromright {
+    0% { transform: translateX(50vw); }
+    100% { transform: translateX(0); }
+}
+@keyframes slidefromtop {
+    0% { transform: translateY(-50vh); }
+    100% { transform: translateY(0); }
+}
+// @keyframes pivot {
+//     0% { transform: rotateY(-180deg); width: 0; }
+//     100% { transform: rotateY(0deg); width: auto; }
+// }
+
+
 header {
     text-align: center;
     
@@ -12,13 +40,44 @@ header {
             font-size: 1.8em;
             margin: 1.5em 0 0.5em;
         }
-    
-        span {
-            font-weight: 500;
+
+        #plus, #new, #access, #compta {
+            display: inline-block;
         }
 
-        sup {
+        #plus {
+            // display: inline-block;
+            transform: translateX(-100vw);
             font-size: 2em;
+            animation-name: sliderot;
+            animation-duration: 600ms;
+            animation-delay: 0.85s;
+            animation-fill-mode: forwards;
+        }
+
+        #new {
+            transform: translateX(70vw);
+            animation-name: slidefromright;
+            animation-duration: 500ms;
+            animation-delay: 0.1s;
+            animation-fill-mode: forwards;
+        }
+
+        #access {
+            transform: translateY(-50vh);
+            font-weight: 500;
+            animation-name: slidefromtop;
+            animation-duration: 400ms;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        #compta {
+            transform: translateX(50vw);
+            animation-name: slidefromleft;
+            animation-duration: 300ms;
+            animation-delay: 0.35s;
+            animation-fill-mode: forwards;
         }
     
         a {
@@ -44,6 +103,8 @@ header {
     }
 }
 
+
+
 .home {
 
     @media screen and (max-width: 1366px) {
@@ -60,6 +121,11 @@ header {
 
     .logo {
         font-size: 4.8em;
+
+        // animation-name: show;
+        // animation-duration: 600ms;
+        // // animation-delay: 2.08s;
+        // animation-fill-mode: forwards;
 
         @media screen and (max-width: 1366px) {
             font-size: 3.75em;
