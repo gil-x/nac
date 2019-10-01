@@ -17,13 +17,13 @@
     100% { transform: translateX(0); }
 }
 @keyframes slidefromtop {
-    0% { transform: translateY(-50vh); }
-    100% { transform: translateY(0); }
+    0% { opacity: 0; transform: translateY(-50vh); }
+    100% { opacity: 1; transform: translateY(0); }
 }
-// @keyframes pivot {
-//     0% { transform: rotateY(-180deg); width: 0; }
-//     100% { transform: rotateY(0deg); width: auto; }
-// }
+@keyframes appearsfromleft {
+    0% { opacity: 0; transform: translateX(-10vw); }
+    100% { opacity: 1; transform: translateY(0); }
+}
 
 
 header {
@@ -53,6 +53,8 @@ header {
             animation-duration: 600ms;
             animation-delay: 0.85s;
             animation-fill-mode: forwards;
+            transition: color 0.75s;
+            transition-delay: 0.25s;
         }
 
         #new {
@@ -61,6 +63,8 @@ header {
             animation-duration: 500ms;
             animation-delay: 0.1s;
             animation-fill-mode: forwards;
+            transition: color 0.75s;
+            transition-delay: 1.75s;
         }
 
         #access {
@@ -70,6 +74,8 @@ header {
             animation-duration: 400ms;
             animation-delay: 0.5s;
             animation-fill-mode: forwards;
+            transition: color 0.75s;
+            transition-delay: 1.25s
         }
 
         #compta {
@@ -78,10 +84,16 @@ header {
             animation-duration: 300ms;
             animation-delay: 0.35s;
             animation-fill-mode: forwards;
+            transition: color 0.75s;
+            transition-delay: 1.75s;
         }
     
         a {
             text-decoration: none;
+
+            &:hover * {
+                color: #05b6bc;
+            }
         }
     }
     
@@ -92,6 +104,12 @@ header {
         font-size: 1.5em;
         font-style: italic;
         text-align: center;
+        opacity: 0;
+        transform: translateX(-10vw);
+        animation-name: appearsfromleft;
+        animation-duration: 600ms;
+        animation-delay: 0.85s;
+        animation-fill-mode: forwards;
 
         @media screen and (max-width: 1366px) {
             font-size: 1.2em;

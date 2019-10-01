@@ -78,6 +78,11 @@ footer {
     justify-content: center;
     @include noshare;
 
+    @media screen and (max-width: 1366px) {
+        padding-top: 0;
+        margin-top: 5vh;
+    }
+
     .content {
         font-size: 1em;
         color: $nac-font-2;
@@ -117,16 +122,16 @@ footer {
             }
         }
         a:nth-child(1) .social-icon {
-            animation-delay: 1s;
+            animation-delay: 1.5s;
         }
         a:nth-child(2) .social-icon {
-            animation-delay: 1.2s;
+            animation-delay: 1.7s;
         }
         a:nth-child(3) .social-icon {
-            animation-delay: 1.3s;
+            animation-delay: 1.8s;
         }
         a:nth-child(4) .social-icon {
-            animation-delay: 1.6s;
+            animation-delay: 2s;
         }
     }
     

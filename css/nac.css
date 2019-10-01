@@ -59,6 +59,10 @@ footer {
     display: none; }
   .home .a2a_kit.a2a_kit_size_32.a2a_floating_style.a2a_vertical_style {
     display: none; }
+  @media screen and (max-width: 1366px) {
+    .home {
+      padding-top: 0;
+      margin-top: 5vh; } }
   .home .content {
     font-size: 1em;
     color: #333;
@@ -89,13 +93,13 @@ footer {
         margin: 0 0.5em;
         width: 3em; } }
   .home .social a:nth-child(1) .social-icon {
-    animation-delay: 1s; }
+    animation-delay: 1.5s; }
   .home .social a:nth-child(2) .social-icon {
-    animation-delay: 1.2s; }
+    animation-delay: 1.7s; }
   .home .social a:nth-child(3) .social-icon {
-    animation-delay: 1.3s; }
+    animation-delay: 1.8s; }
   .home .social a:nth-child(4) .social-icon {
-    animation-delay: 1.6s; }
+    animation-delay: 2s; }
   .home footer {
     position: fixed;
     bottom: 0; }
@@ -165,8 +169,18 @@ footer {
 
 @keyframes slidefromtop {
   0% {
+    opacity: 0;
     transform: translateY(-50vh); }
   100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes appearsfromleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10vw); }
+  100% {
+    opacity: 1;
     transform: translateY(0); } }
 
 header {
@@ -189,35 +203,51 @@ header {
       animation-name: sliderot;
       animation-duration: 600ms;
       animation-delay: 0.85s;
-      animation-fill-mode: forwards; }
+      animation-fill-mode: forwards;
+      transition: color 0.75s;
+      transition-delay: 0.25s; }
     header .logo #new {
       transform: translateX(70vw);
       animation-name: slidefromright;
       animation-duration: 500ms;
       animation-delay: 0.1s;
-      animation-fill-mode: forwards; }
+      animation-fill-mode: forwards;
+      transition: color 0.75s;
+      transition-delay: 1.75s; }
     header .logo #access {
       transform: translateY(-50vh);
       font-weight: 500;
       animation-name: slidefromtop;
       animation-duration: 400ms;
       animation-delay: 0.5s;
-      animation-fill-mode: forwards; }
+      animation-fill-mode: forwards;
+      transition: color 0.75s;
+      transition-delay: 1.25s; }
     header .logo #compta {
       transform: translateX(50vw);
       animation-name: slidefromleft;
       animation-duration: 300ms;
       animation-delay: 0.35s;
-      animation-fill-mode: forwards; }
+      animation-fill-mode: forwards;
+      transition: color 0.75s;
+      transition-delay: 1.75s; }
     header .logo a {
       text-decoration: none; }
+      header .logo a:hover * {
+        color: #05b6bc; }
   header .slogan {
     margin: 0.5em 0 2em;
     padding: 0 20%;
     color: #888;
     font-size: 1.5em;
     font-style: italic;
-    text-align: center; }
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-10vw);
+    animation-name: appearsfromleft;
+    animation-duration: 600ms;
+    animation-delay: 0.85s;
+    animation-fill-mode: forwards; }
     @media screen and (max-width: 1366px) {
       header .slogan {
         font-size: 1.2em; } }
@@ -347,6 +377,9 @@ header {
       flex-basis: 50%;
       margin-bottom: 1em;
       padding: 1em; }
+      @media screen and (max-width: 1024px) {
+        .page .content .post, .page .post-container .post {
+          flex-basis: 66%; } }
   .page h1 {
     flex-basis: 100%; }
   .page .post {
@@ -413,11 +446,33 @@ header {
       display: none; } }
 
 .single.post h1 {
-  padding: 0; }
+  padding: 0 0 1.5em 0; }
+  @media screen and (max-width: 1024px) {
+    .single.post h1 {
+      padding: 0 0 0.5em 0; } }
+  @media screen and (max-width: 1024px) {
+    .single.post h1 {
+      padding: 0 0 0.5em 0; } }
+
+.single.post .post-header {
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 1024px) {
+    .single.post .post-header {
+      display: block; } }
+  .single.post .post-header .thumbnail {
+    flex-basis: 66.66%; }
 
 .single.post .excerpt {
+  flex-basis: 33.33%;
   margin: 1em 0;
-  font-size: 1.5em; }
+  padding-right: 1em;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: right; }
+  .single.post .excerpt .date {
+    font-size: 0.6em;
+    opacity: 0.5; }
 
 .single.post p {
   margin: 1em 0; }
