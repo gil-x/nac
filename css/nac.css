@@ -9,15 +9,16 @@
 *, *:before, *:after {
   box-sizing: border-box; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Julius Sans One', 'sans-serif'; }
-  h1 a, h2 a, h3 a {
+  h1 a, h2 a, h3 a, h4 a {
     text-decoration: none; }
 
 p {
   margin: 1em 0;
   color: #333;
-  text-align: justify; }
+  text-align: justify;
+  line-height: 1.4em; }
   p a {
     font-weight: 600; }
     p a:hover {
@@ -39,7 +40,12 @@ footer {
       color: #05b6bc; }
 
 .copyright {
-  display: none; }
+  color: #FFF;
+  opacity: 0.5;
+  font-size: 0.8em;
+  transition: opacity 0.75s; }
+  .copyright:hover {
+    opacity: 1; }
 
 @keyframes pop {
   0% {
@@ -135,11 +141,24 @@ footer {
   z-index: 1000; }
 
 .simple.page {
-  display: block; }
-  .simple.page .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
-    display: none; }
-  .simple.page .a2a_kit.a2a_kit_size_32.a2a_floating_style.a2a_vertical_style {
-    display: none; }
+  display: block;
+  padding: 0 30%; }
+  .simple.page h2, .simple.page h3, .simple.page h4 {
+    font-weight: 600;
+    color: #05b6bc;
+    margin-top: 1.5em; }
+  .simple.page ul {
+    padding-left: 2em;
+    list-style-type: none; }
+    .simple.page ul li {
+      margin: 0.5em; }
+      .simple.page ul li::before {
+        content: "+";
+        color: #05b6bc;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em; }
 
 @keyframes show {
   0% {

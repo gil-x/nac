@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Julius Sans One', 'sans-serif';
 
     a {
@@ -23,9 +23,9 @@ p {
     margin: 1em 0;
     color: $nac-font-2;
     text-align: justify;
+    line-height: 1.4em;
 
     a {
-        
         font-weight: 600;
 
         &:hover {
@@ -59,7 +59,15 @@ footer {
 }
 
 .copyright {
-    display: none;
+    color: $white;
+    opacity: 0.5;
+    font-size: 0.8em;
+    transition: opacity 0.75s;
+    // display: none;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 @keyframes pop {
@@ -185,7 +193,34 @@ footer {
 }
 
 .simple.page {
-    @include noshare;
-
+    // @include noshare;
     display: block;
+    padding: 0 30%;
+
+    h2, h3, h4 {
+        // text-decoration: underline;
+        font-weight: 600;
+        color: $nac-color;
+        margin-top: 1.5em;
+    }
+
+    ul {
+        padding-left: 2em;
+        // list-style-type: square;
+        list-style-type: none;
+
+        li {
+            margin: 0.5em;
+
+            &::before {
+                // content: "\2022";
+                content: "+";
+                color: $nac-color;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+              }
+        }
+    }
 }
