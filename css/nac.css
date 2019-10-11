@@ -368,6 +368,10 @@ header {
     cursor: pointer; }
     #menu ul .menu-item-has-children > a::after {
       content: " +"; }
+  #menu ul .menu-item-has-children:hover {
+    color: #05b6bc; }
+    #menu ul .menu-item-has-children:hover ul {
+      max-height: 50vh !important; }
   #menu a {
     color: #FFF;
     transition: color 0.25s, border 0.5s, padding 0.35s;
