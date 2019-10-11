@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+#wpadminbar .display-name {
+    color: $nac-color;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Julius Sans One', 'sans-serif';
 
@@ -56,17 +60,16 @@ footer {
             color: $nac-color;
         }
     }
-}
 
-.copyright {
-    color: $white;
-    opacity: 0.5;
-    font-size: 0.8em;
-    transition: opacity 0.75s;
-    // display: none;
-
-    &:hover {
-        opacity: 1;
+    .copyright {
+        color: $white;
+        opacity: 0.5;
+        font-size: 0.8em;
+        transition: opacity 0.75s;
+    
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -74,7 +77,6 @@ footer {
     0% { transform: translateY(25vh) scale(0); }
     100% { transform: translateY(0) scale(1); }
 }
-
 
 .home {
     max-height: 100vh;
@@ -148,10 +150,10 @@ footer {
         position: fixed;
         bottom: 0;
 
-        .copyright {
-            color: rgba(255,255,255, 0.75);
-            display: inline;
-        }
+        // .copyright {
+        //     color: rgba(255,255,255, 0.75);
+        //     display: inline;
+        // }
     }
 }
 
@@ -180,12 +182,10 @@ footer {
 }
 .a2a_kit > * {
     transition: transform 0.25s, filter 0.25s;
-    // background: orange;
 }
 .a2a_kit > *:hover {
     transform: scale(1.35) rotateZ(360deg);
     filter: drop-shadow(0 0 2px #000) invert(80%) ;
-    // background: white;
 }
 .a2a_floating_style a:hover .a2a_svg {
     opacity: 1 !important;
@@ -198,7 +198,6 @@ footer {
     padding: 0 30%;
 
     h2, h3, h4 {
-        // text-decoration: underline;
         font-weight: 600;
         color: $nac-color;
         margin-top: 1.5em;
@@ -206,14 +205,12 @@ footer {
 
     ul {
         padding-left: 2em;
-        // list-style-type: square;
         list-style-type: none;
 
         li {
             margin: 0.5em;
 
             &::before {
-                // content: "\2022";
                 content: "+";
                 color: $nac-color;
                 font-weight: bold;
@@ -221,6 +218,32 @@ footer {
                 width: 1em;
                 margin-left: -1em;
               }
+        }
+    }
+}
+
+ol {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li {
+        display: inline-block;
+        flex-basis: 50%;
+        padding: 0.5em 2em 2em 0.5em;
+        background: $nac-color;
+        border: 1px solid white;
+
+        a {
+            display: inline-block;
+            // color: $nac-color;
+            color: $white;
+        }
+
+        &::before {
+            content: "> ";
+            color: $white;
         }
     }
 }

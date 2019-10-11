@@ -9,6 +9,9 @@
 *, *:before, *:after {
   box-sizing: border-box; }
 
+#wpadminbar .display-name {
+  color: #05b6bc; }
+
 h1, h2, h3, h4 {
   font-family: 'Julius Sans One', 'sans-serif'; }
   h1 a, h2 a, h3 a, h4 a {
@@ -38,14 +41,13 @@ footer {
     color: rgba(255, 255, 255, 0.75); }
     footer a:hover {
       color: #05b6bc; }
-
-.copyright {
-  color: #FFF;
-  opacity: 0.5;
-  font-size: 0.8em;
-  transition: opacity 0.75s; }
-  .copyright:hover {
-    opacity: 1; }
+  footer .copyright {
+    color: #FFF;
+    opacity: 0.5;
+    font-size: 0.8em;
+    transition: opacity 0.75s; }
+    footer .copyright:hover {
+      opacity: 1; }
 
 @keyframes pop {
   0% {
@@ -109,9 +111,6 @@ footer {
   .home footer {
     position: fixed;
     bottom: 0; }
-    .home footer .copyright {
-      color: rgba(255, 255, 255, 0.75);
-      display: inline; }
 
 .content img {
   width: 100%; }
@@ -160,6 +159,24 @@ footer {
         width: 1em;
         margin-left: -1em; }
 
+ol {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  ol li {
+    display: inline-block;
+    flex-basis: 50%;
+    padding: 0.5em 2em 2em 0.5em;
+    background: #05b6bc;
+    border: 1px solid white; }
+    ol li a {
+      display: inline-block;
+      color: #FFF; }
+    ol li::before {
+      content: "> ";
+      color: #FFF; }
+
 @keyframes show {
   0% {
     transform: rotateY(0); }
@@ -202,14 +219,20 @@ footer {
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes colorchange {
+  0% {
+    color: inherit; }
+  100% {
+    color: #05b6bc; } }
+
 header {
   text-align: center; }
   header .logo {
-    margin: 0;
+    margin: 1em 0 0.5em;
+    transform: translateX(-0.35em);
     font-size: 3.8em;
     font-weight: 200;
-    font-family: 'Montserrat', monospace, sans-serif;
-    transform: translateX(-0.35em); }
+    font-family: 'Montserrat', monospace, sans-serif; }
     @media screen and (max-width: 600px) {
       header .logo {
         font-size: 1.8em;
@@ -224,7 +247,7 @@ header {
       animation-delay: 0.85s;
       animation-fill-mode: forwards;
       transition: color 0.75s;
-      transition-delay: 0.25s; }
+      transition-delay: 0.15s; }
     header .logo #new {
       transform: translateX(70vw);
       animation-name: slidefromright;
@@ -232,7 +255,7 @@ header {
       animation-delay: 0.1s;
       animation-fill-mode: forwards;
       transition: color 0.75s;
-      transition-delay: 1.75s; }
+      transition-delay: 1.2s; }
     header .logo #access {
       transform: translateY(-50vh);
       font-weight: 500;
@@ -241,7 +264,7 @@ header {
       animation-delay: 0.5s;
       animation-fill-mode: forwards;
       transition: color 0.75s;
-      transition-delay: 1.25s; }
+      transition-delay: 0.85s; }
     header .logo #compta {
       transform: translateX(50vw);
       animation-name: slidefromleft;
@@ -249,10 +272,11 @@ header {
       animation-delay: 0.35s;
       animation-fill-mode: forwards;
       transition: color 0.75s;
-      transition-delay: 1.75s; }
+      transition-delay: 1.2s; }
     header .logo a {
       text-decoration: none; }
       header .logo a:hover * {
+        transition-delay: 0.5s;
         color: #05b6bc; }
   header .slogan {
     margin: 0.5em 0 2em;
@@ -346,9 +370,20 @@ header {
       content: " +"; }
   #menu a {
     color: #FFF;
+    transition: color 0.25s, border 0.5s, padding 0.35s;
     text-decoration: none; }
     #menu a:hover {
+      color: #05b6bc;
       text-decoration: underline; }
+    #menu a[href*="acces-box"] {
+      padding: 0.25em;
+      border: 1px solid #FFF;
+      border-left: none;
+      list-style-type: disc; }
+      #menu a[href*="acces-box"]:hover {
+        padding: 0.5em;
+        border: 1px solid #05b6bc;
+        border-left: none; }
   @media screen and (max-width: 600px) {
     #menu {
       width: 100%;
@@ -498,7 +533,8 @@ header {
 
 .contact {
   text-align: center;
-  padding: 0 20%; }
+  padding: 0 20%;
+  min-height: 80vh; }
   .contact .content {
     display: flex;
     flex-wrap: wrap; }
@@ -537,4 +573,7 @@ header {
       width: 100%; }
       .contact form *, .contact iframe * {
         width: 100%; } }
+  .contact + footer {
+    position: fixed;
+    bottom: 0; }
 

@@ -1,6 +1,7 @@
 .contact {
     text-align: center;
     padding: 0 20%;
+    min-height: 80vh;
 
     .content {
         display: flex;
@@ -59,5 +60,11 @@
                 width: 100%;
             }
         }
+    }
+
+    & + footer {
+        position: fixed;
+        // margin-top: 5em;
+        bottom: 0;
     }
 }
