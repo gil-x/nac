@@ -66,32 +66,32 @@ add_action('widgets_init', 'nac_widget_setup');
 // add_editor_style( get_template_directory_uri().'/css/nac-custom-editor-style.css' );
 
 
-// function my_mce_buttons_1( $buttons ) {
-// 	array_unshift( $buttons, 'styleselect' );
-// 	return $buttons;
-// }
-// add_filter( 'mce_buttons_2', 'my_mce_buttons_1' );
+function my_mce_buttons_1( $buttons ) {
+	array_unshift( $buttons, 'styleselect' );
+	return $buttons;
+}
+add_filter( 'mce_buttons_2', 'my_mce_buttons_1' );
 
-// function my_mce_before_init_insert_formats( $init_array ) {
-// 	$style_formats = array(
-// 		array(
-//             'title' => 'Bloc Important',
-//             'block' => 'div',
-//             'classes' => 'custom-important',
-//             'wrapper' => true,
-// 		),
-// 		array(
-//             'title' => 'Bloc Citation',
-//             'block' => 'div',
-//             'classes' => 'custom-quote',
-//             'wrapper' => true,
-// 		),
+function my_mce_before_init_insert_formats( $init_array ) {
+	$style_formats = array(
+		array(
+            'title' => 'Menu à ancres',
+            'block' => 'div',
+            'classes' => 'anchor-menu',
+            'wrapper' => true,
+		),
+		// array(
+        //     'title' => 'Bloc Citation',
+        //     'block' => 'div',
+        //     'classes' => 'custom-quote',
+        //     'wrapper' => true,
+		// ),
 	
-// 	);
-// 	$init_array['style_formats'] = json_encode( $style_formats );
-// 	return $init_array;
-// }
-// add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+	);
+	$init_array['style_formats'] = json_encode( $style_formats );
+	return $init_array;
+}
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
 
 

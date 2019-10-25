@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #wpadminbar .display-name {
     color: $nac-color;
 }
@@ -43,7 +47,7 @@ p {
 }
 
 footer {
-    margin-top: 5em;
+    // margin-top: 5em;
     padding: 1.5em 0 0.5em;
     width: 100%;
     // color: $nac-font-3;
@@ -54,6 +58,8 @@ footer {
     font-size: 0.8em;
     letter-spacing: 1px;
     line-height: 1.35em;
+    position: fixed;
+    bottom: 0;
 
     a {
         // color: $nac-font-2;
@@ -165,6 +171,7 @@ footer {
     img {
         width: 100%;
     }
+    margin-bottom: 5em;
 }
 
 .a2a_svg svg {
@@ -253,3 +260,33 @@ ol {
         }
     }
 }
+
+.anchor-menu {
+    margin: 1em 0;
+    width: 100%;
+    // padding-bottom: 5px;
+    border-bottom: 1px solid $nac-color;
+
+    p {
+        display: inline;
+
+        &::before {
+            content: "Sommaire : ";
+        }
+        // display: flex;
+
+        a {
+            display: inline-block;
+            margin: 0 0.5em;
+            text-decoration: none;
+            border-bottom: 4px solid transparent;
+
+            &:hover {
+                color: $nac-font-1;
+                border-bottom: 4px solid $nac-color;
+                
+            }
+        }
+    }
+}
+    
