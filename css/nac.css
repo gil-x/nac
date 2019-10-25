@@ -142,6 +142,10 @@ footer {
 .simple.page {
   display: block;
   padding: 0 25%; }
+  .simple.page .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
+    display: none; }
+  .simple.page .a2a_kit.a2a_kit_size_32.a2a_floating_style.a2a_vertical_style {
+    display: none; }
   .simple.page h2, .simple.page h3, .simple.page h4 {
     font-weight: 600;
     color: #05b6bc;
