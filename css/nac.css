@@ -12,6 +12,9 @@
 html {
   scroll-behavior: smooth; }
 
+body {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), white, white, white, white, rgba(0, 0, 0, 0.35)); }
+
 #wpadminbar .display-name {
   color: #05b6bc; }
 
@@ -437,7 +440,8 @@ header {
   transform: translateX(0); }
 
 .customer-menu-container {
-  padding: 1em; }
+  padding: 1em;
+  margin-bottom: 1.75em; }
   .customer-menu-container .title {
     color: #05b6bc;
     margin-bottom: 5px; }
