@@ -9,7 +9,19 @@ const menu = document.getElementById('menu');
 const burger = document.getElementById('burger');
 
 document.addEventListener("click", function(event) {
-    if (
+    console.log(event.target);
+    
+    if (event.target.classList.contains('menu-open')) {
+        console.log('menu-open');
+        event.preventDefault();
+        toggleMenu();
+    }
+    else if (event.target.classList.contains('menu-close')) {
+        console.log('menu-close');
+        event.preventDefault();
+        toggleMenu();
+    }
+    else if (
         event.target.parentNode.classList.contains('menu-item')
     ) {
         let childs = event.target.parentNode.childNodes;
@@ -22,20 +34,13 @@ document.addEventListener("click", function(event) {
             }
         }
     }
-    else if (event.target.classList.contains('menu-open')) {
-        event.preventDefault();
-        toggleMenu();
-    }
-    else if (event.target.classList.contains('menu-close')) {
-        event.preventDefault();
-        toggleMenu();
-    }
     else if (
         menu.classList.contains('menu-on') && 
         event.target.id != 'menu' && 
         event.target.tagName != 'LI') {
             toggleMenu();
     }
+    
 });
 
 
