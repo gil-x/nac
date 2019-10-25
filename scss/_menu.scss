@@ -58,13 +58,13 @@
                 content: " +";
             }
         }
-        .menu-item-has-children:hover {
-            color: $nac-color;
+        // .menu-item-has-children:hover {
+        //     color: $nac-color;
 
-            ul {
-                max-height: 50vh !important;
-            }
-        }
+        //     ul {
+        //         max-height: 50vh !important;
+        //     }
+        // }
     }
 
     a {
