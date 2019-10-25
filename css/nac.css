@@ -349,26 +349,28 @@ header {
   padding: 1em;
   background: #000;
   transition: transform 0.5s;
-  text-align: left; }
-  #menu ul li {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  #menu #menu-menu-principal li {
     margin: 1.2em;
     color: #FFF;
     list-style-type: "+ ";
     text-transform: uppercase; }
-    #menu ul li ul {
+    #menu #menu-menu-principal li ul {
       max-height: 0;
       overflow: hidden;
       transition: all 0.25s; }
-      #menu ul li ul li {
+      #menu #menu-menu-principal li ul li {
         margin: 0.75em 2em;
         list-style-type: '↪ '; }
-    #menu ul li .submenu-on {
+    #menu #menu-menu-principal li .submenu-on {
       max-height: 50vh; }
-  #menu ul .menu-item-has-children > a {
+  #menu #menu-menu-principal .menu-item-has-children > a {
     cursor: pointer; }
-    #menu ul .menu-item-has-children > a::after {
-      content: " ▾";
-      /*›*/ }
+    #menu #menu-menu-principal .menu-item-has-children > a::after {
+      content: " ·"; }
   #menu a {
     color: #FFF;
     transition: color 0.25s, border 0.5s, padding 0.35s;
@@ -376,12 +378,13 @@ header {
     #menu a:hover {
       color: #05b6bc;
       text-decoration: underline; }
-    #menu a[href*="acces-box"] {
+  #menu .box {
+    margin-top: 3em; }
+    #menu .box a {
       padding: 0.25em;
       border: 1px solid #FFF;
-      border-left: none;
-      list-style-type: disc; }
-      #menu a[href*="acces-box"]:hover {
+      border-left: none; }
+      #menu .box a:hover {
         padding: 0.5em;
         border: 1px solid #05b6bc;
         border-left: none; }
@@ -395,6 +398,20 @@ header {
 
 #menu.menu-on {
   transform: translateX(0); }
+
+.customer-menu-container {
+  padding: 1em; }
+  .customer-menu-container .title {
+    color: #05b6bc;
+    margin-bottom: 5px; }
+  .customer-menu-container #menu-menu-espace-clients {
+    border: 1px solid #05b6bc;
+    border-left: none; }
+    .customer-menu-container #menu-menu-espace-clients li {
+      margin: 1.2em;
+      color: #FFF;
+      list-style-type: square;
+      text-transform: uppercase; }
 
 .blog-title {
   padding: 0 20%;

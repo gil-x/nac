@@ -30,7 +30,11 @@
     transition: transform 0.5s;
     text-align: left;
 
-    ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    #menu-menu-principal {
         li {
             margin: 1.2em;
             color: $white;
@@ -55,7 +59,7 @@
             cursor: pointer;
 
             &::after {
-                content: " ▾"; /*›*/
+                content: " ·"; //›▾
             }
         }
         // .menu-item-has-children:hover {
@@ -77,12 +81,35 @@
             text-decoration: underline;
         }
 
-        &[href*="acces-box"] {
+        // &[href*="acces-box"] {
+        //     padding: 0.25em;
+        //     border: 1px solid $white;
+        //     border-left: none;
+        //     list-style-type: disc;
+
+        //     &:hover {
+        //         padding: 0.5em ;
+        //         border: 1px solid $nac-color;
+        //         border-left: none;
+        //     }
+        // }
+    }
+
+    // .box::before {
+    //     content: "Espace clients";
+    //     display: block;
+    //     background: red;
+    // }
+
+    .box {
+        margin-top: 3em;
+
+        a {
             padding: 0.25em;
             border: 1px solid $white;
             border-left: none;
-            list-style-type: disc;
-
+            // list-style-type: disc;
+    
             &:hover {
                 padding: 0.5em ;
                 border: 1px solid $nac-color;
@@ -103,4 +130,27 @@
 
 #menu.menu-on {
     transform: translateX(0);
+}
+
+.customer-menu-container {
+    padding: 1em;
+    // border: 1px solid $nac-color;
+
+    .title {
+        color: $nac-color;
+        margin-bottom: 5px;
+    }
+    
+    #menu-menu-espace-clients {
+        border: 1px solid $nac-color;
+        border-left: none;
+
+        li {
+            // display: inline-block;
+            margin: 1.2em;
+            color: $white;
+            list-style-type: square;
+            text-transform: uppercase;
+        }
+    }
 }

@@ -27,6 +27,7 @@ function nac_theme_setup() {
 	add_theme_support('custom-logo');
 	add_theme_support('post-thumbnails', array('post', 'page'));
 	register_nav_menu('primary', 'Menu principal');
+	register_nav_menu('secondary', 'Menu Espace Clients');
 }
 add_action('init', 'nac_theme_setup');
 
@@ -53,90 +54,6 @@ function nac_widget_setup() {
 	);
 }
 add_action('widgets_init', 'nac_widget_setup');
-
-
-/*
-	=======================
-	   WIDGETS functions
-	=======================
-*/
-class DomiciliationWidget extends WP_Widget {
-	// Constructor
-	public function __construct() {
-		$args = array(
-			'classname'		=> 'widget-domiciliation',
-			'description'	=> 'essai de widget',
-		);
-		parent::__construct('domiciliation_widget', 'Domiciliation', $args);
-	}
-	// Back-end display
-	public function form($instance) {
-		echo 'suce mon noeud';
-	}
-
-	// Front-end Display
-	public function widget($args, $instance) {
-		echo $args['before_title'];
-		echo 'Demande de domiciliation';
-		echo $args['after_title'];
-		echo $args['before_widget'];
-		echo $args['after_widget'];
-	}
-}
-add_action('widgets_init', function(){
-	register_widget('DomiciliationWidget');
-});
-
-/*
-	=======================
-	   CUSTOM POST TYPES
-	=======================
-*/
-
-// function nac_custom_post_type(){
-// 	$labels = array(
-// 		'name' => 'Action',
-// 		'singular_name' => 'Action',
-// 		'add_new' => 'Ajouter une action',
-// 		'all_items' => 'Toutes les actions',
-// 		'edit_item' => 'Modifier l\'action',
-// 		'new_item' => 'Nouvelle action',
-// 		'view_item' => 'Voir l\'action',
-// 		'search_item' => 'Chercher une action',
-// 		'not_found'  => 'Aucun action trouvée',
-// 		'not_found_in_trash' => 'Aucun action trouvée',
-// 		'parent_item_colon' => 'action parente',
-// 		'menu_name'  => 'Actions',
-// 	);
-// 	$args = array(
-// 		'labels' => $labels,
-// 		'public' => true,
-// 		'has_archive'  => true,
-// 		'publicly_queryable'  => true,
-// 		'query_var' => true,
-// 		'rewrite' => true,
-// 		'capability_type' => 'post',
-// 		'hierarchical' => false,
-// 		'supports' => array(
-// 			'title',
-// 			'editor',
-// 			'excerpt',
-// 			'thumbnail',
-// 		),
-// 		'taxonomies' => array(
-// 			'category',
-// 			'post_tag',
-// 		),
-// 		'menu_position' => 3,
-// 		'exclude_from_search' => false,
-// 		// 'show_in_nav_menus'  => true,
-// 	);
-// 	register_post_type('actions', $args);
-// }
-
-// add_action('init', 'nac_custom_post_type');
-
-
 
 
 /*
@@ -177,15 +94,6 @@ add_action('widgets_init', function(){
 // add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
 
-/*
-	===================
-	   TEST FUNCTION
-	===================
-*/
-
-// function test_text() {
-// 	echo '<p>Coucou, je suis un test !</p>';
-// }
 
 
 /*
@@ -230,8 +138,5 @@ function pressPagination($pages = '', $range = 2)
        }
  
 }
-
-
-
 
 ?>
