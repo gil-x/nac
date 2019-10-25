@@ -16,7 +16,7 @@ echo '<main class="page">';
     ?>
 
 <?php 
-get_sidebar();
+// get_sidebar();
 echo '</main>';
 
 get_footer(); ?>

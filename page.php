@@ -9,8 +9,6 @@ if( have_posts() ):
 
 	echo '<h1>' . get_the_title() . '</h1>';
 
-	
-
 	while( have_posts() ): the_post();
 		echo '<div class="content">';
 		if (has_post_thumbnail($_post->ID)) {

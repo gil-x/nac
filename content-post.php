@@ -6,15 +6,18 @@
 <?php
 
 echo '<div class="post-header">';
-echo '<p class="excerpt">' . get_the_excerpt() . '<br><span class="date">_<br>' . get_the_date() . '</span></p>';
+echo '<p class="excerpt">' . get_the_excerpt() . '</p>';
 echo '<img class="thumbnail" src="' . get_the_post_thumbnail_url( $_post->ID, 'post-thumbnail' ) . '" alt="" />';
-
 echo '</div>';
 
 ?>
 
-<?php the_content(); ?>
+<?php the_content();
 
-<?php // get_sidebar();?>
+echo '<div class="credit">
+<span class="author">Ecrit par ' . get_the_author() . '</span> - <span class="date">' . get_the_date() . '</span>
+</div>';
+
+// get_sidebar();?>
 
 </div>

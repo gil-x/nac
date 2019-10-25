@@ -195,7 +195,7 @@ footer {
 .simple.page {
     // @include noshare;
     display: block;
-    padding: 0 30%;
+    padding: 0 $padding-large;
 
     h2, h3, h4 {
         font-weight: 600;
@@ -231,7 +231,7 @@ ol {
     li {
         display: inline-block;
         flex-basis: 50%;
-        padding: 0.5em 2em 2em 0.5em;
+        padding: 1.5em 0.5em;
         background: $nac-color;
         border: 1px solid white;
 

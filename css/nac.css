@@ -141,7 +141,7 @@ footer {
 
 .simple.page {
   display: block;
-  padding: 0 30%; }
+  padding: 0 25%; }
   .simple.page h2, .simple.page h3, .simple.page h4 {
     font-weight: 600;
     color: #05b6bc;
@@ -167,7 +167,7 @@ ol {
   ol li {
     display: inline-block;
     flex-basis: 50%;
-    padding: 0.5em 2em 2em 0.5em;
+    padding: 1.5em 0.5em;
     background: #05b6bc;
     border: 1px solid white; }
     ol li a {
@@ -413,32 +413,47 @@ header {
       list-style-type: square;
       text-transform: uppercase; }
 
-.blog-title {
-  padding: 0 20%;
-  font-size: 3em; }
-  @media screen and (max-width: 1024px) {
-    .blog-title {
-      padding: 0 10%; } }
-  @media screen and (max-width: 600px) {
-    .blog-title {
-      margin: 0;
-      padding: 0 5%;
-      font-size: 2em; } }
-
-.blog-title::before {
-  content: "(";
-  color: #05b6bc; }
-
-.blog-title::after {
-  content: ")";
-  color: #05b6bc; }
+.header {
+  padding: 0 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .blog-title {
+    display: inline-block;
+    font-size: 3em; }
+    @media screen and (max-width: 1024px) {
+      .header .blog-title {
+        padding: 0 10%; } }
+    @media screen and (max-width: 600px) {
+      .header .blog-title {
+        margin: 0;
+        padding: 0 5%;
+        font-size: 2em; } }
+  .header .blog-title::before {
+    content: "(";
+    color: #05b6bc; }
+  .header .blog-title::after {
+    content: ")";
+    color: #05b6bc; }
+  .header #sidebar {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #05b6bc;
+    border-right: none;
+    margin-right: 10px; }
+    .header #sidebar .widgettitle {
+      color: #888;
+      font-size: small;
+      margin-bottom: 0.5em; }
+    .header #sidebar ul {
+      list-style-type: none; }
+      .header #sidebar ul li {
+        display: inline-block;
+        margin-right: 0.5em; }
 
 .page {
-  padding: 0 20%;
-  display: flex;
-  flex-wrap: wrap; }
+  padding: 0 25%; }
   .page .content, .page .post-container {
-    flex-basis: 70%;
     display: flex;
     flex-wrap: wrap; }
     @media screen and (max-width: 1024px) {
@@ -446,9 +461,9 @@ header {
         display: block;
         flex-basis: 66%; } }
     .page .content .post, .page .post-container .post {
-      flex-basis: 50%;
+      flex-basis: 33.33%;
       margin-bottom: 1em;
-      padding: 1em; }
+      padding: 0.5em; }
       @media screen and (max-width: 1024px) {
         .page .content .post, .page .post-container .post {
           flex-basis: 66%; } }
@@ -495,59 +510,33 @@ header {
       .page .post p {
         margin: 1em 0; } }
 
-#sidebar {
-  flex-basis: 24%;
-  padding: 0 2%;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
-  margin-left: 2%; }
-  #sidebar h2 {
-    margin: 1em 0 1.5em; }
-  #sidebar ul {
-    list-style-type: square; }
-    #sidebar ul li {
-      cursor: pointer;
-      margin: 1em 0; }
-      #sidebar ul li:hover {
-        text-decoration: underline; }
-  @media screen and (max-width: 1024px) {
-    #sidebar {
-      padding: 0 20px; } }
-  @media screen and (max-width: 600px) {
-    #sidebar {
-      display: none; } }
+@media screen and (max-width: 1024px) {
+  .single.post h1 {
+    padding: 0 0 0.5em 0; } }
 
-.single.post h1 {
-  padding: 0 0 1.5em 0; }
-  @media screen and (max-width: 1024px) {
-    .single.post h1 {
-      padding: 0 0 0.5em 0; } }
-  @media screen and (max-width: 1024px) {
-    .single.post h1 {
-      padding: 0 0 0.5em 0; } }
-
-.single.post .post-header {
-  display: flex;
-  align-items: center; }
-  @media screen and (max-width: 1024px) {
-    .single.post .post-header {
-      display: block; } }
-  .single.post .post-header .thumbnail {
-    flex-basis: 66.66%; }
+@media screen and (max-width: 1024px) {
+  .single.post h1 {
+    padding: 0 0 0.5em 0; } }
 
 .single.post .excerpt {
-  flex-basis: 33.33%;
   margin: 1em 0;
   padding-right: 1em;
   font-size: 1.5em;
-  font-style: italic;
-  text-align: right; }
+  font-style: italic; }
   .single.post .excerpt .date {
     font-size: 0.6em;
     opacity: 0.5; }
 
 .single.post p {
   margin: 1em 0; }
+
+.single.post .credit {
+  margin-top: 2em;
+  padding-top: 10px;
+  border-top: 1px solid #888;
+  text-align: right; }
+  .single.post .credit span {
+    color: #888; }
 
 .contact {
   text-align: center;

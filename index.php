@@ -22,7 +22,7 @@ if( have_posts() ):
 	
 endif;
 
-get_sidebar();
+// get_sidebar();
 echo '</main>';
 
 get_footer();

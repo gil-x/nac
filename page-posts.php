@@ -14,7 +14,9 @@ $args = array(
 
 $query = new WP_Query($args);
 
-echo '<h1 class="blog-title">' . get_the_title() . '</h1>';
+echo '<div class="header"><h1 class="blog-title">' . get_the_title() . '</h1>';
+get_sidebar();
+echo '</div>';
 
 echo '<main class="page blog">';
 
@@ -36,7 +38,7 @@ if ( $query->have_posts() ) {
     echo "<p>Aucune actualité pour l'instant...</p>";
 }
 echo '</div>' ;
-get_sidebar();
+
 echo '</main>';
 // test_text() ;
 // echo "<p>Aucune actualité pour l'instant...</p>";
