@@ -353,7 +353,7 @@ header {
   #menu ul li {
     margin: 1.2em;
     color: #FFF;
-    list-style-type: square;
+    list-style-type: "+ ";
     text-transform: uppercase; }
     #menu ul li ul {
       max-height: 0;
@@ -367,7 +367,8 @@ header {
   #menu ul .menu-item-has-children > a {
     cursor: pointer; }
     #menu ul .menu-item-has-children > a::after {
-      content: " +"; }
+      content: " ▾";
+      /*›*/ }
   #menu a {
     color: #FFF;
     transition: color 0.25s, border 0.5s, padding 0.35s;

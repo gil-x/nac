@@ -34,7 +34,7 @@
         li {
             margin: 1.2em;
             color: $white;
-            list-style-type: square;
+            list-style-type: "+ ";
             text-transform: uppercase;
 
             ul {
@@ -55,7 +55,7 @@
             cursor: pointer;
 
             &::after {
-                content: " +";
+                content: " ▾"; /*›*/
             }
         }
         // .menu-item-has-children:hover {
