@@ -12,6 +12,9 @@
 #wpadminbar .display-name {
   color: #05b6bc; }
 
+h1 {
+  margin: 2em auto 1em; }
+
 h1, h2, h3, h4 {
   font-family: 'Julius Sans One', 'sans-serif'; }
   h1 a, h2 a, h3 a, h4 a {
@@ -232,7 +235,7 @@ ol {
 header {
   text-align: center; }
   header .logo {
-    margin: 1em 0 0;
+    margin: 0;
     transform: translateX(-0.35em);
     font-size: 3.8em;
     font-weight: 200;
@@ -312,7 +315,8 @@ header {
     margin-top: 5vh; } }
 
 .home .logo {
-  font-size: 4.8em; }
+  font-size: 4.8em;
+  margin: 1em 0 0; }
   @media screen and (max-width: 1366px) {
     .home .logo {
       font-size: 3.75em; } }
@@ -424,11 +428,13 @@ header {
       text-transform: uppercase; }
 
 .header {
+  margin: 2em 0 1em;
   padding: 0 25%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .header .blog-title {
+    margin: 0;
     display: inline-block;
     font-size: 3em; }
     @media screen and (max-width: 1024px) {
