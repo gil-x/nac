@@ -83,8 +83,8 @@ footer {
         width: 75%; } }
   .home .social .social-icon {
     margin: 4em 1em;
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
     cursor: pointer;
     transition: all 0.35s;
     filter: grayscale(100%) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
@@ -228,7 +228,7 @@ ol {
 header {
   text-align: center; }
   header .logo {
-    margin: 1em 0 0.5em;
+    margin: 1em 0 0;
     transform: translateX(-0.35em);
     font-size: 3.8em;
     font-weight: 200;
@@ -279,11 +279,10 @@ header {
         transition-delay: 0.5s;
         color: #05b6bc; }
   header .slogan {
-    margin: 0.5em 0 2em;
+    margin: 0;
     padding: 0 20%;
     color: #888;
-    font-size: 1.5em;
-    font-style: italic;
+    font-size: 1em;
     text-align: center;
     opacity: 0;
     transform: translateX(-10vw);
@@ -321,6 +320,13 @@ header {
     .home .logo {
       font-size: 1.8em;
       margin: 0; } }
+
+.home h1 {
+  margin: 2em auto 0; }
+
+.home .content p {
+  font-size: 1.5em;
+  margin: 0; }
 
 #burger, #close {
   top: 20px;

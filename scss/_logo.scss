@@ -33,7 +33,7 @@ header {
     text-align: center;
     
     .logo {
-        margin: 1em 0 0.5em;
+        margin: 1em 0 0;
         transform: translateX(-0.35em);
         font-size: 3.8em;
         font-weight: 200;
@@ -101,11 +101,12 @@ header {
     }
     
     .slogan {
-        margin: 0.5em 0 2em;
+        // margin: 0.5em 0 2em;
+        margin: 0;
         padding: 0 20%;
         color: $nac-font-3;
-        font-size: 1.5em;
-        font-style: italic;
+        font-size: 1em;
+        // font-style: italic;
         text-align: center;
         opacity: 0;
         transform: translateX(-10vw);
@@ -123,8 +124,6 @@ header {
         }
     }
 }
-
-
 
 .home {
 
@@ -157,3 +156,13 @@ header {
     }
 }
 
+.home {
+    h1 {
+        margin: 2em auto 0;
+    }
+
+    .content p {
+        font-size: 1.5em;
+        margin: 0;
+    }
+}
