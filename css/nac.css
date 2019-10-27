@@ -36,6 +36,14 @@ p {
     p a:hover {
       color: #05b6bc; }
 
+blockquote {
+  border-left: 7px double #05b6bc;
+  margin-left: 1em;
+  padding: 0 1em; }
+  blockquote p {
+    margin: 0;
+    font-style: italic; }
+
 footer {
   padding: 1.5em 0 0.5em;
   width: 100%;
