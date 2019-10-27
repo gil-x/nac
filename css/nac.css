@@ -132,7 +132,7 @@ footer {
 
 .content {
   margin-bottom: 5em; }
-  .content img {
+  .content .picture {
     width: 100%; }
 
 .a2a_svg svg {
@@ -217,6 +217,18 @@ ol {
       .anchor-menu p a:hover {
         color: #000;
         border-bottom: 4px solid #05b6bc; }
+
+.alignleft {
+  float: left;
+  margin: 0 10px 10px 0; }
+
+.alignright {
+  float: right;
+  margin: 0 0 10px 10px; }
+
+.aligncenter {
+  display: block;
+  margin: 10px auto; }
 
 @keyframes show {
   0% {

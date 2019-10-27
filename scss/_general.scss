@@ -187,7 +187,7 @@ footer {
 }
 
 .content {
-    img {
+    .picture {
         width: 100%;
     }
     margin-bottom: 5em;
@@ -307,5 +307,20 @@ ol {
             }
         }
     }
+}
+
+.alignleft {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 10px auto;
 }
     
