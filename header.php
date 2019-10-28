@@ -19,7 +19,9 @@ else {
 	<div class="logo">
 		<?php echo '<a href="' . get_home_url() . '" title="Revenir à l\'accueil"><sup id="plus">+</sup><span id="new">new</span><span id="access">access</span><span id="compta">compta</span></a>'; ?>
 	</div>
-	<p class="slogan">Donec consectetur a purus at venenatis</p>
+	<p class="slogan">
+		<?php echo get_bloginfo( $show = 'description', $filter = 'raw' )?>
+	</p>
 </header>
 
 <?php
