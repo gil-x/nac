@@ -14,6 +14,9 @@ html {
 
 body {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), white, white, white, white, rgba(0, 0, 0, 0.35)); }
+  @media screen and (max-width: 1024px) {
+    body {
+      background: none; } }
 
 #wpadminbar .display-name {
   color: #05b6bc; }
@@ -353,7 +356,8 @@ header {
 @media screen and (max-width: 1366px) {
   .home {
     padding-top: 0;
-    margin-top: -10vh; } }
+    margin-top: 0;
+    padding-top: 0; } }
 
 @media screen and (max-width: 600px) {
   .home {
@@ -365,7 +369,8 @@ header {
   margin: 1em 0 0; }
   @media screen and (max-width: 1366px) {
     .home .logo {
-      font-size: 3.75em; } }
+      font-size: 3.75em;
+      margin-top: 0; } }
   @media screen and (max-width: 1024px) {
     .home .logo {
       font-size: 3.5em;
@@ -377,10 +382,17 @@ header {
 
 .home h1 {
   margin: 2em auto 0; }
+  @media screen and (max-width: 1366px) {
+    .home h1 {
+      margin: 1em auto 0; } }
 
 .home .content p {
-  font-size: 1.5em;
-  margin: 0; }
+  font-size: 1.4em;
+  line-height: 1.3em; }
+  @media screen and (max-width: 600px) {
+    .home .content p {
+      font-size: 1.2em;
+      line-height: 1.3em; } }
 
 #burger, #close {
   top: 20px;
@@ -480,6 +492,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 1024px) {
+    .header {
+      padding: 0 10%; } }
   .header .blog-title {
     margin: 0;
     display: inline-block;
@@ -527,9 +542,9 @@ header {
       flex-basis: 33.33%;
       margin-bottom: 1em;
       padding: 0.5em; }
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1366px) {
         .page .post-container .post {
-          flex-basis: 66%; } }
+          flex-basis: 50%; } }
   .page h1 {
     flex-basis: 100%; }
   .page .post {
