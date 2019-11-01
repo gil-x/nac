@@ -26,10 +26,11 @@ if ( $query->have_posts() ) {
         $query->the_post();
         echo '<div class="post">' ;
         echo '<h2><a href="' . get_permalink($id) . '" title="' . get_the_title() . '">' . get_the_title() . '</a></h2>';
-        echo '<a href="' . get_permalink($id) . '" title="' . get_the_title() . '"><img src="' . get_the_post_thumbnail_url( $_post->ID, 'post-thumbnail' ) . '" alt="" /></a>';
+        echo '<a class="thumbnail" href="' . get_permalink($id) . '" title="' . get_the_title() . '"><img src="' . get_the_post_thumbnail_url( $_post->ID, 'post-thumbnail' ) . '" alt="" /></a>';
+        // echo '<div class="thumbnail" style="background-image: url(' . get_the_post_thumbnail_url( $_post->ID, 'post-thumbnail' ) . ');" ></div>';
         echo '<p>' . get_the_excerpt() . '</p>';
         echo '<p class="read-more">';
-        echo '<a href="' . get_permalink($id) . '" title="' . get_the_title() . '">> voir</a>';
+        echo '<a href="' . get_permalink($id) . '" title="' . get_the_title() . '">Voir +</a>';
         echo '</p>';
         echo '</div>' ;
     }

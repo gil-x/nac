@@ -58,9 +58,9 @@
         .menu-item-has-children > a {
             cursor: pointer;
 
-            &::after {
-                content: " ·"; //›▾
-            }
+            // &::after {
+            //     content: " ·"; //›▾
+            // }
         }
         // .menu-item-has-children:hover {
         //     color: $nac-color;

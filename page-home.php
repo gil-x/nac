@@ -26,10 +26,10 @@ endif;
 
 <div class="social">
     <?php
-    echo '<a href="https://www.facebook.com/newaccesscompta" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/facebook.svg" alt="Facebook" title="Facebook"></a>';
-	echo '<a href="" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/linkedin.svg" alt="Linkedin" title="Linkedin"></a>';
-	echo '<a href="https://twitter.com/newaccesscompta" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/twitter.svg" alt="Twitter" title="Twitter"></a>';
-    echo '<a href="https://www.instagram.com/newaccesscompta/" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/instagram.svg" alt="Instagram" title="Instagram"></a>';
+    echo '<a href="https://www.facebook.com/newaccesscompta" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/facebook2.svg" alt="Facebook" title="Facebook"></a>';
+	echo '<a href="" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/linkedin2.svg" alt="Linkedin" title="Linkedin"></a>';
+	echo '<a href="https://twitter.com/newaccesscompta" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/twitter2.svg" alt="Twitter" title="Twitter"></a>';
+    echo '<a href="https://www.instagram.com/newaccesscompta/" target="_blank"><img class="social-icon" src="' . get_template_directory_uri() . '/img/instagram2.svg" alt="Instagram" title="Instagram"></a>';
     ?>
 </div>
 

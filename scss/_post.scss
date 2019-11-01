@@ -12,6 +12,10 @@
         }
     }
 
+    .thumbnail {
+        height: auto;
+    }
+
     .post-header {
         // display: flex;
         // align-items: center;
@@ -29,7 +33,7 @@
         // flex-basis: 33.33%;
         margin: 1em 0;
         padding-right: 1em;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-style: italic;
         // text-align: right;
 
@@ -43,8 +47,9 @@
     }
 
     .credit {
-        margin-top: 1em;
-        padding-top: 10px;
+        margin-top: -1em;
+        // margin-top: 1em;
+        // padding-top: 10px;
         // border-top: 1px solid $nac-font-3;
         // text-align: right;
 
@@ -59,15 +64,28 @@
     margin-top: 2em;
     display: flex;
     justify-content: space-between;
+    // justify-content: end;
+
+    .back {
+        display: inline-block;
+        padding: 1em;
+        margin-right: 10px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 
     #sidebar {
         display: inline-block;
         padding: 1em;
-        border: 1px solid $nac-color;
-        border-right: none;
+        // border: 1px solid $nac-color;
+        // border-right: none;
         margin-right: 10px;
     
         .widgettitle {
+            display: none;
             color: $nac-font-3;
             font-size: small;
             margin-bottom: 0.5em;
@@ -80,6 +98,16 @@
             li {
                 display: inline-block;
                 margin-right: 0.5em;
+
+                a {
+                    font-family: 'Julius Sans One', 'sans-serif';
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                
             }
         }
     
