@@ -1,6 +1,6 @@
 <?php echo '<div class="single post">' ;?>
 
-<h1><?php the_title(); ?></h1>
+<h1><?php echo '<a href="' . get_home_url() . '" title="Retourner au blog">Blog</a> / '. get_the_title(); ?></h1>
 
 
 

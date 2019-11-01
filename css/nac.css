@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0 20%, white 20% 80%, rgba(0, 0, 0, 0.05) 80% 100%); }
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0 19%, white 19% 81%, rgba(0, 0, 0, 0.05) 81% 100%); }
   @media screen and (max-width: 1024px) {
     body {
       background: none; } }
@@ -44,7 +44,7 @@ p {
 
 blockquote {
   border-left: 7px double #c39f76;
-  margin-left: 1em;
+  margin: 0.5em 1em 0 0.5em;
   padding: 0 1em; }
   blockquote p {
     margin: 0;
@@ -184,10 +184,12 @@ footer {
       .simple.page ul li::before {
         content: "+";
         color: #c39f76;
-        font-weight: bold;
         display: inline-block;
         width: 1em;
-        margin-left: -1em; }
+        margin-left: -1em;
+        font-size: 1.4em;
+        position: relative;
+        top: 0.1em; }
 
 ol {
   list-style-type: none;
@@ -614,6 +616,21 @@ header {
 
 .single.post {
   margin-bottom: 5em; }
+  .single.post h1 a {
+    font-family: 'Julius Sans One', 'sans-serif';
+    display: inline-block; }
+    .single.post h1 a, .single.post h1 a::before, .single.post h1 a::after {
+      transition: all 0.25s; }
+    .single.post h1 a::before {
+      content: "(";
+      color: #c39f76; }
+    .single.post h1 a::after {
+      content: ")";
+      color: #c39f76; }
+    .single.post h1 a:hover {
+      color: #c39f76; }
+      .single.post h1 a:hover::before, .single.post h1 a:hover::after {
+        color: #000; }
   @media screen and (max-width: 1024px) {
     .single.post h1 {
       padding: 0 0 0.5em 0; } }

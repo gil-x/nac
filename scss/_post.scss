@@ -3,6 +3,34 @@
     
     h1 {
         // padding: 0 0 1.5em 0;
+        a {
+            font-family: 'Julius Sans One', 'sans-serif';
+            // transition: all 0.25s;
+            display: inline-block;
+
+            &, &::before, &::after {
+                transition: all 0.25s;
+            }
+
+            &::before {
+                content: "(";
+                color: $nac-color;
+            }
+            
+            &::after {
+                content: ")";
+                color: $nac-color;
+            }
+
+            &:hover {
+                color: $nac-color;
+                // text-decoration: underline;
+                // transform: rotateY(360deg);
+                &::before, &::after {
+                    color: $black;
+                }
+            }
+        }
 
         @media screen and (max-width: 1024px) {
             padding: 0 0 0.5em 0;
