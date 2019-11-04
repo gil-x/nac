@@ -62,7 +62,8 @@
         margin: 1em 0;
         padding-right: 1em;
         font-size: 1.2em;
-        font-style: italic;
+        // font-style: italic;
+        font-weight: 600;
         // text-align: right;
 
         .date {
@@ -113,7 +114,7 @@
         margin-right: 10px;
     
         .widgettitle {
-            display: none;
+            // display: none;
             color: $nac-font-3;
             font-size: small;
             margin-bottom: 0.5em;
@@ -130,9 +131,12 @@
                 a {
                     font-family: 'Julius Sans One', 'sans-serif';
                     text-decoration: none;
+                    font-size: small;
+                    color: $nac-font-3;
 
                     &:hover {
                         text-decoration: underline;
+                        color: $nac-font-1;
                     }
                 }
                 
@@ -147,4 +151,10 @@
             // display: none;
         }
     }
+}
+
+.wp-caption-text {
+    color: $nac-font-3;
+    text-align: center;
+    margin: 0.25em 0 !important;
 }

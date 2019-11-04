@@ -95,7 +95,7 @@ header {
 
             &:hover * {
                 transition-delay: 0.5s;
-                color: #05b6bc;
+                color: $nac-color;
             }
         }
     }
@@ -175,13 +175,17 @@ header {
     }
 
     .content p {
-        font-size: 1.4em;
-        line-height: 1.3em;
-        // margin: 0 auto 2em;
+        font-size: 1.3em;
+        line-height: 1.2em;
+
+        @media screen and (max-width: 1366px) {
+            font-size: 1.1em;
+            line-height: 1.2em;
+        }
 
         @media screen and (max-width: 600px) {
-            font-size: 1.2em;
-            line-height: 1.3em;
+            font-size: 1em;
+            line-height: 1.1em;
         }
     }
 }

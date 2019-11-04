@@ -43,7 +43,7 @@
         margin-right: 10px;
 
         .widgettitle {
-            display: none;
+            // display: none;
             color: $nac-font-3;
             font-size: small;
             margin-bottom: 0.5em;
@@ -57,6 +57,13 @@
                 margin-right: 0.5em;
                 a {
                     font-family: 'Julius Sans One', 'sans-serif';
+                    font-size: small;
+                    color: $nac-font-2;
+
+                    &:hover {
+                        // font-weight: 600;
+                        color: $nac-font-1;
+                    }
                 }
             }
         }
@@ -112,17 +119,17 @@
         flex-basis: 70%;
         cursor: pointer;
 
-        h2 {
-            padding: 1em 0 0.5em;
-            margin-bottom: 0.5em;
-            color: $black;
-            border-bottom: 5px solid $black;
-            font-size: 0.95em;
-            font-weight: 600;
-        }
+        // h2 {
+        //     padding: 1em 0 0.5em;
+        //     margin-bottom: 0.5em;
+        //     color: $black;
+        //     border-bottom: 5px solid $black;
+        //     font-size: 0.95em;
+        //     font-weight: 600;
+        // }
 
         p {
-            font-style: italic;
+            // font-style: italic;
             font-size: 0.9em;
         }
 
@@ -142,20 +149,39 @@
             text-align: center;
 
             a {
-                color: $white;
+                // color: $white;
                 text-decoration: none;
                 padding: 0.25em 0.5em;
-                background: $black;
+                // background: $black;
                 transition: all 0.25s;
                 border-radius: 1px;
                 display: inline-block;
 
-                &:hover {
-                    // background: rgba(0,0,0,0.85);
-                    color: $black;
-                    background: $nac-color;
-                    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.45));
+                &::before {
+                    content: "( ";
+                    color: $nac-color;
                 }
+                
+                &::after {
+                    content: " )";
+                    color: $nac-color;
+                }
+    
+                &:hover {
+                    color: $nac-color;
+                    // text-decoration: underline;
+                    // transform: rotateY(360deg);
+                    &::before, &::after {
+                        color: $black;
+                    }
+                }
+
+                // &:hover {
+                //     // background: rgba(0,0,0,0.85);
+                //     color: $black;
+                //     background: $nac-color;
+                //     filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.45));
+                // }
             }
         }
     }

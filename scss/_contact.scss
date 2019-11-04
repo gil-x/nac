@@ -21,20 +21,96 @@
         flex-basis: 50%;
     }
 
-    p input[type="submit"] {
-        color: $white;
-        border: none;
-        background: $black;
-        padding: 0.25em 0.5em;
-        border-radius: 1px;
-        transition: all 0.25s;
-        cursor: pointer;
+    .send {
+        text-align: left;
+        
+        div {
+            display: inline;
 
-        &:hover {
-            background: rgba(0,0,0,0.85);
-            filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.45));
+            input {
+                color: $nac-font-1;
+                font-size: 1.1em;
+                font-weight: 600;
+                border: none;
+                background: none;
+                transition: all 0.25s;
+                cursor: pointer;
+                display: inline-block;
+                position:relative;
+            }
+
+
+            &::before {
+                content: "( ";
+                color: $nac-color;
+                $font-size: 1.1em;
+                font-weight: 600;
+            }
+            
+            &::after {
+                content: " )" !important;
+                color: $nac-color;
+                font-size: 1.1em;
+                font-weight: 600;
+            }
+
+            .ajax-loader {
+                display: none;
+            }
+
+            &:hover {
+                input {
+                    color: $nac-color;
+                }
+
+                &::before, &::after {
+                    color: $black;}
+    
+            }
         }
     }
+
+    // p input[type="submit"] {
+
+    //     // color: $white;
+    //     color: $nac-font-1;
+    //     font-size: 1.3em;
+    //     border: none;
+    //     background: none;
+    //     // background: $black;
+    //     // padding: 0.25em 0.5em;
+    //     // border-radius: 1px;
+    //     transition: all 0.25s;
+    //     cursor: pointer;
+    //     display: inline-block;
+    //     position:relative;
+
+    //     &::before {
+    //         content: "( ";
+    //         color: $nac-color;
+    //     }
+        
+    //     &::after {
+    //         content: " )" !important;
+    //         color: $nac-color;
+    //     }
+
+    //     &:hover {
+    //         color: $nac-color;
+    //         // text-decoration: underline;
+    //         // transform: rotateY(360deg);
+    //         &::before, &::after {
+    //             color: $black;
+
+    //     }
+
+    //     // &:hover {
+    //     //     background: rgba(0,0,0,0.85);
+    //     //     filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.45));
+    //     // }
+    //     }
+    // }
+    
 
     @include noshare;
 

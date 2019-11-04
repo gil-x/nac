@@ -5,6 +5,7 @@
     padding: 0;
     color: $nac-font-1;
     font-family: 'Montserrat', 'Sans-Serif';
+    font-weight: 300;
 }
 
 *, *:before, *:after {
@@ -20,7 +21,7 @@ body {
     // border-left: 20% solid red;
     // background: linear-gradient(90deg, gray, white, white, white, white,gray);
     // background: linear-gradient(90deg, rgba(black, 0.35), white, white, white, white, rgba(black, 0.35));
-    background: linear-gradient(90deg, rgba(black, 0.05) 0 19%, white 19% 81%, rgba(black, 0.05) 81% 100%);
+    // background: linear-gradient(90deg, rgba(black, 0.05) 0 19%, white 19% 81%, rgba(black, 0.05) 81% 100%);
 
     @media screen and (max-width: 1024px) {
         background: none;
@@ -33,10 +34,17 @@ body {
 
 h1 {
     margin: 3em auto 1em;
+    text-align: center;
 
     @media screen and (max-width: 1024px) {
         margin: 2em auto 1em;
     }
+}
+
+h2, h3, h4 {
+    font-weight: 600;
+    color: $nac-color;
+    margin: 1.5em 0 0.75em;
 }
 
 h1, h2, h3, h4 {
@@ -75,7 +83,7 @@ blockquote {
 
 footer {
     // margin-top: 5em;
-    padding: 1.5em 0 0.5em;
+    padding: 0.5em 0 0.5em;
     width: 100%;
     // color: $nac-font-3;
     background: $black;
@@ -83,6 +91,7 @@ footer {
     color: rgba(255,255,255, 0.75);
     text-align: center;
     font-size: 0.8em;
+    font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.35em;
     position: fixed;
@@ -91,6 +100,7 @@ footer {
     a {
         // color: $nac-font-2;
         color: rgba(255,255,255, 0.75);
+        font-weight: 600;
 
         &:hover {
             // color: $nac-font-1;
@@ -103,6 +113,7 @@ footer {
         opacity: 0.5;
         font-size: 0.8em;
         transition: opacity 0.75s;
+        font-weight: 300;
     
         &:hover {
             opacity: 1;
@@ -146,8 +157,8 @@ footer {
     .social {
         .social-icon {
             margin: 4em 1em;
-            width: 4em;
-            height: 4em;
+            width: 3.5em;
+            height: 3.5em;
             cursor: pointer;
             transition: all 0.85s;
             // filter: grayscale(100%) drop-shadow(0px 0px 0px rgba(0,0,0,0)) saturate(1);
@@ -168,7 +179,7 @@ footer {
 
             @media screen and (max-width: 1366px) {
                 margin: 0 0.5em;
-                width: 3em;
+                width: 2.5em;
             }
         }
         a:nth-child(1) .social-icon {
@@ -240,11 +251,11 @@ footer {
 
     @include noshare;
 
-    h2, h3, h4 {
-        font-weight: 600;
-        color: $nac-color;
-        margin-top: 1.5em;
-    }
+    // h2, h3, h4 {
+    //     font-weight: 600;
+    //     color: $nac-color;
+    //     margin-top: 1.5em;
+    // }
 
     ul {
         padding-left: 2em;
@@ -268,6 +279,24 @@ footer {
     }
 }
 
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
 ol {
     list-style-type: none;
     display: flex;
@@ -276,20 +305,37 @@ ol {
 
     li {
         display: inline-block;
-        flex-basis: 50%;
-        padding: 1.5em 0.5em;
-        background: $nac-color;
-        border: 1px solid white;
+        margin: 0.25%;
+        flex-basis: 49.5%;
+        padding: 0.75em 0.5em;
+        // background: $nac-color;
+        // border: 1px solid white;
+        border: 1px solid $nac-color;
+        transition: all 0.5s;
 
         a {
             display: inline-block;
             // color: $nac-color;
-            color: $white;
+            // color: $white;
+
+            &:hover {
+                // font-weight: 300;
+                // color: $nac-font-3;
+                // text-shadow: 0 0 1px $black;
+
+                // &::before {
+                //     content: "+";
+                // }
+                animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+                perspective: 1000px;
+            }
         }
 
         &::before {
             content: "> ";
-            color: $white;
+            // color: $white;
         }
     }
 }
@@ -299,12 +345,15 @@ ol {
     width: 100%;
     // padding-bottom: 5px;
     border-bottom: 1px solid $nac-color;
+    // font-family: 'Julius Sans One', 'sans-serif';
 
     p {
         display: inline;
 
         &::before {
             content: "Sommaire : ";
+            font-weight: 600;
+            font-family: 'Julius Sans One', 'sans-serif';
         }
         // display: flex;
 
@@ -313,6 +362,8 @@ ol {
             margin: 0 0.5em;
             text-decoration: none;
             border-bottom: 4px solid transparent;
+            font-family: 'Julius Sans One', 'sans-serif';
+            font-weight: 300;
 
             &:hover {
                 color: $nac-font-1;

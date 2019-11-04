@@ -43,6 +43,24 @@ document.addEventListener("click", function(event) {
     
 });
 
+const categoriesWidget = document.querySelector('.widget_categories ul');
+if (categoriesWidget) {
+    let categoryAllLi = document.createElement("li");
+    let categoryAllA = document.createElement("a");
+    categoryAllA.textContent = "Toutes";
+    categoryAllA.setAttribute('href', window.location.origin + '/blog/');
+    categoryAllLi.appendChild(categoryAllA);
+    categoriesWidget.appendChild(categoryAllLi);
+}
+else {
+    throw new Error('Categories widget not found.');
+}
+
+
+// var pythonElt = document.createElement("li"); // Création d'un élément li
+// pythonElt.id = "python"; // Définition de son identifiant
+// pythonElt.textContent = "Python"; // Définition de son contenu textuel
+// document.getElementById("langages").appendChild(pythonElt); // Insertion du nouvel élément
 
 // document.addEventListener("click", function(event) {
 //     if (
