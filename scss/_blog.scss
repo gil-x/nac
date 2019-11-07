@@ -45,7 +45,8 @@
         .widgettitle {
             // display: none;
             color: $nac-font-3;
-            font-size: small;
+            font-size: 0.8rem;
+            font-weight: 600;
             margin-bottom: 0.5em;
         }
     
@@ -57,12 +58,13 @@
                 margin-right: 0.5em;
                 a {
                     font-family: 'Julius Sans One', 'sans-serif';
-                    font-size: small;
-                    color: $nac-font-2;
+                    font-size: 0.8rem;
+                    color: $nac-font-1;
+                    font-weight: 600;
 
                     &:hover {
                         // font-weight: 600;
-                        color: $nac-font-1;
+                        color: $nac-color;
                     }
                 }
             }
@@ -103,6 +105,11 @@
             flex-basis: 33.33%;
             margin-bottom: 1em;
             padding: 0.5em;
+
+            h2 a:hover {
+                color: $nac-color;
+                text-decoration: underline;
+            }
 
             @media screen and (max-width: 1366px) {
                 flex-basis: 50%;
