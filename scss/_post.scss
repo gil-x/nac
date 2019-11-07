@@ -122,41 +122,12 @@
 
     #sidebar {
         display: inline-block;
-        padding: 1em;
+        // padding: 1em;
         // border: 1px solid $nac-color;
         // border-right: none;
         margin-right: 10px;
     
-        .widgettitle {
-            // display: none;
-            color: $nac-font-3;
-            font-size: small;
-            // margin-bottom: 0.5em;
-            margin: 0 0 0.5em;
-            border-bottom: none;
-        }
-    
-        ul {
-            list-style-type: none;
-    
-            li {
-                display: inline-block;
-                margin-right: 0.5em;
-
-                a {
-                    font-family: 'Julius Sans One', 'sans-serif';
-                    text-decoration: none;
-                    font-size: small;
-                    color: $nac-font-3;
-
-                    &:hover {
-                        text-decoration: underline;
-                        color: $nac-font-1;
-                    }
-                }
-                
-            }
-        }
+        @include cat;
     
         @media screen and (max-width: 1024px) {
             // padding: 0 20px;

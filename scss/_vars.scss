@@ -11,3 +11,33 @@ $padding-large: 25%;
 // $nac-color: #05b6bc;
 // $nac-color: #c39f76;
 $nac-color:#489bbf;
+
+@mixin cat {
+    .widgettitle {
+        // display: none;
+        color: $nac-font-3;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin-right: 0.5em;
+            a {
+                font-family: 'Julius Sans One', 'sans-serif';
+                font-size: 0.8rem;
+                color: $nac-font-1;
+                font-weight: 600;
+
+                &:hover {
+                    // font-weight: 600;
+                    color: $nac-color;
+                }
+            }
+        }
+    }
+}

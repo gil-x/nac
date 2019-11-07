@@ -735,13 +735,12 @@ header {
       text-decoration: underline; }
   .post-footer #sidebar {
     display: inline-block;
-    padding: 1em;
     margin-right: 10px; }
     .post-footer #sidebar .widgettitle {
       color: #888;
-      font-size: small;
-      margin: 0 0 0.5em;
-      border-bottom: none; }
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5em; }
     .post-footer #sidebar ul {
       list-style-type: none; }
       .post-footer #sidebar ul li {
@@ -749,12 +748,11 @@ header {
         margin-right: 0.5em; }
         .post-footer #sidebar ul li a {
           font-family: 'Julius Sans One', 'sans-serif';
-          text-decoration: none;
-          font-size: small;
-          color: #888; }
+          font-size: 0.8rem;
+          color: #000;
+          font-weight: 600; }
           .post-footer #sidebar ul li a:hover {
-            text-decoration: underline;
-            color: #000; }
+            color: #489bbf; }
 
 .wp-caption-text {
   color: #888;
