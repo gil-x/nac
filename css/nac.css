@@ -696,8 +696,18 @@ header {
     display: inline-block;
     padding: 1em;
     margin-right: 10px;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: small;
+    font-family: 'Julius Sans One', 'sans-serif'; }
     .post-footer .back:hover {
+      text-decoration: underline; }
+  .post-footer .top {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    font-size: small;
+    font-family: 'Julius Sans One', 'sans-serif'; }
+    .post-footer .top:hover {
       text-decoration: underline; }
   .post-footer #sidebar {
     display: inline-block;
@@ -706,7 +716,7 @@ header {
     .post-footer #sidebar .widgettitle {
       color: #888;
       font-size: small;
-      margin-bottom: 0.5em;
+      margin: 0 0 0.5em;
       border-bottom: none; }
     .post-footer #sidebar ul {
       list-style-type: none; }

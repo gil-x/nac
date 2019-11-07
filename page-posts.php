@@ -43,10 +43,7 @@ echo '</div>' ;
 echo '</main>';
 // test_text() ;
 // echo "<p>Aucune actualité pour l'instant...</p>";
-// pressPagination($pages ='', $range = 2) ;
-
-
-
+pressPagination($pages ='', $range = 2) ;
 
 
 get_footer(); ?>

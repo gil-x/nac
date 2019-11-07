@@ -1,6 +1,6 @@
 <?php echo '<div class="single post">' ;?>
 
-<h1><?php echo '<a href="' . get_home_url() . '/blog/" title="Retourner au blog">Blog</a> / '. get_the_title(); ?></h1>
+<h1 id="post-title"><?php echo '<a href="' . get_home_url() . '/blog/" title="Retourner au blog">Blog</a> / '. get_the_title(); ?></h1>
 
 
 
@@ -21,11 +21,13 @@ the_content();
 echo '
 <div class="post-footer">
 <a class="back" href="' . get_home_url() . '/blog/">‹‹ Revenir au blog</a>
+<a class="top" href="#post-title">↑ Remonter ↑</a>
     ';
 
 get_sidebar();
 
 echo '</div>';
+
 ?>
 
 </div>
