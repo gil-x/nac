@@ -21,9 +21,8 @@ the_content();
 echo '
 <div class="post-footer">
 <a class="back" href="' . get_home_url() . '/blog/">‹‹ Revenir au blog</a>
-<a class="top" href="#post-title">↑ Remonter ↑</a>
     ';
-
+// <a class="top" href="#post-title">↑ Remonter ↑</a>
 get_sidebar();
 
 echo '</div>';
