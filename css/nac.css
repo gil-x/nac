@@ -707,7 +707,8 @@ header {
   .single.post p {
     margin: 1em 0; }
   .single.post .credit {
-    margin-top: -1em; }
+    margin-top: -1em;
+    text-align: center; }
     .single.post .credit span {
       color: #888;
       font-size: 0.8em; }
