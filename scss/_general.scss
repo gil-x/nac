@@ -256,13 +256,18 @@ footer {
     //     color: $nac-color;
     //     margin-top: 1.5em;
     // }
-
+    
+    p {
+        font-size: 0.9em;
+    }
+    
     ul {
         padding-left: 2em;
         list-style-type: none;
 
         li {
             margin: 0.5em;
+            font-size: 0.9em;
 
             &::before {
                 content: "+";

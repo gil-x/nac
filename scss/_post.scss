@@ -42,9 +42,11 @@
 
     .thumbnail {
         height: auto;
+        display: none;
     }
 
     .post-header {
+        margin: 3em 0 1em;
         // display: flex;
         // align-items: center;
 
