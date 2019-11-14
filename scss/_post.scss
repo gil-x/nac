@@ -77,6 +77,28 @@
         margin: 1em 0;
     }
 
+    ul {
+        padding-left: 2em;
+        list-style-type: none;
+
+        li {
+            margin: 0.5em;
+            font-size: 0.9em;
+
+            &::before {
+                content: "+";
+                color: $nac-color;
+                // font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+                font-size: 1.4em;
+                position: relative;
+                top: 0.1em;
+              }
+        }
+    }
+
     .credit {
         margin-top: -1em;
         // margin-top: 1em;
