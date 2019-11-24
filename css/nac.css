@@ -774,10 +774,11 @@ header {
       font-weight: 600;
       margin-bottom: 0.5em; }
     .post-footer #sidebar ul {
-      list-style-type: none; }
+      list-style-type: none;
+      padding-left: 0; }
       .post-footer #sidebar ul li {
         display: inline-block;
-        margin-right: 0.5em; }
+        margin: 0 0.5em 0 0; }
         .post-footer #sidebar ul li a {
           font-family: 'Julius Sans One', 'sans-serif';
           font-size: 0.8rem;
@@ -785,6 +786,8 @@ header {
           font-weight: 600; }
           .post-footer #sidebar ul li a:hover {
             color: #7cb1ea; }
+        .post-footer #sidebar ul li::before {
+          content: none; }
     @media screen and (max-width: 768px) {
       .post-footer #sidebar {
         display: none; } }

@@ -24,10 +24,11 @@ $nac-color:#7cb1ea;
 
     ul {
         list-style-type: none;
+        padding-left: 0;
 
         li {
             display: inline-block;
-            margin-right: 0.5em;
+            margin: 0 0.5em 0 0;
             a {
                 font-family: 'Julius Sans One', 'sans-serif';
                 font-size: 0.8rem;
@@ -38,6 +39,12 @@ $nac-color:#7cb1ea;
                     // font-weight: 600;
                     color: $nac-color;
                 }
+            }
+            &::before {
+                content: none;
+                // display: inline-block;
+                // margin: 5px;
+                // transition: all 0.75s;
             }
         }
     }

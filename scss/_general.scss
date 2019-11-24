@@ -5,7 +5,6 @@
     padding: 0;
     color: $nac-font-1;
     font-family: 'Montserrat', 'Sans-Serif';
-    // font-weight: 300;
 }
 
 *, *:before, *:after {
@@ -18,11 +17,6 @@ html {
 }
 
 body {
-    // border-left: 20% solid red;
-    // background: linear-gradient(90deg, gray, white, white, white, white,gray);
-    // background: linear-gradient(90deg, rgba(black, 0.35), white, white, white, white, rgba(black, 0.35));
-    // background: linear-gradient(90deg, rgba(black, 0.05) 0 19%, white 19% 81%, rgba(black, 0.05) 81% 100%);
-
     @media screen and (max-width: 1024px) {
         background: none;
     }
@@ -82,12 +76,9 @@ blockquote {
 }
 
 footer {
-    // margin-top: 5em;
     padding: 0.5em 0 0.5em;
     width: 100%;
-    // color: $nac-font-3;
     background: $black;
-    // color: $white;
     color: rgba(255,255,255, 0.75);
     text-align: center;
     font-size: 0.8em;
@@ -98,12 +89,10 @@ footer {
     bottom: 0;
 
     a {
-        // color: $nac-font-2;
         color: rgba(255,255,255, 0.75);
         font-weight: 600;
 
         &:hover {
-            // color: $nac-font-1;
             color: $nac-color;
         }
     }
@@ -161,7 +150,6 @@ footer {
             height: 3.5em;
             cursor: pointer;
             transition: all 0.85s;
-            // filter: grayscale(100%) drop-shadow(0px 0px 0px rgba(0,0,0,0)) saturate(1);
             filter: saturate(0);
 
             transform: scale(0);
@@ -172,8 +160,6 @@ footer {
             &:hover {
                 transform: scale(1.05);
                 transform-origin: center;
-                // filter: grayscale(0%) drop-shadow(0px 0px 0px rgba(0,0,0,0)) saturate(10);
-                // filter: grayscale(0%) drop-shadow(0px 5px 2px rgba(35,55,200,0.25));
                 filter: saturate(7);
             }
 
@@ -200,11 +186,6 @@ footer {
     footer {
         position: fixed;
         bottom: 0;
-
-        // .copyright {
-        //     color: rgba(255,255,255, 0.75);
-        //     display: inline;
-        // }
     }
 }
 
@@ -245,18 +226,11 @@ footer {
 }
 
 .simple.page {
-    // @include noshare;
     display: block;
     padding: 0 $padding-large;
 
     @include noshare;
 
-    // h2, h3, h4 {
-    //     font-weight: 600;
-    //     color: $nac-color;
-    //     margin-top: 1.5em;
-    // }
-    
     p {
         font-size: 0.9em;
     }
@@ -272,7 +246,6 @@ footer {
             &::before {
                 content: "+";
                 color: $nac-color;
-                // font-weight: bold;
                 display: inline-block;
                 width: 1em;
                 margin-left: -1em;
@@ -321,10 +294,7 @@ footer {
 
 100% {
     color: $nac-color;
-    // font-weight: 600;
-    // text-decoration: underline;
-    // text-decoration: none;
-}
+    }
 }
 
 ol {
@@ -338,8 +308,6 @@ ol {
         margin: 0.25%;
         flex-basis: 49.5%;
         padding: 0.75em 0.5em;
-        // background: $nac-color;
-        // border: 1px solid white;
         border: 1px solid $nac-color;
         transition: all 0.75s;
 
@@ -354,23 +322,11 @@ ol {
 
         a {
             display: inline-block;
-            // color: $nac-color;
-            // color: $white;
 
             &:hover {
-                // font-weight: 300;
-                // color: $nac-font-3;
-                // text-shadow: 0 0 1px $black;
-
-                // &::before {
-                //     content: "+";
-                // }
-                // animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
                 animation: shake-simple;
                 animation-duration: 0.75s;
                 animation-fill-mode: forwards;
-                // transform: translate3d(0, 0, 0);
-                // backface-visibility: hidden;
                 perspective: 1000px;
             }
         }
@@ -380,8 +336,6 @@ ol {
             display: inline-block;
             margin: 5px;
             transition: all 0.75s;
-            // color: $nac-color;
-            // color: $white;
         }
     }
 }
@@ -389,9 +343,7 @@ ol {
 .anchor-menu {
     margin: 1em 0;
     width: 100%;
-    // padding-bottom: 5px;
     border-bottom: 1px solid $nac-color;
-    // font-family: 'Julius Sans One', 'sans-serif';
 
     p {
         display: inline;
@@ -401,7 +353,6 @@ ol {
             font-weight: 600;
             font-family: 'Julius Sans One', 'sans-serif';
         }
-        // display: flex;
 
         a {
             display: inline-block;
@@ -437,25 +388,3 @@ ol {
     height: auto;
 }
    
-// #go-up {
-//     position: fixed;
-//     bottom: 40px;
-//     width: 100%;
-//     margin: 0 auto;
-//     text-align: center;
-    
-
-//     div {
-//         display: inline-block;
-//         background: url('../img/up.png') no-repeat;
-//         background-size: cover;
-//         padding: 2rem 3rem 1rem;
-//         color: $white;
-//         font-size: x-small;
-//         cursor: pointer;
-
-//         &:hover {
-//             color: $nac-color;
-//         }
-//     }
-// }
