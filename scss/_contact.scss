@@ -33,7 +33,7 @@
 
             input {
                 color: $nac-font-1;
-                font-size: 1.1em;
+                // font-size: $font-l;
                 font-weight: 600;
                 border: none;
                 background: none;
@@ -47,14 +47,15 @@
             &::before {
                 content: "( ";
                 color: $nac-color;
-                $font-size: 1.1em;
+                // $font-size: 1.1em;
+                $font-size: $font-l;
                 font-weight: 600;
             }
             
             &::after {
                 content: " )" !important;
                 color: $nac-color;
-                font-size: 1.1em;
+                $font-size: $font-l;
                 font-weight: 600;
             }
 
@@ -74,48 +75,6 @@
         }
     }
 
-    // p input[type="submit"] {
-
-    //     // color: $white;
-    //     color: $nac-font-1;
-    //     font-size: 1.3em;
-    //     border: none;
-    //     background: none;
-    //     // background: $black;
-    //     // padding: 0.25em 0.5em;
-    //     // border-radius: 1px;
-    //     transition: all 0.25s;
-    //     cursor: pointer;
-    //     display: inline-block;
-    //     position:relative;
-
-    //     &::before {
-    //         content: "( ";
-    //         color: $nac-color;
-    //     }
-        
-    //     &::after {
-    //         content: " )" !important;
-    //         color: $nac-color;
-    //     }
-
-    //     &:hover {
-    //         color: $nac-color;
-    //         // text-decoration: underline;
-    //         // transform: rotateY(360deg);
-    //         &::before, &::after {
-    //             color: $black;
-
-    //     }
-
-    //     // &:hover {
-    //     //     background: rgba(0,0,0,0.85);
-    //     //     filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.45));
-    //     // }
-    //     }
-    // }
-    
-
     @include noshare;
 
     @media screen and (max-width: 1024px) {
@@ -126,7 +85,7 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
 
         .content {
             display: block;
@@ -138,6 +97,17 @@
 
             * {
                 width: 100%;
+            }
+
+            .send {
+                width: 30%;
+                text-align: center;
+                margin: 1.5em auto;
+
+                input {
+                    width: auto;
+                    font-size: $font-l;
+                }
             }
         }
     }

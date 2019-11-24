@@ -10,7 +10,8 @@
   box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 16px; }
 
 @media screen and (max-width: 1024px) {
   body {
@@ -60,7 +61,7 @@ footer {
   background: #000;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.35em;
@@ -103,7 +104,7 @@ footer {
       padding-top: 0;
       margin-top: 5vh; } }
   .home .content {
-    font-size: 1em;
+    font-size: 0.9rem;
     color: #333;
     text-align: justify;
     width: 33%;
@@ -155,7 +156,7 @@ footer {
 
 .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
   display: none; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
       display: block;
       flex-basis: 100%;
@@ -180,20 +181,20 @@ footer {
   .simple.page .a2a_kit.a2a_kit_size_32.a2a_floating_style.a2a_vertical_style {
     display: none; }
   .simple.page p {
-    font-size: 0.9em; }
+    font-size: 0.9rem; }
   .simple.page ul {
-    padding-left: 2em;
+    padding: 0.25em 0 0.25em 1em;
     list-style-type: none; }
     .simple.page ul li {
       margin: 0.5em;
-      font-size: 0.9em; }
+      color: #333;
+      font-size: 0.9rem; }
       .simple.page ul li::before {
         content: "+";
         color: #7cb1ea;
         display: inline-block;
         width: 1em;
-        margin-left: -1em;
-        font-size: 1.4em;
+        font-size: 1.3rem;
         position: relative;
         top: 0.1em; }
 
@@ -337,16 +338,16 @@ header {
   @media screen and (max-width: 768px) and (orientation: portrait) {
     header {
       margin-top: 10em; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     header {
       margin-top: 0; } }
   header .logo {
     margin: 0;
     transform: translateX(-0.35em);
-    font-size: 3.8em;
+    font-size: 3.5rem;
     font-weight: 200;
     font-family: 'Montserrat', monospace, sans-serif; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
       header .logo {
         font-size: 1.8em;
         margin: 1.5em 0 0.5em; } }
@@ -407,7 +408,7 @@ header {
     @media screen and (max-width: 1366px) {
       header .slogan {
         font-size: 1.2em; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
       header .slogan {
         font-size: 0.95em; } }
 
@@ -417,7 +418,7 @@ header {
     margin-top: 0;
     padding-top: 0; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .home {
     display: block;
     margin-top: 5vh; } }
@@ -433,7 +434,7 @@ header {
     .home .logo {
       font-size: 3.5em;
       margin: 0; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .home .logo {
       font-size: 1.8em;
       margin: 0; } }
@@ -451,7 +452,7 @@ header {
     .home .content p {
       font-size: 1.1em;
       line-height: 1.2em; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .home .content p {
       font-size: 1em;
       line-height: 1.1em; } }
@@ -527,7 +528,7 @@ header {
         padding: 0.5em;
         border: 1px solid #7cb1ea;
         border-left: none; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     #menu {
       width: 100%;
       transition: transform 0.35s; } }
@@ -569,15 +570,15 @@ header {
   .header .blog-title {
     margin: 0;
     display: inline-block;
-    font-size: 3em; }
+    font-size: 3rem; }
     @media screen and (max-width: 1024px) {
       .header .blog-title {
         padding: 0 10%; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
       .header .blog-title {
         margin: 0;
         padding: 0 5%;
-        font-size: 2em; } }
+        font-size: 1.3rem; } }
   .header .blog-title::before {
     content: "(";
     color: #7cb1ea; }
@@ -623,7 +624,7 @@ header {
         min-height: 3.5rem;
         margin: 1.5em 0 0.25em; }
         .page .post-container .post h2 a {
-          font-size: 0.75em; }
+          font-size: 1.3rem; }
           .page .post-container .post h2 a:hover {
             color: #7cb1ea;
             text-decoration: underline; }
@@ -637,7 +638,7 @@ header {
     flex-basis: 70%;
     cursor: pointer; }
     .page .post p {
-      font-size: 0.9em; }
+      font-size: 0.9rem; }
     .page .post .thumbnail {
       width: 100%;
       height: 15vh;
@@ -668,6 +669,8 @@ header {
           color: #7cb1ea; }
           .page .post .read-more a:hover::before, .page .post .read-more a:hover::after {
             color: #000; }
+    .page .post:last-child {
+      margin-bottom: 5em; }
   .page .post-container .post a img {
     opacity: 0.75;
     filter: grayscale(100%); }
@@ -677,7 +680,7 @@ header {
   @media screen and (max-width: 1024px) {
     .page {
       padding: 0 10%; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .page {
       padding: 0 5%;
       display: block; }
@@ -715,10 +718,10 @@ header {
   .single.post .excerpt {
     margin: 1em 0;
     padding-right: 1em;
-    font-size: 1.2em;
+    font-size: 1.3rem;
     font-weight: 600; }
     .single.post .excerpt .date {
-      font-size: 0.6em;
+      font-size: 0.7rem;
       opacity: 0.5; }
   .single.post p {
     margin: 1em 0; }
@@ -727,14 +730,14 @@ header {
     list-style-type: none; }
     .single.post ul li {
       margin: 0.5em;
-      font-size: 0.9em; }
+      font-size: 0.9rem; }
       .single.post ul li::before {
         content: "+";
         color: #7cb1ea;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
-        font-size: 1.4em;
+        font-size: 1.3rem;
         position: relative;
         top: 0.1em; }
   .single.post .credit {
@@ -742,7 +745,7 @@ header {
     text-align: center; }
     .single.post .credit span {
       color: #888;
-      font-size: 0.8em; }
+      font-size: 0.8rem; }
 
 .post-footer {
   margin-top: 2em;
@@ -753,7 +756,7 @@ header {
     padding: 1em;
     margin-right: 10px;
     text-decoration: none;
-    font-size: small;
+    font-size: 0.8rem;
     font-family: 'Julius Sans One', 'sans-serif'; }
     .post-footer .back:hover {
       text-decoration: underline; }
@@ -761,7 +764,7 @@ header {
     display: inline-block;
     padding: 1em;
     text-decoration: none;
-    font-size: small;
+    font-size: 0.7rem;
     font-family: 'Julius Sans One', 'sans-serif'; }
     .post-footer .top:hover {
       text-decoration: underline; }
@@ -819,7 +822,6 @@ header {
       display: inline; }
       .contact .send div input {
         color: #000;
-        font-size: 1.1em;
         font-weight: 600;
         border: none;
         background: none;
@@ -834,7 +836,6 @@ header {
       .contact .send div::after {
         content: " )" !important;
         color: #7cb1ea;
-        font-size: 1.1em;
         font-weight: 600; }
       .contact .send div .ajax-loader {
         display: none; }
@@ -851,14 +852,21 @@ header {
       padding: 0 5%; }
       .contact form, .contact iframe {
         flex-basis: 40%; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .contact .content {
       display: block; }
     .contact form, .contact iframe {
       padding: 0 0.5em;
       width: 100%; }
       .contact form *, .contact iframe * {
-        width: 100%; } }
+        width: 100%; }
+      .contact form .send, .contact iframe .send {
+        width: 30%;
+        text-align: center;
+        margin: 1.5em auto; }
+        .contact form .send input, .contact iframe .send input {
+          width: auto;
+          font-size: 1.3rem; } }
   .contact + footer {
     position: fixed;
     bottom: 0; }

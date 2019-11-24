@@ -63,13 +63,13 @@
         // flex-basis: 33.33%;
         margin: 1em 0;
         padding-right: 1em;
-        font-size: 1.2em;
+        font-size: $font-l;
         // font-style: italic;
         font-weight: 600;
         // text-align: right;
 
         .date {
-            font-size: 0.6em;
+            font-size: $font-xs;
             opacity: 0.5; }
     }
 
@@ -83,7 +83,7 @@
 
         li {
             margin: 0.5em;
-            font-size: 0.9em;
+            font-size: $font-m;
 
             &::before {
                 content: "+";
@@ -92,7 +92,7 @@
                 display: inline-block;
                 width: 1em;
                 margin-left: -1em;
-                font-size: 1.4em;
+                font-size: $font-l;
                 position: relative;
                 top: 0.1em;
               }
@@ -108,7 +108,7 @@
 
         span {
             color: $nac-font-3;
-            font-size: 0.8em;
+            font-size: $font-s;
         }
     }
 }
@@ -124,7 +124,7 @@
         padding: 1em;
         margin-right: 10px;
         text-decoration: none;
-        font-size: small;
+        font-size: $font-s;
         font-family: 'Julius Sans One', 'sans-serif';
 
         &:hover {
@@ -136,7 +136,7 @@
         display: inline-block;
         padding: 1em;
         text-decoration: none;
-        font-size: small;
+        font-size: $font-xs;
         font-family: 'Julius Sans One', 'sans-serif';
 
         &:hover {
@@ -157,7 +157,7 @@
             // padding: 0 20px;
         }
     
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             // display: none;
         }
     }

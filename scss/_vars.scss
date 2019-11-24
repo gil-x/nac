@@ -13,6 +13,16 @@ $padding-large: 25%;
 // $nac-color:#489bbf;
 $nac-color:#7cb1ea;
 
+// D81566 ???
+
+$font-root: 16px;
+$font-xs: 0.7rem;
+$font-s: 0.8rem;
+$font-m: 0.9rem;
+$font-l: 1.3rem;
+$font-xl: 3rem;
+$font-logo: 3.5rem;
+
 @mixin cat {
     .widgettitle {
         // display: none;

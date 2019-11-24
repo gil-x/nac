@@ -13,7 +13,7 @@
 
 html {
     scroll-behavior: smooth;
-    
+    font-size: $font-root;
 }
 
 body {
@@ -81,7 +81,7 @@ footer {
     background: $black;
     color: rgba(255,255,255, 0.75);
     text-align: center;
-    font-size: 0.8em;
+    font-size: $font-s;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.35em;
@@ -131,7 +131,7 @@ footer {
     }
 
     .content {
-        font-size: 1em;
+        font-size: $font-m;
         color: $nac-font-2;
         text-align: justify;
         width: 33%;
@@ -207,7 +207,7 @@ footer {
 .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
     display: none;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         display: block;
         flex-basis: 100%;
         text-align: center;
@@ -232,24 +232,25 @@ footer {
     @include noshare;
 
     p {
-        font-size: 0.9em;
+        font-size: $font-m;
     }
     
     ul {
-        padding-left: 2em;
+        padding: 0.25em 0 0.25em 1em;
         list-style-type: none;
 
         li {
             margin: 0.5em;
-            font-size: 0.9em;
+            color: $nac-font-2;
+            font-size: $font-m;
 
             &::before {
                 content: "+";
                 color: $nac-color;
                 display: inline-block;
                 width: 1em;
-                margin-left: -1em;
-                font-size: 1.4em;
+                // margin-left: -1em;
+                font-size: $font-l;
                 position: relative;
                 top: 0.1em;
               }
