@@ -687,6 +687,32 @@ header {
       .page .post p {
         margin: 1em 0; } }
 
+#pagination {
+  margin: 1em 0;
+  font-size: 0.8rem;
+  color: #333;
+  text-align: center; }
+  #pagination .pages {
+    color: #333; }
+    #pagination .pages .current {
+      font-weight: 600; }
+  #pagination ul {
+    list-style-type: none; }
+    #pagination ul li {
+      display: inline-block;
+      margin: 1em; }
+      #pagination ul li a:hover {
+        color: #7cb1ea; }
+      #pagination ul li.active a {
+        color: #000;
+        font-weight: 600; }
+        #pagination ul li.active a::before {
+          content: "( ";
+          color: #7cb1ea; }
+        #pagination ul li.active a::after {
+          content: " )";
+          color: #7cb1ea; }
+
 .single.post {
   margin-bottom: 5em; }
   .single.post h1 a {

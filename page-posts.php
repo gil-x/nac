@@ -6,13 +6,13 @@
 
 get_header();
 
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 $args = array(
-    'post_type' => 'post',
-    'post_status' => 'publish',
-    // 'posts_per_page' => 6,
+  'posts_per_page' => 12,
+  'paged' => $paged
 );
+$query = new WP_Query( $args );
 
-$query = new WP_Query($args);
 
 echo '<div class="header"><h1 class="blog-title">' . get_the_title() . '</h1>';
 get_sidebar();
@@ -47,6 +47,6 @@ echo '</main>';
 // test_text() ;
 // echo "<p>Aucune actualité pour l'instant...</p>";
 // pressPagination($pages ='', $range = 2) ;
-
+if (function_exists("pagination")) { pagination($query->max_num_pages); };
 
 get_footer(); ?>
