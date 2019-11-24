@@ -91,6 +91,7 @@
         // flex-basis: 70%;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 3em;
 
         @media screen and (max-width: 1024px) {
             display: block;
@@ -203,9 +204,9 @@
             }
         }
 
-        &:last-child {
-            margin-bottom: 5em;
-        }
+        // &:last-child {
+        //     margin-bottom: 5em;
+        // }
     }
 
 
@@ -237,7 +238,9 @@
 }
 
 #pagination {
-    margin: 1em 0;
+    // margin: 1em 0;
+    margin: -2em 0 1em;
+    min-height: 100px;
     font-size: $font-s;
     color: $nac-font-2;
     text-align: center;
@@ -255,7 +258,7 @@
 
         li {
             display: inline-block;
-            margin: 1em;
+            margin: 0.75em;
 
             a:hover {
                 color: $nac-color;
