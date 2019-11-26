@@ -547,10 +547,10 @@ header {
   grid-row-start: 3;
   grid-row-end: 4; }
   .customer-menu-container .title {
-    color: #7cb1ea;
+    color: #d81566;
     margin-bottom: 5px; }
   .customer-menu-container #menu-menu-espace-clients {
-    border: 1px solid #7cb1ea;
+    border: 1px solid #d81566;
     border-left: none; }
     .customer-menu-container #menu-menu-espace-clients li {
       margin: 1.2em;
@@ -581,10 +581,10 @@ header {
         font-size: 1.3rem; } }
   .header .blog-title::before {
     content: "(";
-    color: #7cb1ea; }
+    color: #d81566; }
   .header .blog-title::after {
     content: ")";
-    color: #7cb1ea; }
+    color: #d81566; }
   .header #sidebar {
     display: inline-block;
     padding: 1em;
@@ -605,7 +605,7 @@ header {
           color: #000;
           font-weight: 600; }
           .header #sidebar ul li a:hover {
-            color: #7cb1ea; }
+            color: #d81566; }
 
 .page {
   padding: 0 25%; }
@@ -662,12 +662,12 @@ header {
         display: inline-block; }
         .page .post .read-more a::before {
           content: "( ";
-          color: #7cb1ea; }
+          color: #d81566; }
         .page .post .read-more a::after {
           content: " )";
-          color: #7cb1ea; }
+          color: #d81566; }
         .page .post .read-more a:hover {
-          color: #7cb1ea; }
+          color: #d81566; }
           .page .post .read-more a:hover::before, .page .post .read-more a:hover::after {
             color: #000; }
   .page .post-container .post a img {

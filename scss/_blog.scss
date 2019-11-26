@@ -27,12 +27,12 @@
     
     .blog-title::before {
         content: "(";
-        color: $nac-color;
+        color: $nac-color2;
     }
     
     .blog-title::after {
         content: ")";
-        color: $nac-color;
+        color: $nac-color2;
     }
     
     #sidebar {
@@ -56,6 +56,7 @@
             li {
                 display: inline-block;
                 margin-right: 0.5em;
+                
                 a {
                     font-family: 'Julius Sans One', 'sans-serif';
                     font-size: $font-s;
@@ -64,7 +65,7 @@
 
                     &:hover {
                         // font-weight: 600;
-                        color: $nac-color;
+                        color: $nac-color2;
                     }
                 }
             }
@@ -187,16 +188,16 @@
 
                 &::before {
                     content: "( ";
-                    color: $nac-color;
+                    color: $nac-color2;
                 }
                 
                 &::after {
                     content: " )";
-                    color: $nac-color;
+                    color: $nac-color2;
                 }
     
                 &:hover {
-                    color: $nac-color;
+                    color: $nac-color2;
                     &::before, &::after {
                         color: $black;
                     }
