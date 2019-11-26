@@ -173,6 +173,10 @@
             color: $white;
             list-style-type: square;
             text-transform: uppercase;
+
+            a:hover {
+                color: $nac-color2;
+            }
         }
     }
 }

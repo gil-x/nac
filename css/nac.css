@@ -183,7 +183,7 @@ footer {
   .simple.page p {
     font-size: 0.9rem; }
   .simple.page ul {
-    padding: 0.25em 0 0.25em 1em;
+    padding: 0 0.25em;
     list-style-type: none; }
     .simple.page ul li {
       margin: 0.5em;
@@ -238,7 +238,8 @@ ol {
         color: #7cb1ea;
         transform: rotateZ(360deg); }
     ol li a {
-      display: inline-block; }
+      display: inline-block;
+      font-size: 0.9rem; }
       ol li a:hover {
         animation: shake-simple;
         animation-duration: 0.75s;
@@ -557,6 +558,8 @@ header {
       color: #FFF;
       list-style-type: square;
       text-transform: uppercase; }
+      .customer-menu-container #menu-menu-espace-clients li a:hover {
+        color: #d81566; }
 
 .header {
   margin: 2em 0 1em;

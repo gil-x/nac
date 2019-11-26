@@ -237,7 +237,8 @@ footer {
     }
     
     ul {
-        padding: 0.25em 0 0.25em 1em;
+        // padding: 0.25em 0 0.25em 1em;
+        padding: 0 0.25em;
         list-style-type: none;
 
         li {
@@ -324,6 +325,7 @@ ol {
 
         a {
             display: inline-block;
+            font-size: $font-m;
 
             &:hover {
                 animation: shake-simple;
