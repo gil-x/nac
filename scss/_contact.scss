@@ -4,25 +4,58 @@
     min-height: 80vh;
 
     .content {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
     }
 
-    h1, p {
-        flex-basis: 100%;
+    // h1, p {
+    //     flex-basis: 100%;
+    // }
+    // h1 {
+    //     grid-column-start: 1;
+    //     grid-column-end: 3;
+    //     grid-row-start: 1;
+    //     grid-row-end: 2;
+    // }
+    p {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
 
     form {
-        flex-basis: 50%;
-        padding: 0 2em;
+        // flex-basis: 50%;
+        padding: 0 2em 0 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
 
         label {
             font-weight: 600;
         }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
     }
 
     iframe {
-        flex-basis: 50%;
+        // flex-basis: 50%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        max-width: 100%;
+        padding: 2em 0;
     }
 
     .send {
@@ -30,10 +63,11 @@
         
         div {
             display: inline;
+            white-space: nowrap;
 
             input {
                 color: $nac-font-1;
-                // font-size: $font-l;
+                font-size: $font-m;
                 font-weight: 600;
                 border: none;
                 background: none;
@@ -42,7 +76,6 @@
                 display: inline-block;
                 position:relative;
             }
-
 
             &::before {
                 content: "( ";
