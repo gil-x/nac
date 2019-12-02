@@ -131,6 +131,14 @@ footer {
         margin-top: 5vh;
     }
 
+    h1 {
+        @media screen and (min-height: 1024px) and (max-width: 768px) {
+            // font-size: 3.8em !important;
+            // margin: 1.5em 0 0.5em;
+            margin: 2em auto 0 !important;
+        }
+    }
+
     .content {
         font-size: $font-m;
         color: $nac-font-2;
@@ -142,9 +150,22 @@ footer {
             margin: 1em auto;
             width: 75%;
         }
+
+        @media screen and (min-height: 1024px) and (max-width: 768px) {
+            // font-size: 3.8em !important;
+            // margin: 1.5em 0 0.5em;
+            margin: 0 auto 5em;
+        }
     }
 
     .social {
+
+        @media screen and (min-height: 1024px) and (max-width: 768px) {
+            // font-size: 3.8em !important;
+            // margin: 1.5em 0 0.5em;
+            margin: 2em auto !important;
+        }
+
         .social-icon {
             margin: 4em 1em;
             width: 3.5em;
@@ -168,6 +189,8 @@ footer {
                 margin: 0 0.5em;
                 width: 2.5em;
             }
+
+            
         }
         a:nth-child(1) .social-icon {
             animation-delay: 1.5s;
@@ -214,6 +237,11 @@ footer {
         text-align: center;
     }
 }
+.a2a_kit.a2a_floating_style {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
 .a2a_kit > * {
     transition: transform 0.25s, filter 0.25s;
 }
@@ -231,6 +259,10 @@ footer {
     padding: 0 $padding-large;
 
     @include noshare;
+
+    @media screen and (max-width: 1024px) {
+        padding: 0 10% !important;
+    }
 
     p {
         font-size: $font-m;

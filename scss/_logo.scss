@@ -66,6 +66,10 @@ header {
             margin: 1.5em 0 0.5em;
         }
 
+        @media screen and (min-height: 1024px) and (max-width: 768px) {
+            font-size: 2.5em !important;
+        }
+
         #plus, #new, #access, #compta {
             display: inline-block;
         }
@@ -183,6 +187,10 @@ header {
         @media screen and (max-width: 768px) {
             font-size: 1.8em;
             margin: 0;
+        }
+
+        @media screen and (min-height: 1024px) and (max-width: 768px) {
+            font-size: 3.8em !important;
         }
     }
 }

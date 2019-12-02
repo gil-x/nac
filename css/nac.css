@@ -103,6 +103,9 @@ footer {
     .home {
       padding-top: 0;
       margin-top: 5vh; } }
+  @media screen and (min-height: 1024px) and (max-width: 768px) {
+    .home h1 {
+      margin: 2em auto 0 !important; } }
   .home .content {
     font-size: 0.9rem;
     color: #333;
@@ -113,6 +116,12 @@ footer {
       .home .content {
         margin: 1em auto;
         width: 75%; } }
+    @media screen and (min-height: 1024px) and (max-width: 768px) {
+      .home .content {
+        margin: 0 auto 5em; } }
+  @media screen and (min-height: 1024px) and (max-width: 768px) {
+    .home .social {
+      margin: 2em auto !important; } }
   .home .social .social-icon {
     margin: 4em 1em;
     width: 3.5em;
@@ -162,6 +171,10 @@ footer {
       flex-basis: 100%;
       text-align: center; } }
 
+@media screen and (max-width: 768px) {
+  .a2a_kit.a2a_floating_style {
+    display: none; } }
+
 .a2a_kit > * {
   transition: transform 0.25s, filter 0.25s; }
 
@@ -180,6 +193,9 @@ footer {
     display: none; }
   .simple.page .a2a_kit.a2a_kit_size_32.a2a_floating_style.a2a_vertical_style {
     display: none; }
+  @media screen and (max-width: 1024px) {
+    .simple.page {
+      padding: 0 10% !important; } }
   .simple.page p {
     font-size: 0.9rem; }
   .simple.page ul {
@@ -352,6 +368,9 @@ header {
       header .logo {
         font-size: 1.8em;
         margin: 1.5em 0 0.5em; } }
+    @media screen and (min-height: 1024px) and (max-width: 768px) {
+      header .logo {
+        font-size: 2.5em !important; } }
     header .logo #plus, header .logo #new, header .logo #access, header .logo #compta {
       display: inline-block; }
     header .logo #plus {
@@ -439,6 +458,9 @@ header {
     .home .logo {
       font-size: 1.8em;
       margin: 0; } }
+  @media screen and (min-height: 1024px) and (max-width: 768px) {
+    .home .logo {
+      font-size: 3.8em !important; } }
 
 .home h1 {
   margin: 2em auto 0; }
@@ -612,14 +634,16 @@ header {
 
 .page {
   padding: 0 25%; }
+  @media screen and (max-width: 768px) {
+    .page {
+      padding: 0 10% !important; } }
   .page .post-container {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3em; }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
       .page .post-container {
-        display: block;
-        flex-basis: 66%; } }
+        display: block; } }
     .page .post-container .post {
       flex-basis: 33.33%;
       margin-bottom: 1em;
