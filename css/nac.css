@@ -57,7 +57,7 @@ blockquote {
 
 footer {
   padding: 0.5em 0 0.5em;
-  width: 100%;
+  width: 100vw;
   background: #000;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
@@ -67,6 +67,9 @@ footer {
   line-height: 1.35em;
   position: fixed;
   bottom: 0; }
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    footer {
+      font-size: 1.3rem; } }
   footer a {
     color: rgba(255, 255, 255, 0.75);
     font-weight: 600; }
@@ -103,9 +106,14 @@ footer {
     .home {
       padding-top: 0;
       margin-top: 5vh; } }
-  @media screen and (min-height: 1024px) and (max-width: 768px) {
-    .home h1 {
-      margin: 2em auto 0 !important; } }
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    .home {
+      width: 100%; } }
+  .home h1 {
+    white-space: nowrap; }
+    @media screen and (min-height: 1024px) and (max-width: 768px) {
+      .home h1 {
+        margin: 2em auto 0 !important; } }
   .home .content {
     font-size: 0.9rem;
     color: #333;
@@ -141,6 +149,10 @@ footer {
       .home .social .social-icon {
         margin: 0 0.5em;
         width: 2.5em; } }
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+      .home .social .social-icon {
+        margin: 60px 15px;
+        width: 10%; } }
   .home .social a:nth-child(1) .social-icon {
     animation-delay: 1.5s; }
   .home .social a:nth-child(2) .social-icon {
@@ -152,6 +164,10 @@ footer {
   .home footer {
     position: fixed;
     bottom: 0; }
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+      .home footer {
+        position: fixed !important;
+        bottom: 0; } }
 
 .content {
   margin-bottom: 5em; }
@@ -165,13 +181,13 @@ footer {
 
 .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
   display: none; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
     .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
       display: block;
       flex-basis: 100%;
       text-align: center; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (orientation: portrait) {
   .a2a_kit.a2a_floating_style {
     display: none; } }
 
@@ -248,6 +264,10 @@ ol {
     padding: 0.75em 0.5em;
     border: 1px solid #7cb1ea;
     transition: all 0.75s; }
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+      ol li {
+        flex-basis: 100%;
+        margin-bottom: 2em; } }
     ol li:hover {
       border: 1px solid #888; }
       ol li:hover::before {
@@ -256,6 +276,9 @@ ol {
     ol li a {
       display: inline-block;
       font-size: 0.9rem; }
+      @media screen and (max-width: 768px), screen and (orientation: portrait) {
+        ol li a {
+          font-size: 2.1rem; } }
       ol li a:hover {
         animation: shake-simple;
         animation-duration: 0.75s;
@@ -295,6 +318,24 @@ ol {
 .alignright {
   float: right;
   margin: 0 0 10px 10px; }
+
+@media screen and (max-width: 768px), screen and (orientation: portrait) {
+  .alignleft, .alignright {
+    width: 95%;
+    height: auto;
+    float: none;
+    display: inline-block;
+    margin: 1em auto; }
+  .wp-caption {
+    width: 100% !important;
+    text-align: center; }
+    .wp-caption .alignleft, .wp-caption .alignright {
+      width: 100%;
+      float: none;
+      margin: 1em; }
+      .wp-caption .alignleft img, .wp-caption .alignright img {
+        display: inline-block;
+        width: 100% !important; } }
 
 .aligncenter {
   display: block;
@@ -355,7 +396,7 @@ header {
   @media screen and (max-width: 768px) and (orientation: portrait) {
     header {
       margin-top: 10em; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
     header {
       margin-top: 0; } }
   header .logo {
@@ -364,10 +405,9 @@ header {
     font-size: 3.5rem;
     font-weight: 200;
     font-family: 'Montserrat', monospace, sans-serif; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
       header .logo {
-        font-size: 1.8em;
-        margin: 1.5em 0 0.5em; } }
+        margin: 1.5em 0 0; } }
     @media screen and (min-height: 1024px) and (max-width: 768px) {
       header .logo {
         font-size: 2.5em !important; } }
@@ -416,7 +456,7 @@ header {
     margin: 0;
     padding: 0 20%;
     color: #888;
-    font-size: 1em;
+    font-size: 1rem;
     font-style: italic;
     text-align: center;
     opacity: 0;
@@ -428,9 +468,9 @@ header {
     @media screen and (max-width: 1366px) {
       header .slogan {
         font-size: 1.2em; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
       header .slogan {
-        font-size: 0.95em; } }
+        font-size: 0.8rem; } }
 
 @media screen and (max-width: 1366px) {
   .home {
@@ -438,7 +478,7 @@ header {
     margin-top: 0;
     padding-top: 0; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (orientation: portrait) {
   .home {
     display: block;
     margin-top: 5vh; } }
@@ -454,10 +494,11 @@ header {
     .home .logo {
       font-size: 3.5em;
       margin: 0; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
     .home .logo {
-      font-size: 1.8em;
-      margin: 0; } }
+      margin: 0; }
+      .home .logo * {
+        font-size: 3.5rem; } }
   @media screen and (min-height: 1024px) and (max-width: 768px) {
     .home .logo {
       font-size: 3.8em !important; } }
@@ -467,6 +508,10 @@ header {
   @media screen and (max-width: 1366px) {
     .home h1 {
       margin: 1em auto 0; } }
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    .home h1 {
+      font-size: 3rem;
+      margin: 2em 0 1em; } }
 
 .home .content p {
   font-size: 1.3em;
@@ -475,10 +520,9 @@ header {
     .home .content p {
       font-size: 1.1em;
       line-height: 1.2em; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
     .home .content p {
-      font-size: 1em;
-      line-height: 1.1em; } }
+      font-size: 1.3rem; } }
 
 #burger, #close {
   top: 20px;
@@ -486,16 +530,22 @@ header {
   width: 30px;
   height: 23px;
   cursor: pointer; }
+  @media screen and (orientation: portrait) {
+    #burger, #close {
+      width: 60px;
+      height: 46px; } }
 
 #burger {
   position: fixed;
   z-index: 10;
-  background: url("../img/burger.svg"); }
+  background: url("../img/burger.svg") no-repeat;
+  background-size: contain; }
 
 #close {
   position: absolute;
   z-index: 30;
-  background: url("../img/close.svg"); }
+  background: url("../img/close.svg") no-repeat;
+  background-size: contain; }
 
 #menu {
   position: fixed;
@@ -511,6 +561,14 @@ header {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 40vh 35vh 25vh; }
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    #menu {
+      width: 100%; } }
+  #menu li a {
+    font-size: 0.9rem; }
+    @media screen and (orientation: portrait) {
+      #menu li a {
+        font-size: 2em; } }
   #menu #menu-menu-principal {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -551,7 +609,7 @@ header {
         padding: 0.5em;
         border: 1px solid #7cb1ea;
         border-left: none; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
     #menu {
       width: 100%;
       transition: transform 0.35s; } }
@@ -592,6 +650,9 @@ header {
   @media screen and (max-width: 1024px) {
     .header {
       padding: 0 10%; } }
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    .header {
+      flex-wrap: wrap; } }
   .header .blog-title {
     margin: 0;
     display: inline-block;
@@ -599,11 +660,11 @@ header {
     @media screen and (max-width: 1024px) {
       .header .blog-title {
         padding: 0 10%; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
       .header .blog-title {
-        margin: 0;
+        margin: 1.5em;
         padding: 0 5%;
-        font-size: 1.3rem; } }
+        flex-basis: 100%; } }
   .header .blog-title::before {
     content: "(";
     color: #d81566; }
@@ -614,13 +675,29 @@ header {
     display: inline-block;
     padding: 1em;
     margin-right: 10px; }
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+      .header #sidebar {
+        flex-basis: 100%;
+        text-align: center; } }
     .header #sidebar .widgettitle {
       color: #888;
       font-size: 0.8rem;
       font-weight: 600;
       margin-bottom: 0.5em; }
+      @media screen and (max-width: 768px), screen and (orientation: portrait) {
+        .header #sidebar .widgettitle {
+          font-size: 1.3rem;
+          flex-basis: 25%;
+          display: inline-block;
+          float: left;
+          margin: 0; }
+          .header #sidebar .widgettitle::after {
+            content: " : "; } }
     .header #sidebar ul {
       list-style-type: none; }
+      @media screen and (max-width: 768px), screen and (orientation: portrait) {
+        .header #sidebar ul {
+          flex-basis: 60%; } }
       .header #sidebar ul li {
         display: inline-block;
         margin-right: 0.5em; }
@@ -629,19 +706,23 @@ header {
           font-size: 0.8rem;
           color: #000;
           font-weight: 600; }
+          @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            .header #sidebar ul li a {
+              margin: 0 1em;
+              font-size: 1.3rem; } }
           .header #sidebar ul li a:hover {
             color: #d81566; }
 
 .page {
   padding: 0 25%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
     .page {
       padding: 0 10% !important; } }
   .page .post-container {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3em; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
       .page .post-container {
         display: block; } }
     .page .post-container .post {
@@ -687,6 +768,9 @@ header {
         transition: all 0.25s;
         border-radius: 1px;
         display: inline-block; }
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+          .page .post .read-more a {
+            font-size: 2.1rem; } }
         .page .post .read-more a::before {
           content: "( ";
           color: #d81566; }
@@ -697,6 +781,9 @@ header {
           color: #d81566; }
           .page .post .read-more a:hover::before, .page .post .read-more a:hover::after {
             color: #000; }
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+      .page .post:last-child {
+        margin-bottom: 8em; } }
   .page .post-container .post a img {
     opacity: 0.75;
     filter: grayscale(100%); }
@@ -705,8 +792,9 @@ header {
     filter: grayscale(0%); }
   @media screen and (max-width: 1024px) {
     .page {
-      padding: 0 10%; } }
-  @media screen and (max-width: 768px) {
+      padding: 0 10%;
+      width: 100%; } }
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
     .page {
       padding: 0 5%;
       display: block; }
@@ -923,7 +1011,7 @@ header {
       padding: 0 5%; }
       .contact form, .contact iframe {
         flex-basis: 40%; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px), screen and (orientation: portrait) {
     .contact .content {
       display: block; }
     .contact form, .contact iframe {

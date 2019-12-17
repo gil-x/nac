@@ -38,16 +38,16 @@ header {
         margin-top: 10em;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
         margin-top: 0;
 
     }
-
     
     .logo {
         margin: 0;
         transform: translateX(-0.35em);
         // font-size: 3.8em;
+
         font-size: $font-logo;
         font-weight: 200;
         font-family: 'Montserrat', monospace, sans-serif;
@@ -61,9 +61,14 @@ header {
         // }
 
 
-        @media screen and (max-width: 768px) {
-            font-size: 1.8em;
-            margin: 1.5em 0 0.5em;
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+
+            * {
+                // font-size: 4rem;
+            }
+            // font-size: 1.8em;
+            // margin: 1.5em 0 0.5em;
+            margin: 1.5em 0 0;
         }
 
         @media screen and (min-height: 1024px) and (max-width: 768px) {
@@ -131,7 +136,7 @@ header {
         margin: 0;
         padding: 0 20%;
         color: $nac-font-3;
-        font-size: 1em;
+        font-size: 1rem;
         font-style: italic;
         text-align: center;
         opacity: 0;
@@ -145,8 +150,8 @@ header {
             font-size: 1.2em;
         }
 
-        @media screen and (max-width: 768px) {
-            font-size: 0.95em;
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            font-size: $font-s;
         }
     }
 }
@@ -161,11 +166,8 @@ header {
         // margin-top: 5vh;
     }
 
-    @media screen and (max-width: 1366px) {
-        
-    }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
         display: block;
         margin-top: 5vh;
     }
@@ -184,9 +186,12 @@ header {
             margin: 0;
         }
 
-        @media screen and (max-width: 768px) {
-            font-size: 1.8em;
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
             margin: 0;
+
+            * {
+                font-size: $font-logo;
+            }
         }
 
         @media screen and (min-height: 1024px) and (max-width: 768px) {
@@ -202,6 +207,11 @@ header {
         @media screen and (max-width: 1366px) {
             margin: 1em auto 0;
         }
+
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            font-size: $font-xl;
+            margin: 2em 0 1em;
+        }
     }
 
     .content p {
@@ -213,9 +223,9 @@ header {
             line-height: 1.2em;
         }
 
-        @media screen and (max-width: 768px) {
-            font-size: 1em;
-            line-height: 1.1em;
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            font-size: $font-l;
+            // line-height: 1.1em;
         }
     }
 }

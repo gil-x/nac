@@ -9,6 +9,10 @@
         padding: 0 10%;
     }
 
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+        flex-wrap: wrap;
+    }
+
     .blog-title {
         margin: 0;
         display: inline-block;
@@ -18,10 +22,11 @@
             padding: 0 10%;
         }
         
-        @media screen and (max-width: 768px) {
-            margin: 0;
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            margin: 1.5em;
             padding: 0 5%;
-            font-size: $font-l;
+            // font-size: $font-mxl;
+            flex-basis: 100%;
         }
     }
     
@@ -42,16 +47,48 @@
         // border-right: none;
         margin-right: 10px;
 
+        
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            flex-basis: 100%;
+            text-align: center;
+            
+
+            // .aside {
+            //     display: flex !important;
+            //     flex-wrap: nowrap;
+            // }
+    
+        }
+
         .widgettitle {
             // display: none;
             color: $nac-font-3;
             font-size: $font-s;
             font-weight: 600;
             margin-bottom: 0.5em;
+
+            @media screen and (max-width: 768px), screen and (orientation: portrait) {
+                // margin: 0 1em;
+                font-size: $font-l;
+                flex-basis: 25%;
+                display: inline-block;
+                float: left;
+                margin: 0;
+
+                &::after {
+                    content: " : ";
+                }
+            }
         }
     
         ul {
             list-style-type: none;
+
+            @media screen and (max-width: 768px), screen and (orientation: portrait) {
+                // margin: 0 1em;
+                // font-size: $font-l;
+                flex-basis: 60%;
+            }
     
             li {
                 display: inline-block;
@@ -62,6 +99,11 @@
                     font-size: $font-s;
                     color: $nac-font-1;
                     font-weight: 600;
+
+                    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+                        margin: 0 1em;
+                        font-size: $font-l;
+                    }
 
                     &:hover {
                         // font-weight: 600;
@@ -75,7 +117,7 @@
             // padding: 0 20px;
         }
     
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
             // display: none;
         }
     }
@@ -88,7 +130,7 @@
     // display: flex;
     // flex-wrap: wrap;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
         padding: 0 10% !important;
     }
 
@@ -103,7 +145,7 @@
             // flex-basis: 66%;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
             display: block;
         }
 
@@ -190,6 +232,10 @@
                 border-radius: 1px;
                 display: inline-block;
 
+                @media screen and (max-width: 768px), screen and (orientation: portrait) {
+                    font-size: $font-mxl;
+                }
+
                 &::before {
                     content: "( ";
                     color: $nac-color2;
@@ -209,9 +255,11 @@
             }
         }
 
-        // &:last-child {
-        //     margin-bottom: 5em;
-        // }
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            &:last-child {
+                margin-bottom: 8em;
+            }
+        }
     }
 
 
@@ -228,10 +276,10 @@
     @media screen and (max-width: 1024px) {
         padding: 0 10%;
         // display: flex;
-        
+        width: 100%;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
         padding: 0 5%;
         display: block;
 

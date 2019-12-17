@@ -20,8 +20,14 @@ $font-xs: 0.7rem;
 $font-s: 0.8rem;
 $font-m: 0.9rem;
 $font-l: 1.3rem;
+$font-mxl: 2.1rem;
 $font-xl: 3rem;
 $font-logo: 3.5rem;
+
+@media screen and (max-width: 768px), screen and (orientation: portrait) {
+    $font-root: large;
+    // $font-logo: 10vw;
+}
 
 @mixin cat {
     .widgettitle {

@@ -78,7 +78,8 @@ blockquote {
 footer {
     // margin-top: 3em;
     padding: 0.5em 0 0.5em;
-    width: 100%;
+    width: 100vw;
+    // max-width: 100%;
     background: $black;
     color: rgba(255,255,255, 0.75);
     text-align: center;
@@ -88,6 +89,14 @@ footer {
     line-height: 1.35em;
     position: fixed;
     bottom: 0;
+
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+        font-size: $font-l;
+    }
+
+    // @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    //     position: static;
+    // }
 
     a {
         color: rgba(255,255,255, 0.75);
@@ -131,7 +140,13 @@ footer {
         margin-top: 5vh;
     }
 
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+        width: 100%;
+    }
+
     h1 {
+        white-space: nowrap;
+
         @media screen and (min-height: 1024px) and (max-width: 768px) {
             // font-size: 3.8em !important;
             // margin: 1.5em 0 0.5em;
@@ -190,6 +205,11 @@ footer {
                 width: 2.5em;
             }
 
+            @media screen and (max-width: 768px), screen and (orientation: portrait) {
+                margin: 60px 15px;
+                width: 10%;
+            }
+
             
         }
         a:nth-child(1) .social-icon {
@@ -210,6 +230,11 @@ footer {
     footer {
         position: fixed;
         bottom: 0;
+
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            position: fixed !important;
+            bottom: 0;
+        }
     }
 }
 
@@ -231,14 +256,14 @@ footer {
 .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {
     display: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
         display: block;
         flex-basis: 100%;
         text-align: center;
     }
 }
 .a2a_kit.a2a_floating_style {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px), screen and (orientation: portrait) {
         display: none;
     }
 }
@@ -346,6 +371,11 @@ ol {
         border: 1px solid $nac-color;
         transition: all 0.75s;
 
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            flex-basis: 100%;
+            margin-bottom: 2em;
+        }
+
         &:hover {
             border: 1px solid $nac-font-3;
 
@@ -358,6 +388,10 @@ ol {
         a {
             display: inline-block;
             font-size: $font-m;
+
+            @media screen and (max-width: 768px), screen and (orientation: portrait) {
+                font-size: $font-mxl;
+            }
 
             &:hover {
                 animation: shake-simple;
@@ -410,12 +444,44 @@ ol {
 .alignleft {
     float: left;
     margin: 0 10px 10px 0;
+
+
 }
 
 .alignright {
     float: right;
     margin: 0 0 10px 10px;
 }
+
+@media screen and (max-width: 768px), screen and (orientation: portrait) {
+
+    .alignleft, .alignright {
+        width: 95%;
+        height: auto;
+        float: none;
+        display: inline-block;
+        margin: 1em auto;
+    }
+    .wp-caption {
+        width: 100% !important;
+        text-align: center;
+
+        .alignleft, .alignright {
+            width: 100%;
+            float: none;
+            margin: 1em;
+
+            img {
+                
+                display: inline-block;
+                width: 100% !important;
+            }
+        }
+    }
+    
+    // $font-logo: 10vw;
+}
+
 
 .aligncenter {
     display: block;
