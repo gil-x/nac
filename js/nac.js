@@ -9,15 +9,15 @@ const menu = document.getElementById('menu');
 const burger = document.getElementById('burger');
 
 document.addEventListener("click", function(event) {
-    console.log(event.target);
+    // console.log(event.target);
     
     if (event.target.classList.contains('menu-open')) {
-        console.log('menu-open');
+        // console.log('menu-open');
         event.preventDefault();
         toggleMenu();
     }
     else if (event.target.classList.contains('menu-close')) {
-        console.log('menu-close');
+        // console.log('menu-close');
         event.preventDefault();
         toggleMenu();
     }
@@ -52,9 +52,9 @@ if (categoriesWidget) {
     categoryAllLi.appendChild(categoryAllA);
     categoriesWidget.appendChild(categoryAllLi);
 }
-else {
-    throw new Error('Categories widget not found.');
-}
+// else {
+//     throw new Error('Categories widget not found.');
+// }
 
 
 // var pythonElt = document.createElement("li"); // Création d'un élément li

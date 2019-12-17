@@ -79,7 +79,8 @@
 
             &::before {
                 content: "( ";
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-logo;
                 // $font-size: 1.1em;
                 $font-size: $font-l;
                 font-weight: 600;
@@ -87,7 +88,8 @@
             
             &::after {
                 content: " )" !important;
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-logo;
                 $font-size: $font-l;
                 font-weight: 600;
             }
@@ -98,7 +100,8 @@
 
             &:hover {
                 input {
-                    color: $nac-color;
+                    // color: $nac-color;
+                    color: $kadra-logo;
                 }
 
                 &::before, &::after {

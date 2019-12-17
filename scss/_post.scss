@@ -14,16 +14,19 @@
 
             &::before {
                 content: "(";
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-logo;
             }
             
             &::after {
                 content: ")";
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-logo;
             }
 
             &:hover {
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-logo;
                 // text-decoration: underline;
                 // transform: rotateY(360deg);
                 &::before, &::after {
@@ -87,7 +90,8 @@
 
             &::before {
                 content: "+";
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-logo;
                 // font-weight: bold;
                 display: inline-block;
                 width: 1em;

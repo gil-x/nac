@@ -25,7 +25,8 @@
 }
 @keyframes colorchange {
     0% { color: inherit; }
-    100% { color: $nac-color;}
+    // 100% { color: $nac-color;}
+    100% { color: $kadra-logo;}
 }
 
 
@@ -126,7 +127,8 @@ header {
 
             &:hover * {
                 transition-delay: 0.5s;
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-logo;
             }
         }
     }
@@ -135,7 +137,8 @@ header {
         // margin: 0.5em 0 2em;
         margin: 0;
         padding: 0 20%;
-        color: $nac-font-3;
+        // color: $nac-font-3;
+        color: $kadra-slogan;
         font-size: 1rem;
         font-style: italic;
         text-align: center;

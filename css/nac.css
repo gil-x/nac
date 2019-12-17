@@ -18,7 +18,7 @@ html {
     background: none; } }
 
 #wpadminbar .display-name {
-  color: #7cb1ea; }
+  color: #10ADD1; }
 
 h1 {
   margin: 3em auto 1em;
@@ -29,7 +29,7 @@ h1 {
 
 h2, h3, h4 {
   font-weight: 600;
-  color: #7cb1ea;
+  color: #0E8EAC;
   margin: 1.5em 0 0.75em; }
 
 h1, h2, h3, h4 {
@@ -45,15 +45,18 @@ p {
   p a {
     font-weight: 600; }
     p a:hover {
-      color: #7cb1ea; }
+      color: #D81566; }
 
 blockquote {
-  border-left: 7px double #7cb1ea;
+  border-left: 7px double #D81566;
   margin: 0.5em 1em 0 0.5em;
   padding: 0 1em; }
   blockquote p {
     margin: 0;
     font-style: italic; }
+
+.single.page {
+  margin-bottom: 3em; }
 
 footer {
   padding: 0.5em 0 0.5em;
@@ -74,7 +77,7 @@ footer {
     color: rgba(255, 255, 255, 0.75);
     font-weight: 600; }
     footer a:hover {
-      color: #7cb1ea; }
+      color: #D81566; }
   footer .copyright {
     color: #FFF;
     opacity: 0.5;
@@ -223,7 +226,7 @@ footer {
       font-size: 0.9rem; }
       .simple.page ul li::before {
         content: "+";
-        color: #7cb1ea;
+        color: #D81566;
         display: inline-block;
         width: 1em;
         font-size: 1.3rem;
@@ -250,7 +253,7 @@ footer {
   40%, 60% {
     transform: translateX(1px); }
   100% {
-    color: #7cb1ea; } }
+    color: #D81566; } }
 
 ol {
   list-style-type: none;
@@ -258,11 +261,11 @@ ol {
   flex-wrap: wrap;
   width: 100%; }
   ol li {
-    display: inline-block;
+    display: inline;
     margin: 0.25%;
     flex-basis: 49.5%;
     padding: 0.75em 0.5em;
-    border: 1px solid #7cb1ea;
+    border: 1px solid #D81566;
     transition: all 0.75s; }
     @media screen and (max-width: 768px), screen and (orientation: portrait) {
       ol li {
@@ -271,10 +274,10 @@ ol {
     ol li:hover {
       border: 1px solid #888; }
       ol li:hover::before {
-        color: #7cb1ea;
+        color: #D81566;
         transform: rotateZ(360deg); }
     ol li a {
-      display: inline-block;
+      display: inline;
       font-size: 0.9rem; }
       @media screen and (max-width: 768px), screen and (orientation: portrait) {
         ol li a {
@@ -287,13 +290,13 @@ ol {
     ol li::before {
       content: "+";
       display: inline-block;
-      margin: 5px;
+      margin: 5px 5px 5px 0;
       transition: all 0.75s; }
 
 .anchor-menu {
   margin: 1em 0;
   width: 100%;
-  border-bottom: 1px solid #7cb1ea; }
+  border-bottom: 1px solid #D81566; }
   .anchor-menu p {
     display: inline; }
     .anchor-menu p::before {
@@ -309,7 +312,7 @@ ol {
       font-weight: 300; }
       .anchor-menu p a:hover {
         color: #000;
-        border-bottom: 4px solid #7cb1ea; }
+        border-bottom: 4px solid #D81566; }
 
 .alignleft {
   float: left;
@@ -389,7 +392,7 @@ ol {
   0% {
     color: inherit; }
   100% {
-    color: #7cb1ea; } }
+    color: #10ADD1; } }
 
 header {
   text-align: center; }
@@ -451,11 +454,11 @@ header {
       text-decoration: none; }
       header .logo a:hover * {
         transition-delay: 0.5s;
-        color: #7cb1ea; }
+        color: #10ADD1; }
   header .slogan {
     margin: 0;
     padding: 0 20%;
-    color: #888;
+    color: #CECECE;
     font-size: 1rem;
     font-style: italic;
     text-align: center;
@@ -560,7 +563,7 @@ header {
   text-align: left;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 40vh 35vh 25vh; }
+  grid-template-rows: 50vh 47.5vh 1.5em; }
   @media screen and (max-width: 768px), screen and (orientation: portrait) {
     #menu {
       width: 100%; } }
@@ -597,7 +600,7 @@ header {
     transition: color 0.25s, border 0.5s, padding 0.35s;
     text-decoration: none; }
     #menu a:hover {
-      color: #7cb1ea;
+      color: #10ADD1;
       text-decoration: underline; }
   #menu .box {
     margin-top: 3em; }
@@ -607,7 +610,7 @@ header {
       border-left: none; }
       #menu .box a:hover {
         padding: 0.5em;
-        border: 1px solid #7cb1ea;
+        border: 1px solid #D81566;
         border-left: none; }
   @media screen and (max-width: 768px), screen and (orientation: portrait) {
     #menu {
@@ -625,13 +628,14 @@ header {
   margin-bottom: 1.75em;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4; }
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: end; }
   .customer-menu-container .title {
-    color: #d81566;
+    color: #D81566;
     margin-bottom: 5px; }
   .customer-menu-container #menu-menu-espace-clients {
-    border: 1px solid #d81566;
+    border: 1px solid #D81566;
     border-left: none; }
     .customer-menu-container #menu-menu-espace-clients li {
       margin: 1.2em;
@@ -639,7 +643,7 @@ header {
       list-style-type: square;
       text-transform: uppercase; }
       .customer-menu-container #menu-menu-espace-clients li a:hover {
-        color: #d81566; }
+        color: #D81566; }
 
 .header {
   margin: 2em 0 1em;
@@ -686,18 +690,12 @@ header {
       margin-bottom: 0.5em; }
       @media screen and (max-width: 768px), screen and (orientation: portrait) {
         .header #sidebar .widgettitle {
-          font-size: 1.3rem;
-          flex-basis: 25%;
-          display: inline-block;
-          float: left;
-          margin: 0; }
+          margin: 0 1em 1em;
+          font-size: 1.3rem; }
           .header #sidebar .widgettitle::after {
             content: " : "; } }
     .header #sidebar ul {
       list-style-type: none; }
-      @media screen and (max-width: 768px), screen and (orientation: portrait) {
-        .header #sidebar ul {
-          flex-basis: 60%; } }
       .header #sidebar ul li {
         display: inline-block;
         margin-right: 0.5em; }
@@ -837,12 +835,12 @@ header {
       transition: all 0.25s; }
     .single.post h1 a::before {
       content: "(";
-      color: #7cb1ea; }
+      color: #10ADD1; }
     .single.post h1 a::after {
       content: ")";
-      color: #7cb1ea; }
+      color: #10ADD1; }
     .single.post h1 a:hover {
-      color: #7cb1ea; }
+      color: #10ADD1; }
       .single.post h1 a:hover::before, .single.post h1 a:hover::after {
         color: #000; }
   @media screen and (max-width: 1024px) {
@@ -874,7 +872,7 @@ header {
       font-size: 0.9rem; }
       .single.post ul li::before {
         content: "+";
-        color: #7cb1ea;
+        color: #10ADD1;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
@@ -990,16 +988,16 @@ header {
         position: relative; }
       .contact .send div::before {
         content: "( ";
-        color: #7cb1ea;
+        color: #10ADD1;
         font-weight: 600; }
       .contact .send div::after {
         content: " )" !important;
-        color: #7cb1ea;
+        color: #10ADD1;
         font-weight: 600; }
       .contact .send div .ajax-loader {
         display: none; }
       .contact .send div:hover input {
-        color: #7cb1ea; }
+        color: #10ADD1; }
       .contact .send div:hover::before, .contact .send div:hover::after {
         color: #000; }
   .contact .addtoany_share_save_container.addtoany_content.addtoany_content_bottom {

@@ -23,7 +23,8 @@ body {
 }
 
 #wpadminbar .display-name {
-    color: $nac-color;
+    // color: $nac-color;
+    color: $kadra-logo;
 }
 
 h1 {
@@ -37,7 +38,8 @@ h1 {
 
 h2, h3, h4 {
     font-weight: 600;
-    color: $nac-color;
+    // color: $nac-color;
+    color: $kadra-title;
     margin: 1.5em 0 0.75em;
 }
 
@@ -59,13 +61,15 @@ p {
         font-weight: 600;
 
         &:hover {
-            color: $nac-color;
+            // color: $nac-color;
+            color: $kadra-blog;
         }
     }
 }
 
 blockquote {
-    border-left: 7px double $nac-color;
+    // border-left: 7px double $nac-color;
+    border-left: 7px double $kadra-blog;
     margin: 0.5em 1em 0 0.5em;
     padding: 0 1em;
 
@@ -73,6 +77,10 @@ blockquote {
         margin: 0;
         font-style: italic;
     }
+}
+
+.single.page {
+    margin-bottom: 3em;
 }
 
 footer {
@@ -103,7 +111,8 @@ footer {
         font-weight: 600;
 
         &:hover {
-            color: $nac-color;
+            // color: $nac-color;
+            color: $kadra-blog;
         }
     }
 
@@ -305,7 +314,8 @@ footer {
 
             &::before {
                 content: "+";
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-blog;
                 display: inline-block;
                 width: 1em;
                 // margin-left: -1em;
@@ -353,7 +363,8 @@ footer {
 }
 
 100% {
-    color: $nac-color;
+    // color: $nac-color;
+    color: $kadra-blog;
     }
 }
 
@@ -364,11 +375,12 @@ ol {
     width: 100%;
 
     li {
-        display: inline-block;
+        display: inline;
         margin: 0.25%;
         flex-basis: 49.5%;
         padding: 0.75em 0.5em;
-        border: 1px solid $nac-color;
+        // border: 1px solid $nac-color;
+        border: 1px solid $kadra-blog;;
         transition: all 0.75s;
 
         @media screen and (max-width: 768px), screen and (orientation: portrait) {
@@ -380,13 +392,14 @@ ol {
             border: 1px solid $nac-font-3;
 
             &::before {
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-blog;
                 transform: rotateZ(360deg);
             }
         }
 
         a {
-            display: inline-block;
+            display: inline;
             font-size: $font-m;
 
             @media screen and (max-width: 768px), screen and (orientation: portrait) {
@@ -404,7 +417,7 @@ ol {
         &::before {
             content: "+";
             display: inline-block;
-            margin: 5px;
+            margin: 5px 5px 5px 0;
             transition: all 0.75s;
         }
     }
@@ -413,7 +426,8 @@ ol {
 .anchor-menu {
     margin: 1em 0;
     width: 100%;
-    border-bottom: 1px solid $nac-color;
+    // border-bottom: 1px solid $nac-color;
+    border-bottom: 1px solid $kadra-blog;
 
     p {
         display: inline;
@@ -434,8 +448,8 @@ ol {
 
             &:hover {
                 color: $nac-font-1;
-                border-bottom: 4px solid $nac-color;
-                
+                // border-bottom: 4px solid $nac-color;
+                border-bottom: 4px solid $kadra-blog;
             }
         }
     }
