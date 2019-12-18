@@ -6,16 +6,16 @@
   color: #000;
   font-family: 'Montserrat', 'Sans-Serif'; }
 
-*, *:before, *:after {
-  box-sizing: border-box; }
-
 html {
   scroll-behavior: smooth;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 100vw !important; }
 
-@media screen and (max-width: 1024px) {
-  body {
-    background: none; } }
+body {
+  width: 100vw !important; }
+  @media screen and (max-width: 1024px) {
+    body {
+      background: none; } }
 
 #wpadminbar .display-name {
   color: #10ADD1; }
@@ -40,8 +40,7 @@ h1, h2, h3, h4 {
 p {
   margin: 1em 0;
   color: #333;
-  text-align: justify;
-  line-height: 1.4em; }
+  text-align: justify; }
   p a {
     font-weight: 600; }
     p a:hover {
@@ -60,7 +59,8 @@ blockquote {
 
 footer {
   padding: 0.5em 0 0.5em;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   background: #000;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
@@ -266,6 +266,7 @@ ol {
     flex-basis: 49.5%;
     padding: 0.75em 0.5em;
     border: 1px solid #D81566;
+    box-sizing: border-box;
     transition: all 0.75s; }
     @media screen and (max-width: 768px), screen and (orientation: portrait) {
       ol li {
@@ -473,7 +474,7 @@ header {
         font-size: 1.2em; } }
     @media screen and (max-width: 768px), screen and (orientation: portrait) {
       header .slogan {
-        font-size: 0.8rem; } }
+        font-size: 0.7rem; } }
 
 @media screen and (max-width: 1366px) {
   .home {
@@ -726,7 +727,8 @@ header {
     .page .post-container .post {
       flex-basis: 33.33%;
       margin-bottom: 1em;
-      padding: 0.5em; }
+      padding: 0.5em;
+      box-sizing: border-box; }
       .page .post-container .post h2 {
         min-height: 3.5rem;
         margin: 1.5em 0 0.25em; }

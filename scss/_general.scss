@@ -7,16 +7,18 @@
     font-family: 'Montserrat', 'Sans-Serif';
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
-}
+// *, *:before, *:after {
+//     box-sizing: border-box;
+// }
 
 html {
     scroll-behavior: smooth;
     font-size: $font-root;
+    width: 100vw !important;
 }
 
 body {
+    width: 100vw !important;
     @media screen and (max-width: 1024px) {
         background: none;
     }
@@ -55,7 +57,7 @@ p {
     margin: 1em 0;
     color: $nac-font-2;
     text-align: justify;
-    line-height: 1.4em;
+    // line-height: 1.4em;
 
     a {
         font-weight: 600;
@@ -86,8 +88,8 @@ blockquote {
 footer {
     // margin-top: 3em;
     padding: 0.5em 0 0.5em;
-    width: 100vw;
-    // max-width: 100%;
+    width: 100%;
+    max-width: 100%;
     background: $black;
     color: rgba(255,255,255, 0.75);
     text-align: center;
@@ -380,7 +382,8 @@ ol {
         flex-basis: 49.5%;
         padding: 0.75em 0.5em;
         // border: 1px solid $nac-color;
-        border: 1px solid $kadra-blog;;
+        border: 1px solid $kadra-blog;
+        box-sizing: border-box;
         transition: all 0.75s;
 
         @media screen and (max-width: 768px), screen and (orientation: portrait) {
@@ -503,4 +506,7 @@ ol {
     max-width: 100%;
     height: auto;
 }
-   
+ 
+// #wpadminbar {
+//     display: none;
+// }
