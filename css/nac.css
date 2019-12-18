@@ -671,10 +671,10 @@ header {
         flex-basis: 100%; } }
   .header .blog-title::before {
     content: "(";
-    color: #d81566; }
+    color: #D81566; }
   .header .blog-title::after {
     content: ")";
-    color: #d81566; }
+    color: #D81566; }
   .header #sidebar {
     display: inline-block;
     padding: 1em;
@@ -709,7 +709,7 @@ header {
               margin: 0 1em;
               font-size: 1.3rem; } }
           .header #sidebar ul li a:hover {
-            color: #d81566; }
+            color: #D81566; }
 
 .page {
   padding: 0 25%; }
@@ -733,7 +733,7 @@ header {
         .page .post-container .post h2 a {
           font-size: 1.3rem; }
           .page .post-container .post h2 a:hover {
-            color: #7cb1ea;
+            color: #D81566;
             text-decoration: underline; }
       @media screen and (max-width: 1366px) {
         .page .post-container .post {
@@ -771,12 +771,12 @@ header {
             font-size: 2.1rem; } }
         .page .post .read-more a::before {
           content: "( ";
-          color: #d81566; }
+          color: #D81566; }
         .page .post .read-more a::after {
           content: " )";
-          color: #d81566; }
+          color: #D81566; }
         .page .post .read-more a:hover {
-          color: #d81566; }
+          color: #D81566; }
           .page .post .read-more a:hover::before, .page .post .read-more a:hover::after {
             color: #000; }
     @media screen and (max-width: 768px), screen and (orientation: portrait) {
@@ -815,16 +815,16 @@ header {
       display: inline-block;
       margin: 0.75em; }
       #pagination ul li a:hover {
-        color: #7cb1ea; }
+        color: #D81566; }
       #pagination ul li.active a {
         color: #000;
         font-weight: 600; }
         #pagination ul li.active a::before {
           content: "( ";
-          color: #7cb1ea; }
+          color: #D81566; }
         #pagination ul li.active a::after {
           content: " )";
-          color: #7cb1ea; }
+          color: #D81566; }
 
 .single.post {
   margin-bottom: 5em; }
@@ -927,7 +927,7 @@ header {
           color: #000;
           font-weight: 600; }
           .post-footer #sidebar ul li a:hover {
-            color: #7cb1ea; }
+            color: #D81566; }
         .post-footer #sidebar ul li::before {
           content: none; }
     @media screen and (max-width: 768px) {

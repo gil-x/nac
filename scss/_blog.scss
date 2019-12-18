@@ -32,12 +32,14 @@
     
     .blog-title::before {
         content: "(";
-        color: $nac-color2;
+        // color: $nac-color2;
+        color: $kadra-blog;
     }
     
     .blog-title::after {
         content: ")";
-        color: $nac-color2;
+        // color: $nac-color2;
+        color: $kadra-blog;
     }
     
     #sidebar {
@@ -107,7 +109,8 @@
 
                     &:hover {
                         // font-weight: 600;
-                        color: $nac-color2;
+                        // color: $nac-color2;
+                        color: $kadra-blog;
                     }
                 }
             }
@@ -162,7 +165,8 @@
                     font-size: $font-l;
 
                     &:hover {
-                        color: $nac-color;
+                        // color: $nac-color;
+                        color: $kadra-blog;
                         text-decoration: underline;
                     }
                 }
@@ -238,16 +242,19 @@
 
                 &::before {
                     content: "( ";
-                    color: $nac-color2;
+                    // color: $nac-color2;
+                    color: $kadra-blog;
                 }
                 
                 &::after {
                     content: " )";
-                    color: $nac-color2;
+                    // color: $nac-color2;
+                    color: $kadra-blog;
                 }
     
                 &:hover {
-                    color: $nac-color2;
+                    // color: $nac-color2;
+                    color: $kadra-blog;
                     &::before, &::after {
                         color: $black;
                     }
@@ -316,7 +323,8 @@
             margin: 0.75em;
 
             a:hover {
-                color: $nac-color;
+                // color: $nac-color;
+                color: $kadra-blog;
             }
 
             &.active a {
@@ -327,12 +335,14 @@
                 // padding: 0.35em 0.65em;
                 &::before {
                     content: "( ";
-                    color: $nac-color;
+                    // color: $nac-color;
+                    color: $kadra-blog;
                 }
                 
                 &::after {
                     content: " )";
-                    color: $nac-color;
+                    // color: $nac-color;
+                    color: $kadra-blog;
                 }
             }
         }

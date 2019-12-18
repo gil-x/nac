@@ -11,8 +11,8 @@ $padding-large: 25%;
 // $nac-color: #05b6bc;
 // $nac-color: #c39f76;
 // $nac-color:#489bbf;
-$nac-color:#7cb1ea;
-$nac-color2: #d81566;
+// $nac-color:#7cb1ea;
+// $nac-color2: #d81566;
 // D81566 ???
 
 $kadra-logo: #10ADD1;
@@ -59,7 +59,7 @@ $font-logo: 3.5rem;
 
                 &:hover {
                     // font-weight: 600;
-                    color: $nac-color;
+                    color: $kadra-blog;
                 }
             }
             &::before {
