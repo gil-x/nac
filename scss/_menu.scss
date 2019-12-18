@@ -6,12 +6,12 @@
     cursor: pointer;
 
     // @media screen and (max-width: 768px), screen and (orientation: portrait) {
-    @media screen and (orientation: portrait) {
-        // width: 15vw;
-        // height: 11,5vh;
-        width: 60px;
-        height: 46px;
-    }
+    // @media screen and (orientation: portrait) {
+    //     // width: 15vw;
+    //     // height: 11,5vh;
+    //     width: 60px;
+    //     height: 46px;
+    // }
 }
 
 #burger {
@@ -45,15 +45,17 @@
     // grid-template-rows: 40vh 35vh 25vh;
     grid-template-rows: 50vh 47.5vh 1.5em;
 
-    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    @media screen and (max-width: 768px) {
+    // @media screen and (max-width: 768px), screen and (orientation: portrait) {
         width: 100%;
+        padding: 2em;
     }
 
     li a {
         font-size: $font-m;
 
         @media screen and (orientation: portrait) {
-            font-size: 2em;
+            font-size: $font-s;
         }
     }
 

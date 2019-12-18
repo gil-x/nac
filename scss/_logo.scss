@@ -25,7 +25,6 @@
 }
 @keyframes colorchange {
     0% { color: inherit; }
-    // 100% { color: $nac-color;}
     100% { color: $kadra-logo;}
 }
 
@@ -34,46 +33,22 @@ header {
     text-align: center;
 
     @media screen and (max-width: 768px) and (orientation: portrait) {
-        // margin: 15em 0 0.5em;
-        // background: orange;
         margin-top: 10em;
     }
 
     @media screen and (max-width: 768px), screen and (orientation: portrait) {
         margin-top: 0;
-
     }
     
     .logo {
         margin: 0;
         transform: translateX(-0.35em);
-        // font-size: 3.8em;
-
         font-size: $font-logo;
         font-weight: 200;
         font-family: 'Montserrat', monospace, sans-serif;
 
-        // @media (min-height: 400px), screen and (orientation: portrait) { 
-        //     margin-top: 20em;
-        //  }
-
-        // @media screen and (max-width: 770px) {
-        //     margin-top: 20em;
-        // }
-
-
-        @media screen and (max-width: 768px), screen and (orientation: portrait) {
-
-            * {
-                // font-size: 4rem;
-            }
-            // font-size: 1.8em;
-            // margin: 1.5em 0 0.5em;
-            margin: 1.5em 0 0;
-        }
-
-        @media screen and (min-height: 1024px) and (max-width: 768px) {
-            font-size: 2.5em !important;
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+            font-size: $font-l;
         }
 
         #plus, #new, #access, #compta {
@@ -127,17 +102,14 @@ header {
 
             &:hover * {
                 transition-delay: 0.5s;
-                // color: $nac-color;
                 color: $kadra-logo;
             }
         }
     }
 
     .slogan {
-        // margin: 0.5em 0 2em;
         margin: 0;
         padding: 0 20%;
-        // color: $nac-font-3;
         color: $kadra-slogan;
         font-size: 1rem;
         font-style: italic;
@@ -163,12 +135,9 @@ header {
 
     @media screen and (max-width: 1366px) {
         padding-top: 0;
-        // margin-top: -10vh;
         margin-top: 0;
         padding-top: 0;
-        // margin-top: 5vh;
     }
-
 
     @media screen and (max-width: 768px), screen and (orientation: portrait) {
         display: block;
@@ -185,20 +154,26 @@ header {
         }
     
         @media screen and (max-width: 1024px) {
-            font-size: 3.5em;
+            font-size: $font-xl;
             margin: 0;
         }
 
-        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+        @media screen and (max-width: 768px) {
             margin: 0;
+            font-size: $font-xl;
 
             * {
-                font-size: $font-logo;
+                font-size: $font-xl;
             }
         }
 
-        @media screen and (min-height: 1024px) and (max-width: 768px) {
-            font-size: 3.8em !important;
+        @media screen and (max-width: 480px) {
+            margin: 0;
+            font-size: $font-l;
+
+            * {
+                font-size: $font-l;
+            }
         }
     }
 }
@@ -212,7 +187,7 @@ header {
         }
 
         @media screen and (max-width: 768px), screen and (orientation: portrait) {
-            font-size: $font-xl;
+            font-size: $font-l;
             margin: 2em 0 1em;
         }
     }
@@ -227,8 +202,7 @@ header {
         }
 
         @media screen and (max-width: 768px), screen and (orientation: portrait) {
-            font-size: $font-l;
-            // line-height: 1.1em;
+            font-size: $font-m;
         }
     }
 }

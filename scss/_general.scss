@@ -7,18 +7,21 @@
     font-family: 'Montserrat', 'Sans-Serif';
 }
 
-// *, *:before, *:after {
-//     box-sizing: border-box;
-// }
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
     font-size: $font-root;
-    width: 100vw !important;
+    // width: 100vw !important;
+    // width: 100% !important;
 }
 
 body {
-    width: 100vw !important;
+    // width: 100vw !important;
+    // width: 100% !important;
+
     @media screen and (max-width: 1024px) {
         background: none;
     }
@@ -35,6 +38,11 @@ h1 {
 
     @media screen and (max-width: 1024px) {
         margin: 2em auto 1em;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 1em auto 1em;
+        font-size: $font-l;
     }
 }
 
@@ -87,9 +95,10 @@ blockquote {
 
 footer {
     // margin-top: 3em;
+    position: fixed;
     padding: 0.5em 0 0.5em;
     width: 100%;
-    max-width: 100%;
+    // max-width: 100%;
     background: $black;
     color: rgba(255,255,255, 0.75);
     text-align: center;
@@ -97,11 +106,15 @@ footer {
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.35em;
-    position: fixed;
+    
     bottom: 0;
 
-    @media screen and (max-width: 768px), screen and (orientation: portrait) {
-        font-size: $font-l;
+    @media screen and (max-width: 768px) {
+        padding: 0.5em;
+        font-size: $font-xs;
+        // position: absolute;
+        // width: auto;
+        // max-width: none;
     }
 
     // @media screen and (max-width: 768px), screen and (orientation: portrait) {
@@ -242,10 +255,28 @@ footer {
         position: fixed;
         bottom: 0;
 
-        @media screen and (max-width: 768px), screen and (orientation: portrait) {
-            position: fixed !important;
-            bottom: 0;
+        @media screen and (max-width: 768px) {
+            // display: block;
+            // position: static;
+            margin: 1em auto 0;
+            // width: 100vw !important;
+            // width: auto;
+            // max-width: none;
+
+            font-size: 0.6em;
+
+            // * {
+            //     font-size: 0.6em;
+            // }
+            // * > *  {
+            //     font-size: 0.6em;
+            // }
         }
+
+        // @media screen and (max-width: 768px), screen and (orientation: portrait) {
+        //     position: fixed !important;
+        //     bottom: 0;
+        // }
     }
 }
 
@@ -406,7 +437,7 @@ ol {
             font-size: $font-m;
 
             @media screen and (max-width: 768px), screen and (orientation: portrait) {
-                font-size: $font-mxl;
+                font-size: $font-m;
             }
 
             &:hover {

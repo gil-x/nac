@@ -16,14 +16,14 @@
     .blog-title {
         margin: 0;
         display: inline-block;
-        font-size: $font-xl;
+        font-size: $font-l;
     
         @media screen and (max-width: 1024px) {
             padding: 0 10%;
         }
         
         @media screen and (max-width: 768px), screen and (orientation: portrait) {
-            margin: 1.5em;
+            margin: 0.5em 0;
             padding: 0 5%;
             // font-size: $font-mxl;
             flex-basis: 100%;
@@ -71,7 +71,7 @@
 
             @media screen and (max-width: 768px), screen and (orientation: portrait) {
                 margin: 0 1em 1em;
-                font-size: $font-l;
+                font-size: $font-s;
                 // flex-basis: 25%;
                 // display: inline-block;
                 // float: left;
@@ -104,7 +104,7 @@
 
                     @media screen and (max-width: 768px), screen and (orientation: portrait) {
                         margin: 0 1em;
-                        font-size: $font-l;
+                        font-size: $font-xs;
                     }
 
                     &:hover {
@@ -203,6 +203,12 @@
         //     font-weight: 600;
         // }
 
+        h2 {
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+
         p {
             // font-style: italic;
             font-size: $font-m;
@@ -216,9 +222,15 @@
             overflow: hidden;
             transition: filter 3s, opacity 1s;
 
+            @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (orientation: landscape) {
+                height: 35vh;
+            }
+
             img {
                     width: 100%;
                     transition: filter 3s, opacity 1s;
+
+                    
                 }
         }
         .excerpt-link {
@@ -237,8 +249,8 @@
                 border-radius: 1px;
                 display: inline-block;
 
-                @media screen and (max-width: 768px), screen and (orientation: portrait) {
-                    font-size: $font-mxl;
+                @media screen and (max-width: 768px) {
+                    font-size: $font-m;
                 }
 
                 &::before {
@@ -284,7 +296,7 @@
     @media screen and (max-width: 1024px) {
         padding: 0 10%;
         // display: flex;
-        width: 100%;
+        // width: 100%;
     }
 
     @media screen and (max-width: 768px), screen and (orientation: portrait) {
