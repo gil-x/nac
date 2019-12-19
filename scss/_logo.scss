@@ -31,6 +31,10 @@
 
 header {
     text-align: center;
+    // &:hover {
+    //     cursor: pointer !important;
+    // }
+    
 
     @media screen and (max-width: 768px) and (orientation: portrait) {
         margin-top: 10em;
@@ -46,13 +50,20 @@ header {
         font-size: $font-logo;
         font-weight: 200;
         font-family: 'Montserrat', monospace, sans-serif;
+        // cursor: pointer;
 
         @media screen and (max-width: 768px) and (orientation: portrait) {
             font-size: $font-l;
         }
 
+        // a {
+        //     cursor: pointer;
+        //     // border: 1px solid green !important;
+        // }
+
         #plus, #new, #access, #compta {
             display: inline-block;
+            cursor: pointer;
         }
 
         #plus {

@@ -41,10 +41,12 @@
     // grid-template-rows: 40vh 35vh 25vh;
     grid-template-rows: 50vh 47.5vh 1.5em;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         width: 100%;
         transition: transform 0.35s;
         padding: 2em;
+        right: auto;
+        left: 0;
     }
 
     li a {
@@ -126,10 +128,20 @@
 
 #menu.menu-off {
     transform: translateX(100%);
+
+    @media screen and (max-width: 1024px) {
+        // position: fixed;
+        // left: 0;
+        transform: translateY(-100%);
+    }
 }
 
 #menu.menu-on {
     transform: translateX(0);
+
+    @media screen and (max-width: 1024px) {
+        transform: translateY(0);
+    }
 }
 
 .customer-menu-container {

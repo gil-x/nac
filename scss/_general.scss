@@ -7,32 +7,16 @@
     font-family: 'Montserrat', 'Sans-Serif';
 }
 
-// *, *:before, *:after {
-//     box-sizing: border-box;
-// }
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
     font-size: $font-root;
-    // width: 100vw !important;
-    // width: 100% !important;
-}
-
-body {
-    // width: 100vw !important;
-    // width: 100% !important;
-
-    @media screen and (max-width: 1024px) {
-        background: none;
-    }
-
-    // @media screen and (max-width: 768px) {
-    //     width: 414px !important;
-    // }
 }
 
 #wpadminbar .display-name {
-    // color: $nac-color;
     color: $kadra-logo;
 }
 
@@ -120,21 +104,13 @@ footer {
     @media screen and (max-width: 768px) {
         padding: 0.5em;
         font-size: $font-xs;
-        // position: absolute;
-        // width: auto;
-        // max-width: none;
     }
-
-    // @media screen and (max-width: 768px), screen and (orientation: portrait) {
-    //     position: static;
-    // }
 
     a {
         color: rgba(255,255,255, 0.75);
         font-weight: 600;
 
         &:hover {
-            // color: $nac-color;
             color: $kadra-blog;
         }
     }
@@ -172,16 +148,10 @@ footer {
         margin-top: 5vh;
     }
 
-    // @media screen and (max-width: 768px), screen and (orientation: portrait) {
-    //     width: 100%;
-    // }
-
     h1 {
         white-space: nowrap;
 
         @media screen and (min-height: 1024px) and (max-width: 768px) {
-            // font-size: 3.8em !important;
-            // margin: 1.5em 0 0.5em;
             margin: 2em auto 0 !important;
         }
     }
@@ -199,17 +169,12 @@ footer {
         }
 
         @media screen and (min-height: 1024px) and (max-width: 768px) {
-            // font-size: 3.8em !important;
-            // margin: 1.5em 0 0.5em;
             margin: 0 auto 5em;
         }
     }
 
     .social {
-
         @media screen and (min-height: 1024px) and (max-width: 768px) {
-            // font-size: 3.8em !important;
-            // margin: 1.5em 0 0.5em;
             margin: 2em auto !important;
         }
 
@@ -231,28 +196,20 @@ footer {
                 transform-origin: center;
                 filter: saturate(7);
             }
-
-            // @media screen and (max-width: 1366px) {
-            //     margin: 0 0.5em;
-            //     width: 2.5em;
-            // }
-
-            // @media screen and (max-width: 768px), screen and (orientation: portrait) {
-            //     margin: 60px 15px;
-            //     width: 10%;
-            // }
-
-            
         }
+
         a:nth-child(1) .social-icon {
             animation-delay: 1.5s;
         }
+
         a:nth-child(2) .social-icon {
             animation-delay: 1.7s;
         }
+
         a:nth-child(3) .social-icon {
             animation-delay: 1.8s;
         }
+
         a:nth-child(4) .social-icon {
             animation-delay: 2s;
         }
@@ -264,27 +221,9 @@ footer {
         bottom: 0;
 
         @media screen and (max-width: 768px) {
-            // display: block;
-            // position: static;
             margin: 1em auto 0;
-            // width: 100vw !important;
-            // width: auto;
-            // max-width: none;
-
             font-size: 0.6em;
-
-            // * {
-            //     font-size: 0.6em;
-            // }
-            // * > *  {
-            //     font-size: 0.6em;
-            // }
         }
-
-        // @media screen and (max-width: 768px), screen and (orientation: portrait) {
-        //     position: fixed !important;
-        //     bottom: 0;
-        // }
     }
 }
 
@@ -344,7 +283,6 @@ footer {
     }
     
     ul {
-        // padding: 0.25em 0 0.25em 1em;
         padding: 0 0.25em;
         list-style-type: none;
 
@@ -355,11 +293,9 @@ footer {
 
             &::before {
                 content: "+";
-                // color: $nac-color;
                 color: $kadra-blog;
                 display: inline-block;
                 width: 1em;
-                // margin-left: -1em;
                 font-size: $font-l;
                 position: relative;
                 top: 0.1em;
@@ -387,26 +323,11 @@ footer {
   }
 
 @keyframes shake-simple {
-10%, 90% {
-    transform: translateX(-1px);
-}
-
-20%, 80% {
-    transform: translateX(1px);
-}
-
-30%, 50%, 70% {
-    transform: translateX(-1px);
-}
-
-40%, 60% {
-    transform: translateX(1px);
-}
-
-100% {
-    // color: $nac-color;
-    color: $kadra-blog;
-    }
+    10%, 90% { transform: translateX(-1px); }
+    20%, 80% { transform: translateX(1px); }
+    30%, 50%, 70% { transform: translateX(-1px); }
+    40%, 60% { transform: translateX(1px); }
+    100% { color: $kadra-blog; }
 }
 
 ol {
@@ -420,7 +341,6 @@ ol {
         margin: 0.25%;
         flex-basis: 49.5%;
         padding: 0.75em 0.5em;
-        // border: 1px solid $nac-color;
         border: 1px solid $kadra-blog;
         box-sizing: border-box;
         transition: all 0.75s;
@@ -434,7 +354,6 @@ ol {
             border: 1px solid $nac-font-3;
 
             &::before {
-                // color: $nac-color;
                 color: $kadra-blog;
                 transform: rotateZ(360deg);
             }
@@ -468,7 +387,6 @@ ol {
 .anchor-menu {
     margin: 1em 0;
     width: 100%;
-    // border-bottom: 1px solid $nac-color;
     border-bottom: 1px solid $kadra-blog;
 
     p {
@@ -490,7 +408,6 @@ ol {
 
             &:hover {
                 color: $nac-font-1;
-                // border-bottom: 4px solid $nac-color;
                 border-bottom: 4px solid $kadra-blog;
             }
         }
@@ -500,8 +417,6 @@ ol {
 .alignleft {
     float: left;
     margin: 0 10px 10px 0;
-
-
 }
 
 .alignright {
@@ -518,6 +433,7 @@ ol {
         display: inline-block;
         margin: 1em auto;
     }
+
     .wp-caption {
         width: 100% !important;
         text-align: center;
@@ -534,10 +450,7 @@ ol {
             }
         }
     }
-    
-    // $font-logo: 10vw;
 }
-
 
 .aligncenter {
     display: block;
@@ -545,7 +458,7 @@ ol {
     max-width: 100%;
     height: auto;
 }
- 
-// #wpadminbar {
-//     display: none;
-// }
+
+#wpadminbar {
+    z-index: 0;
+}

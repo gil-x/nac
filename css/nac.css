@@ -6,13 +6,12 @@
   color: #000;
   font-family: 'Montserrat', 'Sans-Serif'; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 html {
   scroll-behavior: smooth;
   font-size: 16px; }
-
-@media screen and (max-width: 1024px) {
-  body {
-    background: none; } }
 
 #wpadminbar .display-name {
   color: #10ADD1; }
@@ -340,6 +339,9 @@ ol {
   max-width: 100%;
   height: auto; }
 
+#wpadminbar {
+  z-index: 0; }
+
 @keyframes show {
   0% {
     transform: rotateY(0); }
@@ -406,7 +408,8 @@ header {
       header .logo {
         font-size: 1.3rem; } }
     header .logo #plus, header .logo #new, header .logo #access, header .logo #compta {
-      display: inline-block; }
+      display: inline-block;
+      cursor: pointer; }
     header .logo #plus {
       transform: translateX(-100vw);
       font-size: 2em;
@@ -555,11 +558,13 @@ header {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 50vh 47.5vh 1.5em; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     #menu {
       width: 100%;
       transition: transform 0.35s;
-      padding: 2em; } }
+      padding: 2em;
+      right: auto;
+      left: 0; } }
   #menu li a {
     font-size: 0.9rem; }
     @media screen and (orientation: portrait) {
@@ -608,9 +613,15 @@ header {
 
 #menu.menu-off {
   transform: translateX(100%); }
+  @media screen and (max-width: 1024px) {
+    #menu.menu-off {
+      transform: translateY(-100%); } }
 
 #menu.menu-on {
   transform: translateX(0); }
+  @media screen and (max-width: 1024px) {
+    #menu.menu-on {
+      transform: translateY(0); } }
 
 .customer-menu-container {
   padding: 1em;
