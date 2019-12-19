@@ -7,9 +7,9 @@
     font-family: 'Montserrat', 'Sans-Serif';
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
-}
+// *, *:before, *:after {
+//     box-sizing: border-box;
+// }
 
 html {
     scroll-behavior: smooth;
@@ -25,6 +25,10 @@ body {
     @media screen and (max-width: 1024px) {
         background: none;
     }
+
+    // @media screen and (max-width: 768px) {
+    //     width: 414px !important;
+    // }
 }
 
 #wpadminbar .display-name {
@@ -51,6 +55,10 @@ h2, h3, h4 {
     // color: $nac-color;
     color: $kadra-title;
     margin: 1.5em 0 0.75em;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 h1, h2, h3, h4 {
@@ -164,9 +172,9 @@ footer {
         margin-top: 5vh;
     }
 
-    @media screen and (max-width: 768px), screen and (orientation: portrait) {
-        width: 100%;
-    }
+    // @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    //     width: 100%;
+    // }
 
     h1 {
         white-space: nowrap;
@@ -224,15 +232,15 @@ footer {
                 filter: saturate(7);
             }
 
-            @media screen and (max-width: 1366px) {
-                margin: 0 0.5em;
-                width: 2.5em;
-            }
+            // @media screen and (max-width: 1366px) {
+            //     margin: 0 0.5em;
+            //     width: 2.5em;
+            // }
 
-            @media screen and (max-width: 768px), screen and (orientation: portrait) {
-                margin: 60px 15px;
-                width: 10%;
-            }
+            // @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            //     margin: 60px 15px;
+            //     width: 10%;
+            // }
 
             
         }

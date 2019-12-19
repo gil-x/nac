@@ -6,9 +6,6 @@
   color: #000;
   font-family: 'Montserrat', 'Sans-Serif'; }
 
-*, *:before, *:after {
-  box-sizing: border-box; }
-
 html {
   scroll-behavior: smooth;
   font-size: 16px; }
@@ -35,6 +32,9 @@ h2, h3, h4 {
   font-weight: 600;
   color: #0E8EAC;
   margin: 1.5em 0 0.75em; }
+  @media screen and (max-width: 768px) {
+    h2, h3, h4 {
+      text-align: center; } }
 
 h1, h2, h3, h4 {
   font-family: 'Julius Sans One', 'sans-serif'; }
@@ -113,9 +113,6 @@ footer {
     .home {
       padding-top: 0;
       margin-top: 5vh; } }
-  @media screen and (max-width: 768px), screen and (orientation: portrait) {
-    .home {
-      width: 100%; } }
   .home h1 {
     white-space: nowrap; }
     @media screen and (min-height: 1024px) and (max-width: 768px) {
@@ -152,14 +149,6 @@ footer {
       transform: scale(1.05);
       transform-origin: center;
       filter: saturate(7); }
-    @media screen and (max-width: 1366px) {
-      .home .social .social-icon {
-        margin: 0 0.5em;
-        width: 2.5em; } }
-    @media screen and (max-width: 768px), screen and (orientation: portrait) {
-      .home .social .social-icon {
-        margin: 60px 15px;
-        width: 10%; } }
   .home .social a:nth-child(1) .social-icon {
     animation-delay: 1.5s; }
   .home .social a:nth-child(2) .social-icon {
@@ -533,13 +522,6 @@ header {
     .home .content p {
       font-size: 0.9rem; } }
 
-#burger, #close {
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 23px;
-  cursor: pointer; }
-
 #burger {
   position: fixed;
   z-index: 10;
@@ -551,6 +533,13 @@ header {
   z-index: 30;
   background: url("../img/close.svg") no-repeat;
   background-size: contain; }
+
+#burger, #close {
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 23px;
+  cursor: pointer; }
 
 #menu {
   position: fixed;
@@ -569,6 +558,7 @@ header {
   @media screen and (max-width: 768px) {
     #menu {
       width: 100%;
+      transition: transform 0.35s;
       padding: 2em; } }
   #menu li a {
     font-size: 0.9rem; }
@@ -615,10 +605,6 @@ header {
         padding: 0.5em;
         border: 1px solid #D81566;
         border-left: none; }
-  @media screen and (max-width: 768px), screen and (orientation: portrait) {
-    #menu {
-      width: 100%;
-      transition: transform 0.35s; } }
 
 #menu.menu-off {
   transform: translateX(100%); }
@@ -685,7 +671,8 @@ header {
     @media screen and (max-width: 768px), screen and (orientation: portrait) {
       .header #sidebar {
         flex-basis: 100%;
-        text-align: center; } }
+        text-align: center;
+        margin-right: 0; } }
     .header #sidebar .widgettitle {
       color: #888;
       font-size: 0.8rem;
@@ -698,19 +685,25 @@ header {
           .header #sidebar .widgettitle::after {
             content: " : "; } }
     .header #sidebar ul {
-      list-style-type: none; }
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap; }
       .header #sidebar ul li {
         display: inline-block;
         margin-right: 0.5em; }
+        @media screen and (max-width: 768px) {
+          .header #sidebar ul li {
+            flex-basis: 33.33%;
+            margin: 0; } }
         .header #sidebar ul li a {
           font-family: 'Julius Sans One', 'sans-serif';
           font-size: 0.8rem;
           color: #000;
           font-weight: 600; }
-          @media screen and (max-width: 768px), screen and (orientation: portrait) {
+          @media screen and (max-width: 768px) {
             .header #sidebar ul li a {
               margin: 0 1em;
-              font-size: 0.7rem; } }
+              font-size: 0.66em; } }
           .header #sidebar ul li a:hover {
             color: #D81566; }
 
@@ -723,7 +716,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3em; }
-    @media screen and (max-width: 768px), screen and (orientation: portrait) {
+    @media screen and (max-width: 768px) {
       .page .post-container {
         display: block; } }
     .page .post-container .post {
@@ -734,6 +727,9 @@ header {
       .page .post-container .post h2 {
         min-height: 3.5rem;
         margin: 1.5em 0 0.25em; }
+        @media screen and (max-width: 768px) {
+          .page .post-container .post h2 {
+            margin: 0.25em 0; } }
         .page .post-container .post h2 a {
           font-size: 1.3rem; }
           .page .post-container .post h2 a:hover {
@@ -942,6 +938,9 @@ header {
             color: #D81566; }
         .post-footer #sidebar ul li::before {
           content: none; }
+    @media screen and (max-width: 768px) {
+      .post-footer #sidebar {
+        display: none; } }
     @media screen and (max-width: 768px) {
       .post-footer #sidebar {
         display: none; } }
