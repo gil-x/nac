@@ -14,21 +14,44 @@
 
             &::before {
                 content: "(";
-                // color: $nac-color;
-                color: $kadra-logo;
+                // color: $kadra-logo;
+                color: $kadra-blog;
+
+                // @media screen and (max-width: 1024px) {
+                //     color: $kadra-logo !important;
+                // }
             }
             
             &::after {
                 content: ")";
-                // color: $nac-color;
-                color: $kadra-logo;
+                // color: $kadra-logo;
+                color: $kadra-blog;
+
+                // @media screen and (max-width: 1024px) {
+                //     color: $kadra-logo !important;
+                // }
             }
 
             &:hover {
-                // color: $nac-color;
+                // color: $kadra-logo;
+                color: $kadra-blog;
+
+                // @media screen and (max-width: 1024px) {
+                //     color: $black !important;
+                // }
+
+                &::before, &::after {
+                    color: $black;
+
+                    // @media screen and (max-width: 1024px) {
+                    //     color: $kadra-logo !important;
+                    // }
+                }
+            }
+
+            &:active {
                 color: $kadra-logo;
-                // text-decoration: underline;
-                // transform: rotateY(360deg);
+
                 &::before, &::after {
                     color: $black;
                 }

@@ -16,7 +16,7 @@
     .blog-title {
         margin: 0;
         display: inline-block;
-        font-size: $font-l;
+        // font-size: $font-l;
     
         @media screen and (max-width: 1024px) {
             padding: 0 10%;
@@ -87,6 +87,7 @@
             list-style-type: none;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
 
             @media screen and (max-width: 768px), screen and (orientation: portrait) {
                 // margin: 0 1em;
@@ -99,7 +100,7 @@
                 margin-right: 0.5em;
 
                 @media screen and (max-width: 768px) {
-                    flex-basis: 33.33%;
+                    flex-basis: 20%;
                     margin: 0;
                 }
                 

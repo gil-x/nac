@@ -56,20 +56,26 @@ if (categoriesWidget) {
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    console.log("DOM loaded");
-    console.log(`WIDTH: ${window.screen.width}`);
-    screenWidth = window.screen.width + 'px';
+    // console.log("DOM loaded");
+    // console.log(`WIDTH: ${window.screen.width}`);
+    // screenWidth = window.screen.width + 'px';
+
     // document.getElementsByTagName('html')[0].style.background = 'red';
     // document.getElementsByTagName('html')[0].style.maxWidth = window.screen.width + 'px';
     // burger.style.position = "static";
     // burger.style.position = "fixed";
     // document.location.reload(true);
-    const footer = document.getElementsByTagName('footer')[0];
-    if (window.screen.width <= 1024) {
-        menu.style.width = screenWidth;
-        footer.style.width = screenWidth;
-        burger.style.left = (window.screen.width - 20 - 30) + 'px';
-    }
+
+    // const footer = document.getElementsByTagName('footer')[0];
+    // const header = document.getElementsByTagName('header')[0];
+
+    // if (window.screen.width <= 1024) {
+    //     menu.style.width = screenWidth;
+    //     footer.style.width = screenWidth;
+    //     burger.style.left = (window.screen.width - 20 - 30) + 'px';
+    // }
+
+    // header.style.display = 'block';
 });
 
 

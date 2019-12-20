@@ -31,6 +31,7 @@
 
 header {
     text-align: center;
+    overflow: hidden !important;
     // &:hover {
     //     cursor: pointer !important;
     // }
@@ -51,6 +52,7 @@ header {
         font-weight: 200;
         font-family: 'Montserrat', monospace, sans-serif;
         // cursor: pointer;
+        overflow: hidden !important;
 
         @media screen and (max-width: 768px) and (orientation: portrait) {
             font-size: $font-l;
@@ -137,7 +139,7 @@ header {
         }
 
         @media screen and (max-width: 768px), screen and (orientation: portrait) {
-            font-size: $font-xs;
+            font-size: $font-mxs;
         }
     }
 }
@@ -213,7 +215,7 @@ header {
         }
 
         @media screen and (max-width: 768px), screen and (orientation: portrait) {
-            font-size: $font-m;
+            font-size: $font-s;
         }
     }
 }
